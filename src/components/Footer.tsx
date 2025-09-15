@@ -1,9 +1,6 @@
 import { FOOTER_LINKS } from '../data/links';
 import { Link } from 'react-router-dom';
 import { CONTACT } from '../data/contactData/contact';
-import { MdOutlineMailOutline } from 'react-icons/md';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { FaFax } from 'react-icons/fa';
 import SocialMediaIcons from './ui/SocialMediaIcons';
 import footerLogo from '../assets/img/logo/footerLogo.png';
 import eclipse from '../assets/img/logo/eclipse.png';

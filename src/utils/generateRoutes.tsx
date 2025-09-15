@@ -1,5 +1,5 @@
 import React from 'react';
-import type { NavLink } from '../types/NavLinks';
+import type { NavLink } from '../types/links';
 import { Route } from 'react-router-dom';
 
 export const generateRoutes = (links: NavLink[]): React.ReactNode[] => {
