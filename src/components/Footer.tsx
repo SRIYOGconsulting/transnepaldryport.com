@@ -91,12 +91,12 @@ function FooterLogoSection() {
                 <img
                     src={eclipse}
                     alt="Eclipse"
-                    className="h-56 w-56 rounded-full bg-white"
+                    className="h-50 w-50 rounded-full bg-white"
                 />
                 <img
                     src={footerLogo}
                     alt="Footer Logo"
-                    className="absolute h-32 w-56"
+                    className="absolute h-25 w-50"
                     style={{
                         top: '50%',
                         transform: 'translateY(-50%)'
@@ -191,7 +191,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-3 w-full border-b-2 border-gray-300" />
+                <div className="mt-10 w-full border-b-2 border-gray-300" />
 
                 <FooterCopyright />
             </div>

@@ -1,14 +1,15 @@
-import Banner from '../components/ui/Banner';
-import { ABOUT_US } from '../data/homePageData/aboutUs';
+import AboutUs from '../components/home/AboutUs';
+import GetInTouchWithUs from '../components/home/GetInTouchWithUs';
+import Services from '../components/home/Services';
+import HomeHeroBanner from '../components/ui/HomeHeroBanner';
 
 export default function Home() {
     return (
         <main>
-            <Banner title="Home page" subtitle="This is home page" />
-            <section>
-                <h1>{ABOUT_US.title}</h1>
-                <p>{ABOUT_US.description}</p>
-            </section>
+            <HomeHeroBanner />
+            <AboutUs />
+            <Services />
+            <GetInTouchWithUs />
         </main>
     );
 }
