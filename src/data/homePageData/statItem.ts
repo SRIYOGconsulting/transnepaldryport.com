@@ -5,11 +5,11 @@ export type StatItem = {
 
 export const STAT_ITEM: StatItem[] = [
     {
-        title: 'Number of Offices',
+        title: 'Offices',
         count: 7
     },
     {
-        title: 'Number of Projects',
+        title: 'Projects',
         count: 3
     },
     {

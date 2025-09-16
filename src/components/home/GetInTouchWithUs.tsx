@@ -1,74 +1,86 @@
 import get_in_touch_with_us from '../../assets/img/home/getInTouch/get_in_touch_with_us.png';
 import { GET_IN_TOUCH_WITH_US } from '../../data/homePageData/getInTouchWithUs';
 
+type InfoCardProps = {
+    logoSrc: string;
+    title: string;
+    children: React.ReactNode;
+};
+
+function InfoCard({ logoSrc, title, children }: InfoCardProps) {
+    return (
+        <div className="w-full rounded-md bg-white px-5 py-3 shadow-lg">
+            <div className="flex gap-4">
+                <div className="flex h-16 w-12 items-center">
+                    <img src={logoSrc} alt={`${title} logo`} />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <h3 className="font-padauk text-base font-bold text-black">
+                        {title}
+                    </h3>
+                    {children}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function GetInTouchWithUs() {
     return (
-        <section className="self-stretch h-150 px-24 bg-slate-100/60 flex flex-col justify-center items-center gap-2.5">
-            <div className='max-w-7xl h-150 inline-flex justify-center items-center gap-36'>
+        <section className="flex w-full justify-center bg-slate-100/60 px-20">
+            <div className="flex max-w-7xl items-center justify-center gap-20">
+                {/* Left Image */}
                 <img
-                    className='w-152 h-152 rounded-tl-3xl rounded-bl-3xl'
-                    src={get_in_touch_with_us} alt="Get In Touch With Us" />
-                <div className='w-96 inline-flex flex-col justify-start items-start gap-16'>
-                    <div className='self-stretch flex flex-col justify-start items-start gap-8'>
-                        <h1 className="self-stretch justify-start text-black text-4xl font-semibold font-['Poltawski_Nowy'] leading-normal">
+                    src={get_in_touch_with_us}
+                    alt="Get In Touch With Us"
+                    className="h-[608px] max-w-[60%] rounded-tl-3xl rounded-bl-3xl object-cover"
+                />
+
+                {/* Right Content */}
+                <div className="flex w-full max-w-sm flex-col gap-8">
+                    <div className="flex flex-col gap-4">
+                        <h1 className="font-poltawski text-4xl font-semibold text-black">
                             Get In Touch With Us
                         </h1>
-                        <div className='w-72 flex flex-col justify-start items-start gap-3.5'>
-                            <p className="self-stretch h-4 text-justify justify-start text-black text-base font-light font-['Segoe_UI'] leading-snug">
-                                Your Reliable Partner for Logistics Support
-                            </p>
-                            <div className="w-14 h-0 outline  outline-offset-[-0.50px] outline-black"></div>
-                        </div>
+                        <p className="font-segoe text-justify text-base font-light text-black">
+                            Your Reliable Partner for Logistics Support
+                        </p>
+                        <div className="h-px w-14 bg-black" />
                     </div>
 
-                    <div className='self-stretch h-16 px-5 py-3.5 bg-white rounded-[5px] shadow-[0px_1px_5px_0px_rgba(0,0,0,0.20)] flex flex-col justify-start items-start gap-2.5'>
-                        <div className='inline-flex justify-start items-start gap-4'>
-                            <img src={GET_IN_TOUCH_WITH_US.workingHours.logo} />
-                            <div className='w-44 h-9 inline-flex flex-col justify-start items-start gap-[5px]'>
-                                <h3 className="self-stretch h-4 justify-start text-black text-base font-bold font-['Padauk'] leading-normal tracking-tight">
-                                {GET_IN_TOUCH_WITH_US.workingHours.title}
-                                </h3>
-                                <p className="self-stretch justify-start text-black text-[10px] font-light font-['Poppins'] leading-normal tracking-tight">
-                                    {GET_IN_TOUCH_WITH_US.workingHours.timing}
-                                </p>
-                            </div>
-                        </div>
+                    {/* Info Cards */}
+                    <InfoCard
+                        logoSrc={GET_IN_TOUCH_WITH_US.workingHours.logo}
+                        title={GET_IN_TOUCH_WITH_US.workingHours.title}
+                    >
+                        <p className="font-poppins text-xs font-light text-black">
+                            {GET_IN_TOUCH_WITH_US.workingHours.timing}
+                        </p>
+                    </InfoCard>
 
+                    <InfoCard
+                        logoSrc={GET_IN_TOUCH_WITH_US.address.logo}
+                        title={GET_IN_TOUCH_WITH_US.address.title}
+                    >
+                        <p className="font-poppins text-xs font-light text-black">
+                            {GET_IN_TOUCH_WITH_US.address.location}
+                        </p>
+                        <p className="font-poppins text-xs font-light text-black">
+                            {GET_IN_TOUCH_WITH_US.address.email}
+                        </p>
+                    </InfoCard>
 
-                    </div>
-
-                    <div className='self-stretch h-16 px-5 py-3.5 bg-white rounded-[5px] shadow-[0px_1px_5px_0px_rgba(0,0,0,0.20)] flex flex-col justify-start items-start gap-2.5'>
-                        <div className='inline-flex justify-start items-start gap-4'>
-                            <img src={GET_IN_TOUCH_WITH_US.address.logo} />
-                            <div className='w-44 h-9 inline-flex flex-col justify-start items-start gap-[5px]'>
-                                <h3 className="self-stretch h-4 justify-start text-black text-base font-bold font-['Padauk'] leading-normal tracking-tight">
-                                {GET_IN_TOUCH_WITH_US.address.title}
-                                </h3>
-                                <p className="self-stretch justify-start text-black text-[10px] font-light font-['Poppins'] leading-normal tracking-tight">
-                                    {GET_IN_TOUCH_WITH_US.address.location}
-                                </p> <p className="self-stretch justify-start text-black text-[10px] font-light font-['Poppins'] leading-normal tracking-tight">
-                                    {GET_IN_TOUCH_WITH_US.address.email}
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div className='self-stretch h-16 px-5 py-3.5 bg-white rounded-[5px] shadow-[0px_1px_5px_0px_rgba(0,0,0,0.20)] flex flex-col justify-start items-start gap-2.5'>
-                        <div className='inline-flex justify-start items-start gap-4'>
-                            <img src={GET_IN_TOUCH_WITH_US.workingHours.logo} />
-                            <div className='w-44 h-9 inline-flex flex-col justify-start items-start gap-[5px]'>
-                                <h3 className="self-stretch h-4 justify-start text-black text-base font-bold font-['Padauk'] leading-normal tracking-tight">
-                                {GET_IN_TOUCH_WITH_US.workingHours.title}
-                                </h3>
-                                <p className="self-stretch justify-start text-black text-[10px] font-light font-['Poppins'] leading-normal tracking-tight">
-                                    {GET_IN_TOUCH_WITH_US.workingHours.timing}
-                                </p>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    <InfoCard
+                        logoSrc={GET_IN_TOUCH_WITH_US.contact.logo}
+                        title={GET_IN_TOUCH_WITH_US.contact.title}
+                    >
+                        <p className="font-poppins text-xs font-light text-black">
+                            Telephone: {GET_IN_TOUCH_WITH_US.contact.telephone}
+                        </p>
+                        <p className="font-poppins text-xs font-light text-black">
+                            Fax: {GET_IN_TOUCH_WITH_US.contact.fax}
+                        </p>
+                    </InfoCard>
                 </div>
             </div>
         </section>

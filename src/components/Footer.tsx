@@ -153,7 +153,7 @@ function FooterCopyright() {
                 Services Pvt. Ltd.
             </p>
             <p className={copyrightNoticeParagraph}>
-                Technology Partner | Pracas Infosys
+                Site By : SRIYOG Consulting
             </p>
         </section>
     );

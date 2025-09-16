@@ -4,7 +4,7 @@ import { ABOUT_US } from '../../data/homePageData/aboutUs';
 export default function AboutUs() {
     return (
         <section className="flex w-full flex-col items-center justify-center gap-2.5 bg-slate-100/60 px-20 py-16">
-            <div className="inline-flex h-80 max-w-7xl items-center justify-center gap-14">
+            <div className="flex h-80 max-w-7xl items-center justify-center gap-14">
                 <img
                     className="h-80 w-96 rounded-tl-4xl rounded-bl-4xl"
                     src={about_us}
