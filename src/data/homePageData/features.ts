@@ -21,7 +21,7 @@ export const FEATURES: Features[] = [
         img: parking
     },
     {
-        title: 'warehouse and Storage',
+        title: 'Warehouse and Storage',
         description:
             'Covered warehouse of 55x25 meters with a 1.2-meter high-level platform at both terminals. Additional fully covered warehouse of similar size in ICP Biratnagar.',
         img: warehouse_and_storage

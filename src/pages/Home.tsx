@@ -1,4 +1,5 @@
 import AboutUs from '../components/home/AboutUs';
+import DetailsTransNepal from '../components/home/DetailsTransNepal';
 import Features from '../components/home/Features';
 import GetInTouchWithUs from '../components/home/GetInTouchWithUs';
 import Services from '../components/home/Services';
@@ -10,6 +11,7 @@ export default function Home() {
     return (
         <main>
             <HomeHeroBanner />
+            <DetailsTransNepal />
             <AboutUs />
             <Services />
             <GetInTouchWithUs />

@@ -8,28 +8,28 @@ type SectionHeaderProps = {
 
 function SectionHeader({ title, subtitle }: SectionHeaderProps) {
     return (
-        <div className="flex flex-col gap-3">
+        <header className="flex flex-col gap-3">
             <h1 className="font-padauk text-4xl leading-normal font-bold tracking-wide text-black">
                 {title}
             </h1>
             <p className="font-poppins text-base leading-normal tracking-tight text-black">
                 {subtitle}
             </p>
-        </div>
+        </header>
     );
 }
 
 export default function Services() {
     return (
-        <section className="flex w-full flex-col items-center justify-center px-20 py-16">
+        <section className="flex w-full flex-col items-center justify-center px-5 py-16">
             <div className="flex max-w-7xl flex-col items-start gap-24">
                 <SectionHeader
                     title="Services"
                     subtitle="TransNepal Delivers a Complete Range of Logistics Solutions"
                 />
 
-                {/* Services Card List */}
-                <div className="flex w-full items-center justify-center gap-5">
+                {/* Services Cards Grid */}
+                <div className="flex w-full flex-wrap justify-center gap-5">
                     {SERVICES.map(({ title, description, img }, index) => (
                         <ServicesCard
                             key={index}

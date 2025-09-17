@@ -19,7 +19,7 @@ import ICDKakarvitta from '../pages/services/TerminalManagement/ICDKakarvitta';
 import ICDTatopani from '../pages/services/TerminalManagement/ICDTatopani';
 import ICPBiratnagar from '../pages/services/TerminalManagement/ICPBiratnagar';
 import Transportation from '../pages/services/Transportation';
-import Tarrif from '../pages/Tarrif';
+import Tariff from '../pages/Tariff';
 import type { FooterLinks, NavLink } from '../types/links';
 
 export const NAV_LINKS: NavLink[] = [
@@ -158,9 +158,9 @@ export const NAV_LINKS: NavLink[] = [
     },
 
     {
-        label: 'Tarrif',
-        path: '/tarrif',
-        element: <Tarrif />
+        label: 'Tariff',
+        path: '/tariff',
+        element: <Tariff />
     }
 ];
 
@@ -194,7 +194,7 @@ export const FOOTER_LINKS: FooterLinks = {
             path: '/icd-kakarvitta',
             element: <ICDKakarvitta />
         },
-        { label: 'Tarrif', path: '/tarrif', element: <Tarrif /> },
+        { label: 'Tarrif', path: '/tarrif', element: <Tariff /> },
         {
             label: 'News & Events',
             path: '/newsandevents',
