@@ -76,7 +76,7 @@ function NavLinkLabel({
 }
 
 function NavItem({ link }: { link: NavLink }) {
-    const [isHovered, setIsHovered] = useState(false);
+    const [isHovered, setIsHovered] = useState(false); // Track hover state
     const hasDropdown = isDropdown(link);
 
     const content = (
@@ -93,8 +93,8 @@ function NavItem({ link }: { link: NavLink }) {
         <li
             className="group relative flex cursor-pointer items-center"
             role="none"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(true)} // Trigger on hover
+            onMouseLeave={() => setIsHovered(false)} // Reset on mouse leave
         >
             {link.path ? (
                 <Link
@@ -113,6 +113,7 @@ function NavItem({ link }: { link: NavLink }) {
                 content
             )}
 
+            {/* Dropdown Menu */}
             {hasDropdown && isHovered && (
                 <DropdownMenu items={link.children!} />
             )}
@@ -121,7 +122,6 @@ function NavItem({ link }: { link: NavLink }) {
 }
 
 function NavMenu({ links }: { links: NavLink[] }) {
-    // Exclude 'Tarrif' from main nav
     const mainLinks = links.filter(link => link.label !== 'Tarrif');
 
     return (
