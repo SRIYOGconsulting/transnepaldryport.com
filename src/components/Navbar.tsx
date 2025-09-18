@@ -1,9 +1,9 @@
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiChevronDown } from 'react-icons/hi';
 import logo from '../assets/img/logo/logo.png';
 import { NAV_LINKS } from '../data/links';
 import type { NavLink } from '../types/links';
-import { useState } from 'react';
 
 const isDropdown = (link: NavLink): boolean =>
     Array.isArray(link.children) &&
@@ -37,7 +37,7 @@ function DropdownGroup({ group }: { group: NavLink }) {
 function DropdownMenu({ items }: { items: NavLink[] }) {
     return (
         <ul
-            className="absolute top-full left-0 z-20 mt-2 min-w-[180px] origin-top scale-y-95 transform rounded bg-white p-2 text-black opacity-0 shadow-lg transition-all duration-200 ease-in-out group-hover:block group-hover:scale-y-100 group-hover:opacity-100 group-hover:duration-1000"
+            className="absolute top-full left-0 z-[999] mt-2 min-w-[180px] origin-top transform rounded bg-white p-2 text-black shadow-lg transition-all duration-200 ease-in-out"
             role="menu"
             aria-label="submenu"
         >
@@ -76,25 +76,36 @@ function NavLinkLabel({
 }
 
 function NavItem({ link }: { link: NavLink }) {
-    const [isHovered, setIsHovered] = useState(false); // Track hover state
+    const [isHovered, setIsHovered] = useState(false);
+    const hoverTimeout = useRef<number | null>(null);
     const hasDropdown = isDropdown(link);
 
-    const content = (
-        <span
-            className="inline-flex items-center gap-1 font-['Inter'] text-base font-normal whitespace-nowrap text-white"
-            aria-haspopup={hasDropdown}
-            aria-expanded={hasDropdown ? undefined : false}
-        >
-            <NavLinkLabel label={link.label} hasDropdown={hasDropdown} />
-        </span>
-    );
+    // Clear timeout on unmount to avoid memory leaks
+    useEffect(() => {
+        return () => {
+            if (hoverTimeout.current) clearTimeout(hoverTimeout.current);
+        };
+    }, []);
+
+    const handleMouseEnter = () => {
+        if (hoverTimeout.current) {
+            clearTimeout(hoverTimeout.current);
+        }
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        hoverTimeout.current = window.setTimeout(() => {
+            setIsHovered(false);
+        }, 200); // Delay before closing dropdown
+    };
 
     return (
         <li
             className="group relative flex cursor-pointer items-center"
             role="none"
-            onMouseEnter={() => setIsHovered(true)} // Trigger on hover
-            onMouseLeave={() => setIsHovered(false)} // Reset on mouse leave
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
         >
             {link.path ? (
                 <Link
@@ -102,7 +113,7 @@ function NavItem({ link }: { link: NavLink }) {
                     className="inline-flex items-center gap-1 font-['Inter'] text-base font-normal whitespace-nowrap text-white"
                     role="menuitem"
                     aria-haspopup={hasDropdown}
-                    aria-expanded={hasDropdown ? false : undefined}
+                    aria-expanded={hasDropdown ? isHovered : undefined}
                 >
                     <NavLinkLabel
                         label={link.label}
@@ -110,12 +121,28 @@ function NavItem({ link }: { link: NavLink }) {
                     />
                 </Link>
             ) : (
-                content
+                <span
+                    className="inline-flex items-center gap-1 font-['Inter'] text-base font-normal whitespace-nowrap text-white"
+                    role="menuitem"
+                    aria-haspopup={hasDropdown}
+                    aria-expanded={hasDropdown ? isHovered : undefined}
+                >
+                    <NavLinkLabel
+                        label={link.label}
+                        hasDropdown={hasDropdown}
+                    />
+                </span>
             )}
 
-            {/* Dropdown Menu */}
+            {/* Render the dropdown when hovered, and keep it open while hovering over it */}
             {hasDropdown && isHovered && (
-                <DropdownMenu items={link.children!} />
+                <div
+                    className="absolute top-full left-0 z-[999]"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
+                    <DropdownMenu items={link.children!} />
+                </div>
             )}
         </li>
     );
@@ -123,7 +150,6 @@ function NavItem({ link }: { link: NavLink }) {
 
 function NavMenu({ links }: { links: NavLink[] }) {
     const mainLinks = links.filter(link => link.label !== 'Tarrif');
-
     return (
         <nav aria-label="Main Navigation">
             <ul className="inline-flex h-7 flex-wrap items-center gap-x-10">
@@ -153,11 +179,11 @@ function TarrifLink({ link }: { link: NavLink }) {
 }
 
 export default function Navbar() {
-    const tarrifLink = NAV_LINKS.find(link => link.label === 'Tarrif');
+    const tariffLink = NAV_LINKS.find(link => link.label === 'Tarrif');
 
     return (
         <header
-            className="w-full px-8 py-4"
+            className="relative z-[1000] w-full px-8 py-4"
             style={{ backgroundColor: 'var(--primary)' }}
         >
             <div className="relative mx-auto flex max-w-7xl flex-wrap items-center justify-between space-x-4">
@@ -172,7 +198,7 @@ export default function Navbar() {
 
                 <NavMenu links={NAV_LINKS} />
 
-                {tarrifLink && <TarrifLink link={tarrifLink} />}
+                {tariffLink && <TarrifLink link={tariffLink} />}
             </div>
         </header>
     );
