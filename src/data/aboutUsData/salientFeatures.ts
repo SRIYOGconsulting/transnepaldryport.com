@@ -1,21 +1,58 @@
-export const salientFeatures = {
-    title: 'Salient Features',
-    description:
-        'Exporters can get their containers custom-cleared at terminals and importers can manifest import containers directly to terminals for delivery option for stuffing / de-stuffing containers at ICDs/ICPs/CFSs.',
-    features: [
-        'TransNepal manages two terminals at the Nepal-India border at Bitanagar and Kakarbhitta, located in the Eastern Nepal plains.',
-        'TransNepal, through a joint venture, acquired two ICDs at Tatopani and Chobhar. Tatopani is at the Nepal-China border; Chobhar is in Kirtipur, Kathmandu Valley.',
-        'Chobhar ICD is a unique facility as it deals in both **EXIM and DOMESTIC** cargo.',
-        'These facilities significantly reduce overhead for exporters/importers and eliminate business uncertainties.',
-        'The company provides **Tailor-Made Storage Solutions** designed to meet specific business needs beyond basic storage services.',
-        'Automated warehousing solutions like **Warehouse Management System (WMS)** help streamline inventory, reduce errors, and optimize space.',
-        'With the rise of EV adoption in Nepal, **Chobhar ICD is equipped with state-of-the-art warehouses** and has adequate space in both **EXIM** and **DOMESTIC** sections for EVs and components.',
-        'All terminals are equipped with firefighting hydrant systems and necessary fire extinguishing equipment.',
-        'These terminals extend the benefits of gateway ports directly to exporters and importers across Nepal.',
-        'A backup power supply with diesel generators ranging from 82.5 KVA to 450 KVA ensures 24/7 operations.',
-        'Facilities are well connected to Kolkata/Haldia and Vizag ports (India) via road and rail.',
-        'All terminals have Grade-A warehouses and are equipped with digital weighbridges.',
-        'Availability of handling equipment like cranes, forklifts, and pallet trolleys.',
-        'Space availability for warehousing and 3PL operations.'
-    ]
-};
+import nepal_flag from '../../assets/img/about/salientFeatures/nepal_flag.png';
+import ev_storage_solution from '../../assets/img/about/salientFeatures/ev_storage_solution.jpg';
+
+export const SALIENT_FEATURES = {
+    terminalNetwork: {
+        title: "Terminal Network",
+        img: nepal_flag,
+        networks: [
+            {
+                title: "Border Terminals",
+                description: "TransNepal has been managing two terminals at Nepal-India border",
+                li: [
+                    "Biratnagar & Kakarbitta: Located in the plains of Eastern Nepal"
+                ]
+            },
+            {
+                title: "Joint venture",
+                description: "Through joint ventures, TransNepal acquired two ICDs:",
+                li: [
+                    "Tatopani ICD: Located at Nepal-China border",
+                    "Chobhar ICD: Located at Kirtipur, Kathmandu Valley",
+                ]
+            },
+            {
+                title: "Unique Capabilities",
+                description: "Chobhar ICD: A unique facility handling both EXIM and DOMESTIC cargo. These facilities cut down overhead expenses of exporters/importers significantly and eliminate business uncertainties.",
+            },
+
+        ]
+    },
+
+    evStorage: {
+        title: "EV  Storage Solutions",
+        description: [
+            "The Nepal Govt. has introduced policies to encourage adoption of EVs and consequently there has been spurt in import of EVs in the country which requires storage space and for that Chobhar ICD is well equipped with state of art warehouses has adequate space in both EXIM and DOMESTIC sections of terminal to accommodate the growing inventory of EVs and their components.",
+            "All the terminals are equipped with fire fighting hydrant system and n-number of cylinders have been put thereon to tackle small incident.",
+        ],
+        img: ev_storage_solution
+    },
+
+    advancedStorage: {
+        title: "Advanced Storage Solutions",
+        description: [
+            "Automated Warehousing Solution like Warehouse Management System(WMS) to streamline inventory processing, reducing errors, and optimising storage.",
+            "The Company also provides Tailor-Made Storage Solution that are designed to align with the specific requirements of business, offering a range of benefits which extends beyond basic storage services.",
+        ],
+    },
+
+    security: {
+        title: "Security",
+        description: [
+            "These terminals bring the advantages of the gateway ports to the very door-step of exporters /importers across Nepal.With a view to provide 24 hour power supply there is a back up arrangement of Diesel Generator ranging from 82.5 KVA to 450 KVA.These facilities are well connected to the gateway ports of Kolkata/Haldia and Vizag(in India) by road and rail.",
+            "All the terminals have Grade-A category of warehouse and equipped with Digital Weighbridge.",
+            "Availability of handling equipment like crane, forklift and pallet trolley etc.",
+            "Availability of space for warehousing and 3PL operations.",
+        ]
+    }
+}

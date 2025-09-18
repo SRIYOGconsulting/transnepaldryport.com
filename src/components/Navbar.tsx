@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import{ useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiChevronDown } from 'react-icons/hi';
 import logo from '../assets/img/logo/logo.png';
@@ -149,7 +149,7 @@ function NavItem({ link }: { link: NavLink }) {
 }
 
 function NavMenu({ links }: { links: NavLink[] }) {
-    const mainLinks = links.filter(link => link.label !== 'Tarrif');
+    const mainLinks = links.filter(link => link.label !== 'Tariff');
     return (
         <nav aria-label="Main Navigation">
             <ul className="inline-flex h-7 flex-wrap items-center gap-x-10">
@@ -161,9 +161,9 @@ function NavMenu({ links }: { links: NavLink[] }) {
     );
 }
 
-function TarrifLink({ link }: { link: NavLink }) {
+function TariffLink({ link }: { link: NavLink }) {
     return (
-        <nav aria-label="Tarrif Navigation">
+        <nav aria-label="Tariff Navigation">
             <ul className="inline-flex h-7 w-20 items-center justify-center rounded-[10px] bg-white p-2.5">
                 <li>
                     <Link
@@ -179,7 +179,7 @@ function TarrifLink({ link }: { link: NavLink }) {
 }
 
 export default function Navbar() {
-    const tariffLink = NAV_LINKS.find(link => link.label === 'Tarrif');
+    const tariffLink = NAV_LINKS.find(link => link.label === 'Tariff');
 
     return (
         <header
@@ -198,7 +198,7 @@ export default function Navbar() {
 
                 <NavMenu links={NAV_LINKS} />
 
-                {tariffLink && <TarrifLink link={tariffLink} />}
+                {tariffLink && <TariffLink link={tariffLink} />}
             </div>
         </header>
     );

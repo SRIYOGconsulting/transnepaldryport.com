@@ -3,7 +3,7 @@ import HistoriesAndMemories from '../pages/about/HistoriesAndMemories';
 import Holidays from '../pages/about/Holidays';
 import ManagementTeam from '../pages/about/ManagementTeam';
 import QACANDCOC from '../pages/about/QACANDCOC';
-import SolientFeatures from '../pages/about/SolientFeatures';
+import SalientFeatures from '../pages/about/SalientFeatures';
 import VisionAndMission from '../pages/about/VisionAndMission';
 import TransilkTemninalsPvtLtd from '../pages/associates/TransilkTemninalsPvtLtd';
 import TransNepalTRSLogiparkPvtLtd from '../pages/associates/TransNepalTRSLogiparkPvtLtd';
@@ -49,9 +49,9 @@ export const NAV_LINKS: NavLink[] = [
                 element: <VisionAndMission />
             },
             {
-                label: 'Solient Features',
-                path: '/solient-features',
-                element: <SolientFeatures />
+                label: 'Salient Features',
+                path: '/salient-features',
+                element: <SalientFeatures />
             },
             {
                 label: 'History and Memories',

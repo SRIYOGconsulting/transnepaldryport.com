@@ -32,7 +32,7 @@ export default function TeamCard({
                     >
                         <h2
                             id="director-name"
-                            className="self-stretch text-center font-['Segoe_UI'] text-xl leading-normal font-semibold text-indigo-950"
+                            className="self-stretch text-center font-['Segoe_UI'] text-xl leading-normal  text-indigo-950"
                         >
                             {name}
                         </h2>
@@ -42,7 +42,7 @@ export default function TeamCard({
                     </div>
                 </header>
                 <section
-                    className="w-[486px] text-justify font-['Segoe_UI'] text-xs leading-normal font-light text-black"
+                    className="w-[486px] text-justify font-['Segoe_UI'] text-xs leading-normal text-black"
                     aria-label={`Biography of ${name}`}
                 >
                     <p>{description}</p>

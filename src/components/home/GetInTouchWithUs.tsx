@@ -27,8 +27,8 @@ function InfoCard({ logoSrc, title, children }: InfoCardProps) {
 
 export default function GetInTouchWithUs() {
     return (
-        <section className="flex w-full justify-center bg-slate-100/60 px-20">
-            <div className="flex max-w-7xl items-center justify-center gap-20">
+        <section className="flex w-full justify-center bg-slate-100/60 px-4 sm:px-20 lg:px-15">
+            <div className="flex w-full max-w-7xl items-center justify-between gap-20">
                 {/* Left Image */}
                 <img
                     src={get_in_touch_with_us}

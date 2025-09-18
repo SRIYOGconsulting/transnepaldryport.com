@@ -19,7 +19,7 @@ export default function BoardOfDirector() {
             />
 
             <section className="mt-10 flex flex-wrap justify-center gap-8 py-20">
-                {BOARD_OF_DIRECTORS.director.map(director => (
+                {BOARD_OF_DIRECTORS.map(director => (
                     <TeamCard
                         key={director.id}
                         imgSrc={director.img}

@@ -8,6 +8,15 @@ type InfoCardProps = {
     title: string;
 };
 
+function ContactUs() {
+    return (
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-52 p-2.5 bg-sky-950 rounded-tl-[10px] rounded-bl-[10px] flex flex-col justify-center items-center gap-2.5">
+            <div className="w-32 h-7 origin-top-left rotate-90 text-white text-xl font-bold font-['Inter'] capitalize whitespace-nowrap">
+                CONTACT US
+            </div>
+        </div>
+    );
+}
 function InfoCard({ logoSrc, title }: InfoCardProps) {
     return (
         <div className="w-full rounded-md px-5 py-3">
@@ -28,7 +37,7 @@ function InfoCard({ logoSrc, title }: InfoCardProps) {
 }
 export default function DetailsTransNepal() {
     return (
-        <section className="flex w-full justify-center bg-slate-100/60 px-4 py-12 sm:px-20 lg:px-15">
+        <section className="flex relative w-full justify-center bg-slate-100/60 px-4 py-12 sm:px-20 lg:px-15">
             <div className="flex w-full max-w-7xl items-center justify-between gap-8 lg:flex-col">
                 <div className="flex flex-col">
                     <h1 className="font-[Poppins] text-4xl text-black mb-10">
@@ -52,6 +61,7 @@ export default function DetailsTransNepal() {
                     ))}
                 </div>
             </div>
+            <ContactUs />
         </section>
     );
 }
