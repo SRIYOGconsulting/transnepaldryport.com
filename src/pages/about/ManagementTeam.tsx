@@ -18,17 +18,7 @@ export default function ManagementTeam() {
                 img={BANNER.img}
             />
 
-            <section className="mt-10 flex flex-wrap justify-center gap-8 py-20">
-                {MANAGEMENT_TEAM.map((director) => (
-                    <TeamCard
-                        key={director.id}
-                        imgSrc={director.img}
-                        name={director.name}
-                        role={director.post}
-                        description={director.description}
-                    />
-                ))}
-            </section>
+            <Members teamData={MANAGEMENT_TEAM} />
         </main>
     );
 }

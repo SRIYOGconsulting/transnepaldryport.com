@@ -1,5 +1,5 @@
 import BoardOfDirector from '../pages/about/BoardOfDirector';
-import HistoriesAndMemories from '../pages/about/HistoriesAndMemories';
+import HistoryAndMemories from '../pages/about/HistoryAndMemories';
 import Holidays from '../pages/about/Holidays';
 import ManagementTeam from '../pages/about/ManagementTeam';
 import QACANDCOC from '../pages/about/QACANDCOC';
@@ -55,8 +55,8 @@ export const NAV_LINKS: NavLink[] = [
             },
             {
                 label: 'History and Memories',
-                path: '/history-memories',
-                element: <HistoriesAndMemories />
+                path: '/history-and-memories',
+                element: <HistoryAndMemories />
             },
             {
                 label: 'QAC &COC',

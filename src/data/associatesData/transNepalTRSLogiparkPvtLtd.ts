@@ -1,38 +1,69 @@
+import mukesh_kumar_rathi from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/mukesh_kumar_rathi.svg';
+import bhim_raj_joshi from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/bhimraj_joshi.svg';
+import anand_kumar_singh from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/anand_kumar_singh.svg';
+import capt_mayur_paralkar from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/capt_mayur_paralkar.svg';
+import male_place_holder from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/male_place_holder.svg';
+
 export const TRANSNEPAL_TRSLOGIPARK = {
     company: 'TransNepal TRS Logipark Pvt. Ltd.',
     overview: {
-        incorporatedYear: 2023,
-        ownership: '50:50 Joint Venture',
-        objective: 'Operating and managing terminals in Nepal',
-        keyProject: 'Chobhar ICD',
-        contractWith: 'Nepal Intermodal Transport Development Board',
-        operationCommencement: 'December 2023'
+        title: 'Company overview',
+        description:
+            'TransNepal TRS Logipark Pvt. Ltd. a 50:50 Joint Venture company incorporated in the year 2023 with the objective of operating and managing terminals in Nepal. The company has signed the contract of operation and management of Chobhar ICD with Nepal Intermodel Transport Development Board and commenced its operation from December 2023'
     },
     boardOfDirectors: [
-        { name: 'Mukesh Kumar Rathi', designation: 'Director' },
-        { name: 'Raghvendra Pratap Singh', designation: 'Director' },
-        { name: 'Debangshu Mukherjee', designation: 'Director' },
-        { name: 'Suresh Kumar R', designation: 'Director' },
-        { name: 'Bhimraj Joshi', designation: 'Director' },
-        { name: 'Dipendra Pratap Singh', designation: 'Director' }
+        {
+            name: 'Mukesh Kumar Rathi',
+            designation: 'Director',
+            img: mukesh_kumar_rathi
+        },
+        {
+            name: 'Raghvendra Pratap Singh',
+            designation: 'Director',
+            img: male_place_holder
+        },
+        {
+            name: 'Debangshu Mukherjee',
+            designation: 'Director',
+            img: male_place_holder
+        },
+        {
+            name: 'Suresh Kumar R',
+            designation: 'Director',
+            img: male_place_holder
+        },
+        { name: 'Bhimraj Joshi', designation: 'Director', img: bhim_raj_joshi },
+        {
+            name: 'Dipendra Pratap Singh',
+            designation: 'Director',
+            img: male_place_holder
+        }
     ],
     managementCommittee: [
         {
             name: 'Debangshu Mukherjee',
-            designation: 'Management Committee Member'
+            designation: 'Management Committee Member',
+            img: male_place_holder
         },
         {
             name: 'Capt. Mayur Paralkar',
-            designation: 'Management Committee Member'
+            designation: 'Management Committee Member',
+            img: capt_mayur_paralkar
         },
         {
             name: 'Anand Kumar Singh',
-            designation: 'Management Committee Member'
+            designation: 'Management Committee Member',
+            img: anand_kumar_singh
         },
         {
             name: 'Aditya Roy',
-            designation: 'Management Committee Member and CFO'
+            designation: 'Management Committee Member and CFO',
+            img: male_place_holder
         },
-        { name: 'Ravi Vidyarthi', designation: 'Chief Executive Officer' }
+        {
+            name: 'Ravi Vidyarthi',
+            designation: 'Chief Executive Officer',
+            img: male_place_holder
+        }
     ]
 };

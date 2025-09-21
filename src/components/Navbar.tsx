@@ -1,4 +1,4 @@
-import{ useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HiChevronDown } from 'react-icons/hi';
 import logo from '../assets/img/logo/logo.png';
@@ -21,6 +21,11 @@ function DropdownGroup({ group }: { group: NavLink }) {
                     <li
                         key={child.label}
                         className="rounded p-2 hover:bg-gray-200"
+                        style={{
+                            whiteSpace: 'nowrap', // Prevent text from wrapping
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis' // Use ellipsis if the text is too long
+                        }}
                     >
                         {child.path ? (
                             <Link to={child.path}>{child.label}</Link>
@@ -40,6 +45,9 @@ function DropdownMenu({ items }: { items: NavLink[] }) {
             className="absolute top-full left-0 z-[999] mt-2 min-w-[180px] origin-top transform rounded bg-white p-2 text-black shadow-lg transition-all duration-200 ease-in-out"
             role="menu"
             aria-label="submenu"
+            style={{
+                minWidth: '220px' // Adjust this to make sure items fit without breaking
+            }}
         >
             {items.map(item =>
                 item.type === 'group' ? (
@@ -49,6 +57,11 @@ function DropdownMenu({ items }: { items: NavLink[] }) {
                         key={item.label}
                         className="rounded p-2 hover:bg-gray-200"
                         role="menuitem"
+                        style={{
+                            whiteSpace: 'nowrap', // Prevent text from wrapping
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis' // Use ellipsis for long text
+                        }}
                     >
                         <Link to={item.path!}>{item.label}</Link>
                     </li>

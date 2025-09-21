@@ -1,7 +1,7 @@
 import Banner from '../../components/ui/Banner';
 import hero from '../../assets/img/about/boardOfDirectors/hero.png';
 import { BOARD_OF_DIRECTORS } from '../../data/aboutUsData/boardOfDirector';
-import TeamCard from '../../components/ui/TeamCard';
+import Members from '../../components/Members';
 
 const BANNER = {
     title: 'Board of Directors',
@@ -18,17 +18,7 @@ export default function BoardOfDirector() {
                 img={BANNER.img}
             />
 
-            <section className="mt-10 flex flex-wrap justify-center gap-8 py-20">
-                {BOARD_OF_DIRECTORS.map(director => (
-                    <TeamCard
-                        key={director.id}
-                        imgSrc={director.img}
-                        name={director.name}
-                        role={director.post}
-                        description={director.description}
-                    />
-                ))}
-            </section>
+            <Members teamData={BOARD_OF_DIRECTORS} />
         </main>
     );
 }

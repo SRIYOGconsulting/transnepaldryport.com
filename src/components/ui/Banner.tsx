@@ -20,7 +20,7 @@ export default function Banner({ title, subtitle, img }: BannerProps) {
             {/* Content */}
             <div className="relative flex h-64 w-[575px] flex-col items-start justify-center gap-2.5 bg-sky-950/95 px-14 py-16">
                 <div className="flex w-full flex-col items-start justify-center gap-6">
-                    <h1 className="h-12 self-stretch overflow-hidden font-['Segoe_UI'] text-5xl font-bold whitespace-nowrap text-white">
+                    <h1 className="h-12 self-stretch font-['Segoe_UI'] text-5xl font-bold text-white">
                         {title}
                     </h1>
                     <p className="self-stretch font-['Segoe_UI'] text-3xl font-light text-white">

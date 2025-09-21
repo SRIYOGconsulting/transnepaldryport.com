@@ -14,7 +14,7 @@ function InfoCard({ logoSrc, title, children }: InfoCardProps) {
                 <div className="flex h-16 w-12 items-center">
                     <img src={logoSrc} alt={`${title} logo`} />
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 whitespace-nowrap">
                     <h3 className="font-padauk text-base font-bold text-black">
                         {title}
                     </h3>

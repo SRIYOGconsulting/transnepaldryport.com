@@ -32,7 +32,7 @@ export default function TeamCard({
                     >
                         <h2
                             id="director-name"
-                            className="self-stretch text-center font-['Segoe_UI'] text-xl leading-normal  text-indigo-950"
+                            className="self-stretch text-center font-['Segoe_UI'] text-xl leading-normal text-indigo-950"
                         >
                             {name}
                         </h2>

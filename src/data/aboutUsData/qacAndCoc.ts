@@ -10,12 +10,8 @@ export const QAC_AND_COC = {
     codeOfConduct: {
         title: 'Code of Conduct',
         intro: 'TransNepal’s code of conducts',
-
-        applicability: {
-            title: 'Applicability',
-            description:
-                'This ‘Code of Conduct’ shall be applicable to all Board Members, the Senior Management Team and all the Employees. Ethical business conduct is a key to a business and consequently, all Board Members, the Senior Management Team and all the Employees are expected to read and understand this code and emulate these standards in their day to day activities.'
-        },
+        description:
+            'This ‘Code of Conduct’ shall be applicable to all Board Members, the Senior Management Team and all the Employees. Ethical business conduct is a key to a business and consequently, all Board Members, the Senior Management Team and all the Employees are expected to read and understand this code and emulate these standards in their day to day activities.',
 
         sections: [
             {
@@ -89,5 +85,24 @@ export const QAC_AND_COC = {
                     'The Board holds the authority to take action against any violations of the Code.'
             }
         ]
-    }
+    },
+    policyManagement: [
+        {
+            title: 'Variation of the Code and Waivers',
+            description:
+                'The Code shall be reviewed from time to time for updation thereof. Any variation in the Code or any waivers from the provisions of the Code shall be approved by the Board Directors of the Company and shall be disclosed on the Company’s website.'
+        },
+
+        {
+            title: 'High Level of Ethical Standards',
+            description:
+                'In their personal and professional life, all Employees and Directors of the Company shall ensure high level of ethical standards and will not be involved in any incident of moral turpitude.'
+        },
+
+        {
+            title: 'Violation of the Code',
+            description:
+                'The Board of Directors of the Company shall have the powers to take necessary action in case of any violation of the code.'
+        }
+    ]
 };
