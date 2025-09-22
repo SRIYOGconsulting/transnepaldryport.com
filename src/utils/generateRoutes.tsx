@@ -1,12 +1,13 @@
 import React from 'react';
+import { Route, Outlet } from 'react-router-dom';
 import type { NavLink } from '../types/links';
-import { Route } from 'react-router-dom';
 
 export const generateRoutes = (links: NavLink[]): React.ReactNode[] => {
     const routes: React.ReactNode[] = [];
 
     links.forEach(link => {
         if (link.path && link.element) {
+            // If the link has no children, generate a standard Route
             routes.push(
                 <Route
                     key={link.path}
@@ -16,18 +17,18 @@ export const generateRoutes = (links: NavLink[]): React.ReactNode[] => {
             );
         }
 
-        if (link.children) {
-            link.children.forEach(sublink => {
-                if (sublink.path && sublink.element) {
-                    routes.push(
-                        <Route
-                            key={sublink.path}
-                            path={sublink.path}
-                            element={sublink.element}
-                        />
-                    );
-                }
-            });
+        if (link.children && link.children.length > 0) {
+            // If the link has children, create a parent route with an Outlet for nested routes
+            routes.push(
+                <Route
+                    key={link.label}
+                    path={link.path || ''}
+                    element={<Outlet />}
+                >
+                    {/* Recursively generate child routes */}
+                    {generateRoutes(link.children)}
+                </Route>
+            );
         }
     });
 

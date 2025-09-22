@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { HiChevronDown } from 'react-icons/hi';
+import { HiChevronDown, HiMenu, HiX } from 'react-icons/hi';
 import logo from '../assets/img/logo/logo.png';
 import { NAV_LINKS } from '../data/links';
 import type { NavLink } from '../types/links';
@@ -164,7 +164,7 @@ function NavItem({ link }: { link: NavLink }) {
 function NavMenu({ links }: { links: NavLink[] }) {
     const mainLinks = links.filter(link => link.label !== 'Tariff');
     return (
-        <nav aria-label="Main Navigation">
+        <nav aria-label="Main Navigation" className="hidden lg:block">
             <ul className="inline-flex h-7 flex-wrap items-center gap-x-10">
                 {mainLinks.map(link => (
                     <NavItem key={link.label} link={link} />
@@ -192,7 +192,12 @@ function TariffLink({ link }: { link: NavLink }) {
 }
 
 export default function Navbar() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const tariffLink = NAV_LINKS.find(link => link.label === 'Tariff');
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
 
     return (
         <header
@@ -212,6 +217,30 @@ export default function Navbar() {
                 <NavMenu links={NAV_LINKS} />
 
                 {tariffLink && <TariffLink link={tariffLink} />}
+
+                {/* Hamburger Icon */}
+                <div className="lg:hidden">
+                    <button onClick={toggleMobileMenu}>
+                        {isMobileMenuOpen ? (
+                            <HiX className="h-6 w-6 text-white" />
+                        ) : (
+                            <HiMenu className="h-6 w-6 text-white" />
+                        )}
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div
+                className={`${
+                    isMobileMenuOpen ? 'block' : 'hidden'
+                } bg-primary absolute top-full left-0 z-[999] w-full p-4 lg:hidden`}
+            >
+                <ul className="space-y-4">
+                    {NAV_LINKS.map(link => (
+                        <NavItem key={link.label} link={link} />
+                    ))}
+                </ul>
             </div>
         </header>
     );

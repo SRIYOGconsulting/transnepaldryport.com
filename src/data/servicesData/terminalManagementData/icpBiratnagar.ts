@@ -1,13 +1,23 @@
+import img1 from '../../../assets/img/services/ICPBiratnager/img1.jpg';
+import img2 from '../../../assets/img/services/ICPBiratnager/img2.jpg';
+import img3 from '../../../assets/img/services/ICPBiratnager/img3.jpg';
+import img4 from '../../../assets/img/services/ICPBiratnager/img4.jpg';
+import img5 from '../../../assets/img/services/ICPBiratnager/img5.jpg';
+import img6 from '../../../assets/img/services/ICPBiratnager/img6.jpg';
+import img7 from '../../../assets/img/services/ICPBiratnager/img7.jpg';
+import img8 from '../../../assets/img/services/ICPBiratnager/img8.jpg';
+
 export const ICP_BIRATNAGAR_INFO = {
-    title: 'ICP BIRATNAGAR',
-    subtitle: 'Salient Features',
-    description: `Spread over 129 bighas of land, Biratnagar ICP is equipped with Warehouses for Export and Import separately, Cold Storage, Terminal Building, Restaurant, Customs, Immigration, Quarantine, Banks, Resting facility, Currency Exchange, Litigation Shed and Parking & Container Yard, CCTV Surveillance that are required for the clearance of goods and movement of people from a single location, thereby reducing trading & transit cost for traders.
+    title: 'Features',
+    description: [
+        `Spread over 129 bighas of land, Biratnagar ICP is equipped with Warehouses for Export and Import separately, Cold Storage, Terminal Building, Restaurant, Customs, Immigration, Quarantine, Banks, Resting facility, Currency Exchange, Litigation Shed and Parking & Container Yard, CCTV Surveillance that are required for the clearance of goods and movement of people from a single location, thereby reducing trading & transit cost for traders.',
 
-Adequate facilities for quarantine, amenities for drivers, passengers, and security personnel have also been created, along with a wastewater treatment plant and large scale landscaping and tree plantation to conserve and enhance the environment.
+'Adequate facilities for quarantine, amenities for drivers, passengers, and security personnel have also been created, along with a wastewater treatment plant and large scale landscaping and tree plantation to conserve and enhance the environment.'
 
-The ICP started full-fledged operations from February 1, 2020 and cross border cargo movement has been completely shifted from ICD to ICP Biratnagar.
+'The ICP started full-fledged operations from February 1, 2020 and cross border cargo movement has been completely shifted from ICD to ICP Biratnagar.',
 
-Some of the key facilities within the ICD complex include:`
+'Some of the key facilities within the ICD complex include:`
+    ]
 };
 
 export const ICP_BIRATNAGAR_FACILITIES = [
@@ -90,4 +100,15 @@ export const ICP_BIRATNAGAR_FACILITIES = [
     { id: 11, particular: 'Railway Yard-NCY', unit: '' },
     { id: 12, particular: 'Additional Space for Cargo Storage', unit: '' },
     { id: 13, particular: 'Immigration Office', unit: '' }
+];
+
+export const ICP_BIRATNAGER_GALLERY = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8
 ];
