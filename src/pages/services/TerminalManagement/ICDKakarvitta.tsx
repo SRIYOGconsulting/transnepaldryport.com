@@ -6,7 +6,6 @@ import {
     ICD_KAKARBHITTA_FACILITIES,
     ICD_KAKARBHITTA_GALLERY
 } from '../../../data/servicesData/terminalManagementData/icdKakarvitta';
-import { ICP_BIRATNAGAR_FACILITIES } from '../../../data/servicesData/terminalManagementData/icpBiratnagar';
 import Mapper from '../../../utils/Mapper';
 
 const BANNER = {
@@ -76,7 +75,7 @@ export default function ICDKakarvitta() {
                     </ul>
 
                     <section>
-                        <h1 className="text-xl text-blue-900">Second Floor</h1>
+                        <h1 className="text-xl text-blue-900 mb-10 mt-10">Galleryr</h1>
                         <ImgCard img={ICD_KAKARBHITTA_GALLERY} grid={3} />
                     </section>
                 </section>

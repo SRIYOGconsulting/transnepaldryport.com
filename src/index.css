@@ -12,3 +12,7 @@
 *::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
 }
+
+.container {
+    @apply w-full px-4 py-5 sm:px-20 lg:px-25;
+}

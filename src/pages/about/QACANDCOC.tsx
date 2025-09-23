@@ -1,6 +1,6 @@
 import hero from '../../assets/img/about/qacAndCoc/hero.png';
 import Banner from '../../components/ui/Banner';
-import TextAreaWithHeading from '../../components/ui/TextAreaWithHeading';
+import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { QAC_AND_COC } from '../../data/aboutUsData/qacAndCoc';
 
 const BANNER = {
@@ -75,7 +75,7 @@ export default function QACANDCOC() {
             </div>
 
             <div className={`w-full ${paddign}`}>
-                <TextAreaWithHeading
+                <TextAreaWithHeadingAndLogo
                     title={QAC_AND_COC.codeOfConduct.title}
                     description={QAC_AND_COC.codeOfConduct.description}
                     bold={true}
@@ -84,7 +84,7 @@ export default function QACANDCOC() {
             <div className="px-20">
                 {QAC_AND_COC.codeOfConduct.sections.map(section => (
                     <div className={`w-full ${paddign}`}>
-                        <TextAreaWithHeading
+                        <TextAreaWithHeadingAndLogo
                             title={section.title}
                             description={section.description}
                         />
@@ -95,7 +95,7 @@ export default function QACANDCOC() {
                 <h1 className="mb-10 font-['Poppins'] text-xl font-bold text-blue-900">
                     Policy Management
                 </h1>
-                <div className="mb-10 flex items-center justify-center gap-12">
+                <div className="mb-10 lg:flex-row flex-col flex items-center justify-center gap-12">
                     {QAC_AND_COC.policyManagement.map(policy => (
                         <PolicyManagement
                             title={policy.title}

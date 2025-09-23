@@ -2,7 +2,7 @@ import hero from '../../../assets/img/services/ICPBiratnager/hero.png';
 import Banner from '../../../components/ui/Banner';
 import ImgCard from '../../../components/ui/ImgCard';
 import Table from '../../../components/ui/Table';
-import TextAreaWithHeading from '../../../components/ui/TextAreaWithHeading';
+import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICP_BIRATNAGAR_FACILITIES,
     ICP_BIRATNAGAR_INFO,
@@ -31,7 +31,7 @@ export default function ICPBiratnagar() {
             />
 
             <section className={`w-full ${padding} my-10`}>
-                <TextAreaWithHeading
+                <TextAreaWithHeadingAndLogo
                     title={ICP_BIRATNAGAR_INFO.title}
                     description={ICP_BIRATNAGAR_INFO.description}
                 />

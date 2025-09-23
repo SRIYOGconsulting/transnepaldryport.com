@@ -1,7 +1,7 @@
 import hero from '../../assets/img/associates/hero.png';
 import PeopleSection from '../../components/PeopleSection';
 import Banner from '../../components/ui/Banner';
-import TextAreaWithHeading from '../../components/ui/TextAreaWithHeading';
+import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { TRANSNEPAL_TRSLOGIPARK } from '../../data/associatesData/transNepalTRSLogiparkPvtLtd';
 
 const BANNER = {
@@ -22,7 +22,7 @@ export default function TransNepalTRSLogiparkPvtLtd() {
             />
 
             <section className={`w-full ${padding} my-10`}>
-                <TextAreaWithHeading
+                <TextAreaWithHeadingAndLogo
                     title={TRANSNEPAL_TRSLOGIPARK.overview.title}
                     description={TRANSNEPAL_TRSLOGIPARK.overview.description}
                 />

@@ -2,7 +2,7 @@ import hero from '../../../assets/img/services/ICDChobhar/hero.png';
 import map from '../../../assets/img/services/ICDChobhar/map.png';
 import Banner from '../../../components/ui/Banner';
 import Table from '../../../components/ui/Table';
-import TextAreaWithHeading from '../../../components/ui/TextAreaWithHeading';
+import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICD_CHOBHAR_FACILITIES,
     ICD_CHOBHAR_INFO
@@ -26,7 +26,7 @@ export default function ICDChobhar() {
 
             <section className={`w-full ${padding} my-10`}>
                 <section>
-                    <TextAreaWithHeading
+                    <TextAreaWithHeadingAndLogo
                         title={ICD_CHOBHAR_INFO.title}
                         description={ICD_CHOBHAR_INFO.description}
                     />

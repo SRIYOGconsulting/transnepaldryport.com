@@ -1,7 +1,7 @@
 import hero from '../../../assets/img/services/ICDTatopani/hero.png';
 import Banner from '../../../components/ui/Banner';
 import Table from '../../../components/ui/Table';
-import TextAreaWithHeading from '../../../components/ui/TextAreaWithHeading';
+import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICD_TATOPANI_FACILITIES,
     ICD_TATOPANI_INFO
@@ -27,7 +27,7 @@ export default function ICDTatopani() {
 
             <section className={`w-full ${padding} my-10`}>
                 <section>
-                    <TextAreaWithHeading
+                    <TextAreaWithHeadingAndLogo
                         title={ICD_TATOPANI_INFO.title}
                         description={ICD_TATOPANI_INFO.description}
                     />

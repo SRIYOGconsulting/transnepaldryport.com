@@ -10,13 +10,13 @@ import img8 from '../../../assets/img/services/ICPBiratnager/img8.jpg';
 export const ICP_BIRATNAGAR_INFO = {
     title: 'Features',
     description: [
-        `Spread over 129 bighas of land, Biratnagar ICP is equipped with Warehouses for Export and Import separately, Cold Storage, Terminal Building, Restaurant, Customs, Immigration, Quarantine, Banks, Resting facility, Currency Exchange, Litigation Shed and Parking & Container Yard, CCTV Surveillance that are required for the clearance of goods and movement of people from a single location, thereby reducing trading & transit cost for traders.',
+        `Spread over 129 bighas of land, Biratnagar ICP is equipped with Warehouses for Export and Import separately, Cold Storage, Terminal Building, Restaurant, Customs, Immigration, Quarantine, Banks, Resting facility, Currency Exchange, Litigation Shed and Parking & Container Yard, CCTV Surveillance that are required for the clearance of goods and movement of people from a single location, thereby reducing trading & transit cost for traders.`,
 
-'Adequate facilities for quarantine, amenities for drivers, passengers, and security personnel have also been created, along with a wastewater treatment plant and large scale landscaping and tree plantation to conserve and enhance the environment.'
+        `Adequate facilities for quarantine, amenities for drivers, passengers, and security personnel have also been created, along with a wastewater treatment plant and large scale landscaping and tree plantation to conserve and enhance the environment.`,
 
-'The ICP started full-fledged operations from February 1, 2020 and cross border cargo movement has been completely shifted from ICD to ICP Biratnagar.',
+        `The ICP started full-fledged operations from February 1, 2020, and cross-border cargo movement has been completely shifted from ICD to ICP Biratnagar.`,
 
-'Some of the key facilities within the ICD complex include:`
+        `Some of the key facilities within the ICP complex include:`
     ]
 };
 
