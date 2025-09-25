@@ -13,7 +13,7 @@ export default function TextAreaWithHeadingAndLogo({
 }: TextAreaWithHeadingProps) {
     return (
         <section className="w-full max-w-7xl">
-            <div className="flex items-center mb-5 gap-4">
+            <div className="mb-5 flex items-center gap-4">
                 {logo && (
                     <img
                         src={logo}
@@ -21,9 +21,7 @@ export default function TextAreaWithHeadingAndLogo({
                         className="h-10 w-10 object-contain"
                     />
                 )}
-                <h1 className=" text-2xl font-bold text-blue-900">
-                    {title}
-                </h1>
+                <h1 className="text-2xl font-bold text-blue-900">{title}</h1>
             </div>
             <div
                 className={`font-['Poppins'] text-xl text-neutral-600 ${
@@ -43,4 +41,3 @@ export default function TextAreaWithHeadingAndLogo({
         </section>
     );
 }
-

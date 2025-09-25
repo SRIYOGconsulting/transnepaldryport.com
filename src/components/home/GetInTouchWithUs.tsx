@@ -38,7 +38,7 @@ export default function GetInTouchWithUs() {
                 </div>
 
                 {/* Right Content - Full width on mobile, original size on desktop */}
-                <div className="flex w-full flex-col gap-6 px-10 lg:px-0 lg:max-w-sm lg:gap-8 lg:py-20">
+                <div className="flex w-full flex-col gap-6 px-10 lg:max-w-sm lg:gap-8 lg:px-0 lg:py-20">
                     <div className="flex flex-col gap-4 text-center lg:text-left">
                         <h1 className="font-poltawski text-3xl font-semibold text-black lg:text-4xl">
                             Get In Touch With Us

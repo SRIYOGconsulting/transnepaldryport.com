@@ -30,7 +30,7 @@ function InfoCard({ title, description, logo: icon }: InfoCardProps) {
             </h3>
 
             {/* Description */}
-            <p className="text-center font-['Inter'] text-base leading-snug font-medium text-black/70">
+            <p className="text-center text-base leading-snug font-medium text-black/70">
                 {description}
             </p>
         </div>
@@ -53,12 +53,13 @@ export default function RentalService() {
                         title={RENTAL_SERVICES.title}
                         description={RENTAL_SERVICES.description}
                     />
-
                 </section>
 
                 <div>
-                    <h1 className='text-blue-900 text-xl font-bold leading-loose mb-5'>Key Benefits</h1>
-                    <section className="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:px-20">
+                    <h1 className="mb-5 text-xl leading-loose font-bold text-blue-900">
+                        Key Benefits
+                    </h1>
+                    <section className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 lg:px-20">
                         {RENTAL_SERVICES.keyBenifits.map((item, index) => (
                             <InfoCard
                                 key={index}
@@ -68,7 +69,6 @@ export default function RentalService() {
                             />
                         ))}
                     </section>
-
                 </div>
             </section>
         </main>

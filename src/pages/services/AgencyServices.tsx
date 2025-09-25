@@ -33,7 +33,7 @@ export default function AgencyServices() {
                     <img
                         src={trusted_partenership}
                         alt="trusted_partenership"
-                        className="h-full w-full rounded-2xl lg:w-[27%]"
+                        className="h-full w-full rounded-2xl lg:w-[35%]"
                     />
                 </section>
             </section>

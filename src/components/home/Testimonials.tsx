@@ -57,7 +57,7 @@ export default function Testimonials() {
         <section className="w-full px-4 py-12 lg:px-5 lg:py-16">
             <div className="mx-auto max-w-7xl">
                 <Heading />
-                <div className="flex flex-col md:flex-row items-center justify-center gap-8 sm:grid sm:grid-cols-2 lg:flex lg:flex-wrap lg:justify-between lg:gap-16">
+                <div className="flex flex-col items-center justify-center gap-8 sm:grid sm:grid-cols-2 md:flex-row lg:flex lg:flex-wrap lg:justify-between lg:gap-16">
                     {TESTIMONIALS.map(testimonial => (
                         <TestimonialCard
                             key={testimonial.id}

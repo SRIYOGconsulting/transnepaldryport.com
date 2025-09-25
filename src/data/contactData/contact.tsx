@@ -1,59 +1,33 @@
 import { CiLinkedin } from 'react-icons/ci';
 import { FaFacebook, FaFax, FaYoutube } from 'react-icons/fa';
-import React from 'react';
-import { MdOutlineMailOutline } from 'react-icons/md';
-import { BsFillTelephoneFill } from 'react-icons/bs';
 
-type SocialMedia = {
-    name: string;
-    url: string;
-    icon: React.ReactNode;
-};
-
-type Contact = SocialMedia & {
-    info: string;
-};
-
-type CONTACT = {
-    companyOverview: string;
-    address: {
-        line1: string;
-        city: string;
-        country: string;
-    };
-    contact: Contact[];
-    workingHours: {
-        weekdays: string;
-    };
-    socialMedia: SocialMedia[];
-};
-
-export const CONTACT: CONTACT = {
-    companyOverview:
-        'TransNepal Freight Services Pvt. Ltd. started in 2002, taking over management of two ICDs in Biratnagar and Bhairahawa on lease from the Nepal Intermodal Transport Development Board for ten years, as directed by the Nepalese government.',
+export const CONTACT = {
+    overview: {
+        title: 'Contact',
+        subtitle:
+            'We are next to your single call, feel free to get informed!! ',
+        description:
+            'TransNepal Freight Services Pvt. Ltd. started in 2002, taking over management of two ICDs in Biratnagar and Bhairahawa on lease from the Nepal Intermodal Transport Development Board for ten years, as directed by the Nepalese government.'
+    },
     address: {
         line1: 'TransNepal Tower, Piyush Marg',
-        city: 'Biratnagar-05',
-        country: 'Nepal'
+        city: 'Biratnagar-05 Nepal'
     },
     contact: [
         {
-            name: 'email',
-            info: 'transnepal_brt@transnepaldryport.com',
-            url: 'mailto:transnepal_brt@transnepaldryport.com',
-            icon: <MdOutlineMailOutline />
+            title: 'Telephone',
+            details: '+977 21 501441',
+            url: 'tel:+977 21 501441'
         },
         {
-            name: 'telephone',
-            info: '+977 21 501441',
-            url: 'tel:+97721501441',
-            icon: <BsFillTelephoneFill />
+            title: 'Fax',
+            details: '+977 21501470',
+            url: 'tel:+977 21501470'
         },
         {
-            name: 'fax',
-            info: '+977 21501470',
-            url: 'tel:+97721501470',
-            icon: <FaFax />
+            title: 'Email',
+            details: 'transnepal_brt@transnepaldryport.com',
+            url: 'mailto:transnepal_brt@transnepaldryport.com'
         }
     ],
     workingHours: {

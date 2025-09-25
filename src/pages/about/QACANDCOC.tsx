@@ -14,16 +14,16 @@ const paddign = 'px-4 py-5 sm:px-20 lg:px-25';
 function QualityPolicy() {
     return (
         <section className="py-12">
-            <h1 className="mb-6 font-['Poppins'] text-xl font-semibold text-indigo-950">
+            <h1 className="mb-6 text-2xl font-semibold text-indigo-950">
                 {QAC_AND_COC.qualityPolicy.title}
             </h1>
 
-            <div className="relative mx-auto w-full max-w-6xl rounded-2xl bg-slate-500/5 px-6 py-8 text-center sm:px-10">
+            <div className="relative mx-auto w-full max-w-7xl rounded-2xl bg-slate-500/5 px-6 py-8 text-center sm:px-10">
                 <span className="absolute top-4 left-8 font-serif text-4xl text-neutral-400 select-none">
                     &ldquo;
                 </span>
 
-                <p className="mx-auto text-center font-['Inter'] text-base leading-relaxed font-medium text-neutral-600">
+                <p className="mx-auto text-center font-['Inter'] text-xl leading-relaxed font-medium text-neutral-600">
                     {QAC_AND_COC.qualityPolicy.description}
                 </p>
 
@@ -81,7 +81,7 @@ export default function QACANDCOC() {
                     bold={true}
                 />
             </div>
-            <div className="px-20">
+            <div className="px-10">
                 {QAC_AND_COC.codeOfConduct.sections.map(section => (
                     <div className={`w-full ${paddign}`}>
                         <TextAreaWithHeadingAndLogo
@@ -95,7 +95,7 @@ export default function QACANDCOC() {
                 <h1 className="mb-10 font-['Poppins'] text-xl font-bold text-blue-900">
                     Policy Management
                 </h1>
-                <div className="mb-10 lg:flex-row flex-col flex items-center justify-center gap-12">
+                <div className="mb-10 flex flex-col items-center justify-center gap-12 lg:flex-row">
                     {QAC_AND_COC.policyManagement.map(policy => (
                         <PolicyManagement
                             title={policy.title}

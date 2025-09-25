@@ -1,7 +1,8 @@
 import hero from '../../../assets/img/services/ICPBiratnager/hero.png';
 import Banner from '../../../components/ui/Banner';
-import ImgCard from '../../../components/ui/ImgCard';
-import Table from '../../../components/ui/Table';
+import type { Column } from '../../../components/ui/DataTable';
+import DataTable from '../../../components/ui/DataTable';
+import ImgGrid from '../../../components/ImgGrid';
 import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICP_BIRATNAGAR_FACILITIES,
@@ -17,10 +18,16 @@ const BANNER = {
     hero: hero
 };
 
-const mapper = (item: any) => ({
-    h1Data: item.particular,
-    h2Data: item.unit
-});
+type TableData = {
+    id: number;
+    particular: string;
+    unit: string;
+};
+const columns: Column<TableData>[] = [
+    { key: 'id', label: 'S.N' },
+    { key: 'particular', label: 'Particular' },
+    { key: 'unit', label: 'Unit' }
+];
 export default function ICPBiratnagar() {
     return (
         <main>
@@ -36,15 +43,30 @@ export default function ICPBiratnagar() {
                     description={ICP_BIRATNAGAR_INFO.description}
                 />
 
-                <Table
-                    h1Title="Particular"
-                    h2Title="Unit"
-                    data={ICP_BIRATNAGAR_FACILITIES}
-                    dataMapping={mapper}
+                <h1 className="text-xl font-light text-blue-900">Building</h1>
+                <DataTable
+                    columns={columns}
+                    data={ICP_BIRATNAGAR_FACILITIES.building}
+                />
+
+                <h1 className="text-xl font-light text-blue-900">
+                    Pre-engineered Sheds/Godowns
+                </h1>
+                <DataTable
+                    columns={columns}
+                    data={ICP_BIRATNAGAR_FACILITIES.preEngineeredShedsGodowns}
+                />
+
+                <h1 className="text-xl font-light text-blue-900">
+                    Additional Features{' '}
+                </h1>
+                <DataTable
+                    columns={columns}
+                    data={ICP_BIRATNAGAR_FACILITIES.additionalFeatures}
                 />
 
                 <section className="my-10">
-                    <ImgCard img={ICP_BIRATNAGER_GALLERY} />
+                    <ImgGrid img={ICP_BIRATNAGER_GALLERY} />
                 </section>
             </section>
         </main>

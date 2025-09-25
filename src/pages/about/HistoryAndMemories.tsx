@@ -1,5 +1,6 @@
 import hero from '../../assets/img/about/historyAndMemories/hero.png';
 import Banner from '../../components/ui/Banner';
+import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { HISTORY_AND_MEMORIES } from '../../data/aboutUsData/historysAndMemories';
 
 const BANNER = {
@@ -18,12 +19,10 @@ function Event() {
                 src={HISTORY_AND_MEMORIES.img}
                 alt="Event"
             />
-            <h1 className="mb-2 font-['Poppins'] text-base leading-relaxed font-medium text-blue-900">
-                {HISTORY_AND_MEMORIES.eventTitle}
-            </h1>
-            <p className="font-['Poppins'] text-xs leading-relaxed font-normal tracking-wider text-neutral-600">
-                {HISTORY_AND_MEMORIES.description}
-            </p>
+            <TextAreaWithHeadingAndLogo
+                title={HISTORY_AND_MEMORIES.eventTitle}
+                description={HISTORY_AND_MEMORIES.description}
+            />
         </section>
     );
 }

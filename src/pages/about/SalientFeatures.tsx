@@ -15,8 +15,7 @@ const paddign = 'px-4 py-5 sm:px-20 lg:px-15';
 
 export default function SalientFeatures() {
     return (
-        <main className="w-full justify-center">
-            <div></div>
+        <main className="w-full">
             <Banner
                 title={BANNER.title}
                 subtitle={BANNER.subtitle}

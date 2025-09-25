@@ -10,7 +10,7 @@ function DescriptionList({ items }: DescriptionListProps) {
             {items.map((item, index) => (
                 <p
                     key={index}
-                    className="self-stretch text-justify font-['Poppins'] text-xs leading-relaxed font-light text-neutral-600"
+                    className="self-stretch text-justify text-sm leading-relaxed font-light text-neutral-600 lg:text-base"
                 >
                     {item}
                 </p>
@@ -22,23 +22,26 @@ function DescriptionList({ items }: DescriptionListProps) {
 export default function EvStorageSolution() {
     const { title, description, img } = SALIENT_FEATURES.evStorage;
 
-    return (
-        <section className="inline-flex h-72 items-center justify-start gap-10 self-stretch bg-slate-100 px-4 sm:px-20 lg:px-10">
-            {/* Text Section */}
-            <article className="inline-flex w-190 flex-col items-start justify-start gap-2">
-                <h2 className="self-stretch font-['Poppins'] text-xl font-normal text-blue-900">
-                    {title}
-                </h2>
-                <DescriptionList items={description} />
-            </article>
+    const sectionClasses =
+        'inline-flex flex-col lg:flex-row items-center justify-start bg-slate-100 gap-6 lg:gap-10 px-4 py-8 sm:px-6 lg:px-10 lg:h-72';
+    const articleClasses =
+        'inline-flex flex-col items-start justify-start w-full lg:w-190 gap-3 lg:gap-2';
+    const headingClasses =
+        'text-xl lg:text-2xl font-normal text-blue-900 text-center lg:text-left self-stretch';
+    const figureClasses =
+        'flex justify-center lg:justify-start w-full lg:w-auto';
+    const imageClasses = 'h-48 w-full max-w-md lg:h-56 lg:w-96 object-cover';
 
-            {/* Image */}
-            <figure>
-                <img
-                    src={img}
-                    alt="EV Storage"
-                    className="h-56 w-96 object-cover"
-                />
+    return (
+        <section className={sectionClasses}>
+            <article className={articleClasses}>
+                <h2 className={headingClasses}>{title}</h2>
+                <div className="space-y-3 lg:space-y-2">
+                    <DescriptionList items={description} />
+                </div>
+            </article>
+            <figure className={figureClasses}>
+                <img src={img} alt="EV Storage" className={imageClasses} />
             </figure>
         </section>
     );

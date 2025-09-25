@@ -3,6 +3,9 @@ import state_of_the_art_equipment from '../../assets/img/services/transportation
 import reliable_performance from '../../assets/img/services/transportation/logo/reliable_performance.svg';
 import customized_solutions from '../../assets/img/services/transportation/logo/customized_solutions.svg';
 import exceptional_customer_service from '../../assets/img/services/transportation/logo/exceptional_customer_service.svg';
+import recognized_by_customers from '../../assets/img/services/transportation/recognized_by_customers.jpg';
+import contract_signing_of_icd_chobhar from '../../assets/img/services/transportation/contract_signin_ofICD_chobhar.jpg';
+import trans_silk from '../../assets/img/services/transportation/trans_silk_joint_venture.png';
 
 export const TRANSPORTATION_SERVICES = {
     title: 'Transportation Services',
@@ -45,5 +48,27 @@ export const TRANSPORTATION_SERVICES = {
         }
     ],
     conclusion:
-        'Experience the convenience and reliability of Allcargo Logistics Limited Transportation Services. Get in touch with us today to discuss your transportation needs and discover how we can help streamline your logistics operations. Let us be your partner in success!'
+        'Experience the convenience and reliability of Allcargo Logistics Limited Transportation Services. Get in touch with us today to discuss your transportation needs and discover how we can help streamline your logistics operations. Let us be your partner in success!',
+
+    news: [
+        {
+            id: 1,
+            title: 'Recognized by Customs',
+            date: 'January 30, 2024',
+            img: recognized_by_customers
+        },
+        {
+            id: 2,
+            title: 'Contract Signing of ICD Chobhar',
+            date: 'December 15,2023',
+            img: contract_signing_of_icd_chobhar
+        },
+
+        {
+            id: 3,
+            title: 'Trans Silk joint venture company of Trans Nepal to operate Tatopani ICD for five years',
+            date: 'Septmeber 28, 2022',
+            img: trans_silk
+        }
+    ]
 };

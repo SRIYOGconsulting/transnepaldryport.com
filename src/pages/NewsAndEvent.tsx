@@ -1,7 +1,79 @@
+import Banner from '../components/ui/Banner';
+import NewsCard from '../components/ui/NewsCard';
+import hero from '../assets/img/news_and_event/hero.png';
+import our_journey from '../assets/img/news_and_event/our_journey.png';
+import { NEWS_AND_EVENT } from '../data/newsAndEventData/newsAndEvent';
+
+const BANNER = {
+    title: 'News & Events',
+    subtitle: '',
+    hero: hero
+};
+
+function FeaturedSection() {
+    return (
+        <section>
+            <h1 className="title inline-block border-b-2 border-red-500">
+                Featured
+            </h1>
+            <div className="flex flex-col items-center gap-15 md:flex-row">
+                <img
+                    className="h-full w-full rounded-2xl md:h-60 md:w-96"
+                    src={NEWS_AND_EVENT.featured.img}
+                    alt=""
+                />
+                <div>
+                    <p className="mb-2 text-base font-medium text-blue-900">
+                        {NEWS_AND_EVENT.featured.date}
+                    </p>
+                    <h1 className="title">{NEWS_AND_EVENT.featured.title}</h1>
+                    <p className="text-base leading-loose font-medium text-black/50">
+                        {NEWS_AND_EVENT.featured.description}
+                    </p>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+function NewsSection() {
+    return (
+        <section className="my-10 w-full">
+            <h1 className="title">Latest News</h1>
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
+                {NEWS_AND_EVENT.news.map(item => (
+                    <NewsCard
+                        image={item.img}
+                        date={item.date}
+                        title={item.title}
+                        description={item.description}
+                    />
+                ))}
+            </div>
+        </section>
+    );
+}
+
 export default function NewsAndEvent() {
     return (
-        <div>
-            <h1>NewsAndEvent</h1>
-        </div>
+        <main>
+            <Banner
+                title={BANNER.title}
+                subtitle={BANNER.subtitle}
+                img={BANNER.hero}
+            />
+
+            <section className="container">
+                <FeaturedSection />
+                <NewsSection />
+
+                <section>
+                    <h1 className="title inline-block border-b-2 border-red-500">
+                        Featured
+                    </h1>
+                    <img src={our_journey} alt="" className='h-full w-full' />
+                </section>
+            </section>
+        </main>
     );
 }

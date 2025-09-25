@@ -1,13 +1,13 @@
 import hero from '../../../assets/img/services/ICDChobhar/hero.png';
 import map from '../../../assets/img/services/ICDChobhar/map.png';
 import Banner from '../../../components/ui/Banner';
-import Table from '../../../components/ui/Table';
+import type { Column } from '../../../components/ui/DataTable';
+import DataTable from '../../../components/ui/DataTable';
 import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICD_CHOBHAR_FACILITIES,
     ICD_CHOBHAR_INFO
 } from '../../../data/servicesData/terminalManagementData/icdChobhar';
-import Mapper from '../../../utils/Mapper';
 
 const BANNER = {
     title: 'ICD Chobhar',
@@ -15,6 +15,18 @@ const BANNER = {
     hero: hero
 };
 const padding = 'px-4 py-5 sm:px-20 lg:px-25';
+
+type TableData = {
+    id: number;
+    particular: string;
+    unit: string;
+};
+
+const columns: Column<TableData>[] = [
+    { key: 'id', label: 'S.N' },
+    { key: 'particular', label: 'Particular' },
+    { key: 'unit', label: 'Unit' }
+];
 export default function ICDChobhar() {
     return (
         <main>
@@ -33,11 +45,9 @@ export default function ICDChobhar() {
                 </section>
 
                 <section>
-                    <Table
-                        h1Title="Particular"
-                        h2Title="Unit"
+                    <DataTable
+                        columns={columns}
                         data={ICD_CHOBHAR_FACILITIES}
-                        dataMapping={Mapper}
                     />
                 </section>
 

@@ -1,10 +1,4 @@
-type ContactUs = {
-    id: number;
-    type: string;
-    title: string;
-    contact: string;
-};
-export const CONTACT_US: ContactUs[] = [
+export const CONTACT_US = [
     {
         id: 1,
         type: 'email',
