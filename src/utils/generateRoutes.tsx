@@ -7,7 +7,6 @@ export const generateRoutes = (links: NavLink[]): React.ReactNode[] => {
 
     links.forEach(link => {
         if (link.path && link.element) {
-            // If the link has no children, generate a standard Route
             routes.push(
                 <Route
                     key={link.path}
@@ -18,14 +17,12 @@ export const generateRoutes = (links: NavLink[]): React.ReactNode[] => {
         }
 
         if (link.children && link.children.length > 0) {
-            // If the link has children, create a parent route with an Outlet for nested routes
             routes.push(
                 <Route
                     key={link.label}
                     path={link.path || ''}
                     element={<Outlet />}
                 >
-                    {/* Recursively generate child routes */}
                     {generateRoutes(link.children)}
                 </Route>
             );

@@ -1,94 +1,192 @@
-export const ICD_KAKARBHITTA = {
-    vehicleEntry: {
-        truckTankerTractorTrailor: 259.31,
-        lightVehiclesBullockCartUpTo5Ton: 129.69,
-        rickshawHandTrolley: 38.94,
-        containerTruckFixedContainer: 389.06,
-        trailorFlatTruckArticulatedVehicles: {
-            TEU: 518.64,
-            FEU: 778.13
+export const ICD_KAKARVITTA = {
+    freightEntryCharges: [
+        {
+            sn: 1,
+            activities: 'Truck / Tanker / Tractor / Trailor',
+            vehicle: 259.31
+        },
+        {
+            sn: 2,
+            activities: 'Light Vehicles / Bullock Cart (Up to 5 Ton)',
+            vehicle: 129.69
+        },
+        {
+            sn: 3,
+            activities: 'Rickshaw / Hand Trolley',
+            vehicle: 38.94
+        },
+        {
+            sn: 4,
+            activities: 'Container Truck (Fixed Container)',
+            vehicle: 389.06
+        },
+        {
+            sn: 5,
+            activities: 'Trailor / Flat Truck / Articulated Vehicles',
+            teu: 518.64,
+            feu: 778.13
         }
-    },
-    cargoHandling: {
-        allActivities: {
-            TEU: 2593.75,
-            FEU: 4668.74
+    ],
+
+    cargoHandlingCharges: [
+        {
+            sn: 1,
+            activities: 'All Activities',
+            teu: 2593.75,
+            feu: 4668.74
         },
-        containerizedCargo: 181.57,
-        nonContainerizedBreakBulkPackagedBagged: 181.57,
-        nonContainerizedBulkLooseCargo: 129.69
-    },
-    terminalHandlingCharges: {
-        loadedContainer: {
-            TEU: 2593.75,
-            FEU: 4150.0
+        {
+            sn: 2,
+            activities: 'Containerized Cargo',
+            vehicle: 181.57
         },
-        unloadedContainer: {
-            TEU: 1296.89,
-            FEU: 2075.01
+        {
+            sn: 3,
+            activities: 'Non-Containerized Break Bulk (Packaged/Bagged)',
+            vehicle: 181.57
         },
-        lclCargo: 518.74
-    },
-    weighmentCharge: 259.39,
-    warehousingCharges: {
-        imports: {
-            freeTimeHours: 24, // 24 hours free time from arrival
-            days2to8: 0.16,
-            days9to30: 0.21,
-            days31Onwards: 0.31
-        },
-        exports: {
-            freeTimeHours: 24,
-            days2to8: 0.08,
-            days9to30: 0.1,
-            days31Onwards: 0.13
-        },
-        openYardStorage: {
-            days2to8: 0.08,
-            days9Onwards: 0.13
+        {
+            sn: 4,
+            activities: 'Non-Containerized Bulk Loose Cargo',
+            vehicle: 129.69
         }
-    },
-    parkingStorageCharges: {
-        freightVehicle: {
-            freeDays: 1,
-            days2to7: {
-                vehicle: 389.06,
-                TEU: 518.74
-            },
-            days8Onwards: {
-                vehicle: 518.74,
-                TEU: 518.74,
-                FEU: 778.13
-            }
+    ],
+
+    terminalHandlingCharges: [
+        {
+            sn: 1,
+            activities: 'Loaded Container',
+            teu: 2593.75,
+            feu: 4150.0
         },
-        container: {
-            freeDays: 1,
-            days2to7: {
-                TEU: 389.06,
-                FEU: 518.74
-            },
-            days8Onwards: {
-                TEU: 518.74,
-                FEU: 778.13
-            }
+        {
+            sn: 2,
+            activities: 'Unloaded Container',
+            teu: 1296.89,
+            feu: 2075.01
+        },
+        {
+            sn: 3,
+            activities: 'LCL Cargo',
+            vehicle: 518.74
         }
-    },
-    cleaningContainers: {
-        TEU: 259.39,
-        FEU: 389.06
-    },
-    subLeaseCharges: {
-        unfurnishedRoomMainTerminal: 1071.81 // per m2 per month
-    },
-    forkliftCharges: {
-        completeCycle: {
-            TEU: 3865.22,
-            FEU: 7730.45
+    ],
+
+    weighmentCharges: [
+        {
+            sn: 1,
+            activities: 'Weighment Charge',
+            vehicle: 259.39
+        }
+    ],
+
+    warehousingCharges: [
+        {
+            sn: 1,
+            activities: 'Imports (Days 2 to 8)',
+            vehicle: 0.16
         },
-        singleCycle: {
-            TEU: 2013.8,
-            FEU: 4026.28
+        {
+            sn: 2,
+            activities: 'Imports (Days 9 to 30)',
+            vehicle: 0.21
         },
-        nonContainerisedPerTon: 242.42
-    }
+        {
+            sn: 3,
+            activities: 'Imports (Day 31 Onwards)',
+            vehicle: 0.31
+        },
+        {
+            sn: 4,
+            activities: 'Exports (Days 2 to 8)',
+            vehicle: 0.08
+        },
+        {
+            sn: 5,
+            activities: 'Exports (Days 9 to 30)',
+            vehicle: 0.1
+        },
+        {
+            sn: 6,
+            activities: 'Exports (Day 31 Onwards)',
+            vehicle: 0.13
+        },
+        {
+            sn: 7,
+            activities: 'Open Yard Storage (Days 2 to 8)',
+            vehicle: 0.08
+        },
+        {
+            sn: 8,
+            activities: 'Open Yard Storage (Day 9 Onwards)',
+            vehicle: 0.13
+        }
+    ],
+
+    parkingStorageCharges: [
+        {
+            sn: 1,
+            activities: 'Freight Vehicle Parking (Days 2 to 7)',
+            vehicle: 389.06,
+            teu: 518.74
+        },
+        {
+            sn: 2,
+            activities: 'Freight Vehicle Parking (Day 8 Onwards)',
+            vehicle: 518.74,
+            teu: 518.74,
+            feu: 778.13
+        },
+        {
+            sn: 3,
+            activities: 'Container Parking (Days 2 to 7)',
+            teu: 389.06,
+            feu: 518.74
+        },
+        {
+            sn: 4,
+            activities: 'Container Parking (Day 8 Onwards)',
+            teu: 518.74,
+            feu: 778.13
+        }
+    ],
+
+    cleaningAndForkliftCharges: [
+        {
+            sn: 1,
+            activities: 'Cleaning Container (TEU)',
+            teu: 259.39
+        },
+        {
+            sn: 2,
+            activities: 'Cleaning Container (FEU)',
+            feu: 389.06
+        },
+        {
+            sn: 3,
+            activities: 'Forklift Complete Cycle',
+            teu: 3865.22,
+            feu: 7730.45
+        },
+        {
+            sn: 4,
+            activities: 'Forklift Single Cycle',
+            teu: 2013.8,
+            feu: 4026.28
+        },
+        {
+            sn: 5,
+            activities: 'Forklift (Non-Containerized Per Ton)',
+            vehicle: 242.42
+        }
+    ],
+
+    subLeaseCharges: [
+        {
+            sn: 1,
+            activities:
+                'Sub Lease - Unfurnished Room (Main Terminal) per m²/month',
+            vehicle: 1071.81
+        }
+    ]
 };

@@ -166,8 +166,8 @@ export default function Contact() {
                 img={BANNER.img}
             />
 
-            <section className="container px-4 lg:px-0">
-                <div className="flex flex-col gap-8 py-8 lg:flex-row lg:gap-16 lg:py-12">
+            <section className="container">
+                <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
                     <ContactInfoSection />
                     <FormSection />
                 </div>
