@@ -71,7 +71,7 @@ export default function NewsAndEvent() {
                     <h1 className="title inline-block border-b-2 border-red-500">
                         Featured
                     </h1>
-                    <img src={our_journey} alt="" className='h-full w-full' />
+                    <img src={our_journey} alt="" className="h-full w-full" />
                 </section>
             </section>
         </main>

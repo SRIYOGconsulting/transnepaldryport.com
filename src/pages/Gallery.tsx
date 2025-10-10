@@ -1,6 +1,6 @@
 import ImgGrid from '../components/ImgGrid';
 import Banner from '../components/ui/Banner';
-import { GALLERY } from '../data/gallery/gallery';
+import { GALLERY } from '../data/galleryData/gallery';
 import hero from '../assets/img/gallery/hero.png';
 
 const BANNER = {

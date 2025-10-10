@@ -1,4 +1,4 @@
-export const ICD_KAKARVITTA = {
+export const ICD_KAKARBHITTA = {
     freightEntryCharges: [
         {
             sn: 1,

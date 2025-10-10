@@ -61,18 +61,18 @@ function ContactDetailsSection() {
 }
 
 function Map() {
-  return (
-    <div className="mt-6 h-64 w-full overflow-hidden rounded-lg lg:h-80">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14287.033183029727!2d87.276028!3d26.463519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74147f7fa62d%3A0x631d4e7be0d690c2!2sTrans%20Nepal%20Freight%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1758816161896!5m2!1sen!2snp"
-                className='w-full h-full'
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-  );
+    return (
+        <div className="mt-6 h-64 w-full overflow-hidden rounded-lg lg:h-80">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14287.033183029727!2d87.276028!3d26.463519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74147f7fa62d%3A0x631d4e7be0d690c2!2sTrans%20Nepal%20Freight%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1758816161896!5m2!1sen!2snp"
+                className="h-full w-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    );
 }
 
 function ContactInfoSection() {
@@ -171,7 +171,7 @@ export default function Contact() {
                     <ContactInfoSection />
                     <FormSection />
                 </div>
-            <Map />
+                <Map />
             </section>
         </main>
     );

@@ -1,1 +1,0 @@
-<div class="self-stretch justify-start text-blue-900 text-xl font-normal font-['Poppins']">Terminal Network</div>

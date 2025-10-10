@@ -21,7 +21,7 @@ export default function ImgGrid({ items, grid = 4 }: ImgCardProps) {
                         className="h-full w-full object-cover"
                     />
                     {item.title ? (
-                        <p className="mt-5 font-semibold text-center text-xl text-blue-900">
+                        <p className="mt-5 text-center text-xl font-semibold text-blue-900">
                             {item.title}
                         </p>
                     ) : null}

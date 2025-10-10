@@ -1,7 +1,7 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { AppRoutes } from './utils/AppRoutes';
-import ScrollToTop from './utils/ScrollOnTop';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
     return (

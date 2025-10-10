@@ -62,7 +62,7 @@ export default function CSR() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-y-6">
+                <div className="grid grid-cols-1 space-y-6 sm:grid-cols-2 md:grid-cols-3">
                     {CORPORATE_SOCIAL_RESPONSIBILITY.news.map(news => (
                         <NewsCard
                             date={news.date}

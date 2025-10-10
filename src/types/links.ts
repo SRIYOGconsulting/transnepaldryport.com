@@ -4,6 +4,7 @@ export type NavLink = {
     children?: NavLink[];
     element?: React.ReactNode;
     type?: string;
+    isMobile?: boolean;
 };
 
 export type FooterLink = NavLink & {

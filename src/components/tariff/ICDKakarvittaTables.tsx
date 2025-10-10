@@ -1,99 +1,127 @@
-import { ICD_KAKARVITTA } from '../../data/tarrifData/icdKakarvitta';
+import { ICD_KAKARBHITTA } from '../../data/tarrifData/icdKakarbhitta';
 import { getAvailableColumns } from '../../utils/getAvailableColumns';
 import DataTable from '../ui/DataTable';
 
 // Freight Entry Charges
 function FreightEntryChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.freightEntryCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.freightEntryCharges);
 
     return (
         <>
             <h2 className="subTitle">Freight Entry Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.freightEntryCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.freightEntryCharges}
+            />
         </>
     );
 }
 
 // Cargo Handling Charges
 function CargoHandlingChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.cargoHandlingCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.cargoHandlingCharges);
 
     return (
         <>
             <h2 className="title">Cargo Handling Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.cargoHandlingCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.cargoHandlingCharges}
+            />
         </>
     );
 }
 
 // Terminal Handling Charges
 function TerminalHandlingChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.terminalHandlingCharges);
+    const columns = getAvailableColumns(
+        ICD_KAKARBHITTA.terminalHandlingCharges
+    );
 
     return (
         <>
             <h2 className="title">Terminal Handling Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.terminalHandlingCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.terminalHandlingCharges}
+            />
         </>
     );
 }
 
 // Weighment Charges
 function WeighmentChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.weighmentCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.weighmentCharges);
 
     return (
         <>
             <h2 className="title">Weighment Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.weighmentCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.weighmentCharges}
+            />
         </>
     );
 }
 
 // Warehousing Charges
 function WarehousingChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.warehousingCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.warehousingCharges);
 
     return (
         <>
             <h2 className="title">Warehousing Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.warehousingCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.warehousingCharges}
+            />
         </>
     );
 }
 
 // Parking & Storage Charges
 function ParkingAndStorageChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.parkingStorageCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.parkingStorageCharges);
 
     return (
         <>
             <h2 className="title">Parking & Storage Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.parkingStorageCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.parkingStorageCharges}
+            />
         </>
     );
 }
 
 // Cleaning & Forklift Charges
 function CleaningAndForkliftChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.cleaningAndForkliftCharges);
+    const columns = getAvailableColumns(
+        ICD_KAKARBHITTA.cleaningAndForkliftCharges
+    );
 
     return (
         <>
             <h2 className="title">Cleaning & Forklift Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.cleaningAndForkliftCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.cleaningAndForkliftCharges}
+            />
         </>
     );
 }
 
 // Sub Lease Charges
 function SubLeaseChargesTable() {
-    const columns = getAvailableColumns(ICD_KAKARVITTA.subLeaseCharges);
+    const columns = getAvailableColumns(ICD_KAKARBHITTA.subLeaseCharges);
 
     return (
         <>
             <h2 className="title">Sub Lease Charges</h2>
-            <DataTable columns={columns} data={ICD_KAKARVITTA.subLeaseCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_KAKARBHITTA.subLeaseCharges}
+            />
         </>
     );
 }

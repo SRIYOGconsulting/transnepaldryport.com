@@ -10,7 +10,10 @@ function FreightEntryChargesTable() {
     return (
         <>
             <h2 className="subTitle">Freight Entry Charges</h2>
-            <DataTable columns={columns} data={ICD_TATOPANI.freightEntryCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_TATOPANI.freightEntryCharges}
+            />
         </>
     );
 }
@@ -21,7 +24,10 @@ function CargoHandlingChargesTable() {
     return (
         <>
             <h2 className="title">Cargo Handling Charges</h2>
-            <DataTable columns={columns} data={ICD_TATOPANI.cargoHandlingCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_TATOPANI.cargoHandlingCharges}
+            />
         </>
     );
 }
@@ -32,7 +38,10 @@ function TerminalHandlingChargesTable() {
     return (
         <>
             <h2 className="title">Terminal Handling Charges</h2>
-            <DataTable columns={columns} data={ICD_TATOPANI.terminalHandlingCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_TATOPANI.terminalHandlingCharges}
+            />
         </>
     );
 }
@@ -53,28 +62,41 @@ function WarehousingChargesTable() {
     return (
         <>
             <h2 className="title">Warehousing Charges</h2>
-            <DataTable columns={importCols} data={ICD_TATOPANI.warehousingCharges} />
+            <DataTable
+                columns={importCols}
+                data={ICD_TATOPANI.warehousingCharges}
+            />
         </>
     );
 }
 
 function ParkingAndStorageChargesTable() {
-    const freightColumns = getAvailableColumns(ICD_TATOPANI.parkingStorageCharges);
+    const freightColumns = getAvailableColumns(
+        ICD_TATOPANI.parkingStorageCharges
+    );
     return (
         <>
             <h2 className="title">Parking and Storage Charges</h2>
-            <DataTable columns={freightColumns} data={ICD_TATOPANI.parkingStorageCharges} />
+            <DataTable
+                columns={freightColumns}
+                data={ICD_TATOPANI.parkingStorageCharges}
+            />
         </>
     );
 }
 
 function CleaningAndForkliftChargesTable() {
-    const columns = getAvailableColumns(ICD_TATOPANI.cleaningAndForkliftCharges);
+    const columns = getAvailableColumns(
+        ICD_TATOPANI.cleaningAndForkliftCharges
+    );
 
     return (
         <>
             <h2 className="title">Cleaning & Forklift Charges</h2>
-            <DataTable columns={columns} data={ICD_TATOPANI.cleaningAndForkliftCharges} />
+            <DataTable
+                columns={columns}
+                data={ICD_TATOPANI.cleaningAndForkliftCharges}
+            />
         </>
     );
 }
