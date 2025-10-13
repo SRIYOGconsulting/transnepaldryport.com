@@ -2,6 +2,10 @@ import {
     DETAILS,
     DETAILS_TITLE_WITH_LOGO
 } from '../../data/homePageData/details';
+import {
+    DesktopContactUsButton,
+    MobileContactUsButton
+} from '../ui/ContactUsButton';
 
 type InfoCardProps = {
     logoSrc: string;
@@ -44,29 +48,6 @@ function InfoCardList() {
     );
 }
 
-function ContactUsButton() {
-    return (
-        <div className="fixed top-1/2 right-0 z-40 hidden h-40 w-10 -translate-y-1/2 transform flex-col items-center justify-center gap-2.5 rounded-tl-[10px] rounded-bl-[10px] bg-sky-950 p-2.5 lg:flex lg:h-52 lg:w-12">
-            <div className="rotate-90">
-                <span className="font-['Inter'] text-base font-bold whitespace-nowrap text-white capitalize lg:text-xl">
-                    CONTACT US
-                </span>
-            </div>
-        </div>
-    );
-}
-
-function MobileContactUsButton() {
-    return (
-        <div className="fixed right-4 bottom-4 z-40 lg:hidden">
-            <button className="flex h-12 w-12 items-center justify-center rounded-full bg-sky-950 shadow-lg transition-transform hover:scale-110">
-                <span className="rotate-90 font-['Inter'] text-xs font-bold text-white">
-                    CONTACT
-                </span>
-            </button>
-        </div>
-    );
-}
 export default function DetailsTransNepal() {
     return (
         <section className="relative flex w-full justify-center bg-slate-100/60 px-4 py-8 sm:px-6 lg:px-15 lg:py-12">
@@ -87,7 +68,7 @@ export default function DetailsTransNepal() {
             </div>
 
             {/* Desktop Contact Button */}
-            <ContactUsButton />
+            <DesktopContactUsButton />
 
             {/* Mobile Contact Button */}
             <MobileContactUsButton />

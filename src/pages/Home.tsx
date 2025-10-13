@@ -5,6 +5,10 @@ import GetInTouchWithUs from '../components/home/GetInTouchWithUs';
 import Services from '../components/home/Services';
 import Stats from '../components/home/Stats';
 import Testimonials from '../components/home/Testimonials';
+import {
+    DesktopContactUsButton,
+    MobileContactUsButton
+} from '../components/ui/ContactUsButton';
 import HomeHeroBanner from '../components/ui/HomeHeroBanner';
 
 export default function Home() {
@@ -18,6 +22,9 @@ export default function Home() {
             <Features />
             <Stats />
             <Testimonials />
+
+            <DesktopContactUsButton />
+            <MobileContactUsButton />
         </main>
     );
 }

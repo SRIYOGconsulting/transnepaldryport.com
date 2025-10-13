@@ -66,7 +66,7 @@ export default function ICPBiratnagar() {
                 />
 
                 <section className="my-10">
-                    <ImgGrid img={ICP_BIRATNAGER_GALLERY} />
+                    <ImgGrid items={ICP_BIRATNAGER_GALLERY} />
                 </section>
             </section>
         </main>

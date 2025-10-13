@@ -120,12 +120,35 @@ export const ICP_BIRATNAGAR_FACILITIES = {
 };
 
 export const ICP_BIRATNAGER_GALLERY = [
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    img7,
-    img8
+    {
+        img: img1
+    },
+
+    {
+        img: img2
+    },
+
+    {
+        img: img3
+    },
+
+    {
+        img: img4
+    },
+
+    {
+        img: img5
+    },
+
+    {
+        img: img6
+    },
+
+    {
+        img: img7
+    },
+
+    {
+        img: img8
+    }
 ];
