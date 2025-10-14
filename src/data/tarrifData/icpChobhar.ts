@@ -1,4 +1,4 @@
-export const ICD_CHOBHAR = {
+export const ICP_CHOBHAR = {
     // INTERNATIONAL CHARGES
 
     // VEHICLE ENTRY CHARGES

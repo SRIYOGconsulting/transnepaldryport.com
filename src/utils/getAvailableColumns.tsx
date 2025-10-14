@@ -1,28 +1,38 @@
 import type { Column } from '../components/ui/DataTable';
 
-// Utility function to generate columns based on available keys
-export function getAvailableColumns<T>(data: T[]): Column<T>[] {
+export function getAvailableColumns<T extends Record<string, any>>(
+    data: T[]
+): Column<T>[] {
     if (data.length === 0) return [];
 
-    const baseColumns: Column<T>[] = [
-        { key: 'sn' as keyof T, label: 'SN' },
-        { key: 'activities' as keyof T, label: 'Activities' }
-    ];
+    const baseKeys: (keyof T)[] = ['sn', 'activities'].filter(key =>
+        data.some(row => key in row)
+    );
 
-    const keysToCheck: (keyof T)[] = [
-        'vehicle' as keyof T,
-        'teu' as keyof T,
-        'feu' as keyof T
-    ];
+    const dynamicKeys = new Set<keyof T>();
 
-    const dynamicColumns = keysToCheck
-        .filter(key =>
-            data.some(row => row[key] !== undefined && row[key] !== null)
-        )
-        .map(key => ({
-            key,
-            label: key.toUpperCase()
-        }));
+    data.forEach(row => {
+        Object.keys(row).forEach(key => {
+            const typedKey = key as keyof T;
+            if (!baseKeys.includes(typedKey)) {
+                dynamicKeys.add(typedKey);
+            }
+        });
+    });
+
+    const baseColumns: Column<T>[] = baseKeys.map(key => ({
+        key,
+        label: capitalize(key.toString())
+    }));
+
+    const dynamicColumns: Column<T>[] = Array.from(dynamicKeys).map(key => ({
+        key,
+        label: key.toString().toUpperCase()
+    }));
 
     return [...baseColumns, ...dynamicColumns];
+}
+
+function capitalize(str: string): string {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
