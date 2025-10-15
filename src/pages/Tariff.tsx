@@ -75,8 +75,8 @@ const TabNavigation = ({
     onTableSelect: (table: TableKey) => void;
 }) => {
     return (
-        <section className="container px-4 lg:px-0">
-            <div className="flex flex-col gap-3 py-6 sm:flex-row lg:gap-4 lg:py-8">
+        <section className="px-4 lg:px-0">
+            <div className="mb-5 flex flex-col gap-3 sm:flex-row lg:gap-4">
                 {Object.values(TARIFF_TABLES).map(table => (
                     <TabButton
                         key={table.key}
@@ -94,7 +94,7 @@ const TableSection = ({ selectedTable }: TableSectionProps) => {
     const TableComponent = TARIFF_TABLES[selectedTable].component;
 
     return (
-        <section className="container px-4 lg:px-0">
+        <section className="px-4 lg:px-0">
             <TableComponent />
         </section>
     );
@@ -117,12 +117,14 @@ export default function Tariff() {
                 img={BANNER_CONFIG.hero}
             />
 
-            <TabNavigation
-                selectedTable={selectedTable}
-                onTableSelect={handleTableSelect}
-            />
+            <div className="container">
+                <TabNavigation
+                    selectedTable={selectedTable}
+                    onTableSelect={handleTableSelect}
+                />
 
-            <TableSection selectedTable={selectedTable} />
+                <TableSection selectedTable={selectedTable} />
+            </div>
         </main>
     );
 }

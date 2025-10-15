@@ -1,12 +1,22 @@
 import { ICD_TATOPANI } from '../../data/tarrifData/icdTatopani';
-import TariffTable from '../TariffTable';
+import TableWithHeading from '../TableWithHeading';
 
-function SectionBlock({ title, sections }: { title: string; sections: { title: string; data: any[] }[] }) {
+function SectionBlock({
+    title,
+    sections
+}: {
+    title: string;
+    sections: { title: string; data: any[] }[];
+}) {
     return (
         <>
             <h1 className="title">{title}</h1>
             {sections.map((section, idx) => (
-                <TariffTable key={idx} title={section.title} data={section.data} />
+                <TableWithHeading
+                    key={idx}
+                    title={section.title}
+                    data={section.data}
+                />
             ))}
         </>
     );
@@ -27,26 +37,49 @@ export default function ICDTatopaniTables() {
 
     return (
         <>
-            <TariffTable title="Freight Entry Charges" data={freightEntryCharges} />
+            <TableWithHeading
+                title="Freight Entry Charges"
+                data={freightEntryCharges}
+            />
 
             <SectionBlock
                 title="Cargo & Terminal Handling"
                 sections={[
-                    { title: 'Cargo Handling Charges', data: cargoHandlingCharges },
-                    { title: 'Terminal Handling Charges', data: terminalHandlingCharges }
+                    {
+                        title: 'Cargo Handling Charges',
+                        data: cargoHandlingCharges
+                    },
+                    {
+                        title: 'Terminal Handling Charges',
+                        data: terminalHandlingCharges
+                    }
                 ]}
             />
 
-            <TariffTable title="Weighment Charge" data={weighmentCharges} />
+            <TableWithHeading
+                title="Weighment Charge"
+                data={weighmentCharges}
+            />
 
-            <TariffTable title="Warehousing Charges" data={warehousingCharges} />
+            <TableWithHeading
+                title="Warehousing Charges"
+                data={warehousingCharges}
+            />
 
-            <TariffTable title="Parking and Storage Charges" data={parkingStorageCharges} />
+            <TableWithHeading
+                title="Parking and Storage Charges"
+                data={parkingStorageCharges}
+            />
 
-            <TariffTable title="Cleaning & Forklift Charges" data={cleaningAndForkliftCharges} />
+            <TableWithHeading
+                title="Cleaning & Forklift Charges"
+                data={cleaningAndForkliftCharges}
+            />
 
-            <TariffTable title="Sub Lease Charges" data={subLeaseCharges} />
+            <TableWithHeading
+                title="Sub Lease Charges"
+                data={subLeaseCharges}
+            />
         </>
     );
 }
-

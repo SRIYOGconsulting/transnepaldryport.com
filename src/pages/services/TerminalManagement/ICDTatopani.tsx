@@ -1,7 +1,6 @@
 import hero from '../../../assets/img/services/ICDTatopani/hero.png';
+import TableWithHeading from '../../../components/TableWithHeading';
 import Banner from '../../../components/ui/Banner';
-import type { Column } from '../../../components/ui/DataTable';
-import DataTable from '../../../components/ui/DataTable';
 import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICD_TATOPANI_FACILITIES,
@@ -13,19 +12,6 @@ const BANNER = {
     subtitle: '',
     hero: hero
 };
-const padding = 'px-4 py-5 sm:px-20 lg:px-25';
-
-type TableData = {
-    id: number;
-    particular: string;
-    unit: string;
-};
-
-const columns: Column<TableData>[] = [
-    { key: 'id', label: 'S.N' },
-    { key: 'particular', label: 'Particular' },
-    { key: 'unit', label: 'Unit' }
-];
 
 export default function ICDTatopani() {
     return (
@@ -36,7 +22,7 @@ export default function ICDTatopani() {
                 img={BANNER.hero}
             />
 
-            <section className={`w-full ${padding} my-10`}>
+            <section className="container">
                 <section>
                     <TextAreaWithHeadingAndLogo
                         title={ICD_TATOPANI_INFO.title}
@@ -45,10 +31,7 @@ export default function ICDTatopani() {
                 </section>
 
                 <section>
-                    <DataTable
-                        columns={columns}
-                        data={ICD_TATOPANI_FACILITIES}
-                    />
+                    <TableWithHeading title="" data={ICD_TATOPANI_FACILITIES} />
                 </section>
             </section>
         </main>

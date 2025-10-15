@@ -1,4 +1,3 @@
-import { CgOptions } from 'react-icons/cg';
 import top_img from '../assets/img/csr/top_img.jpg';
 import Banner from '../components/ui/Banner';
 import NewsCard from '../components/ui/NewsCard';

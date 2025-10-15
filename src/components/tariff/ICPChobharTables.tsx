@@ -1,5 +1,5 @@
 import { ICP_CHOBHAR } from '../../data/tarrifData/icpChobhar';
-import TariffTable from '../TariffTable';
+import TableWithHeading from '../TableWithHeading';
 
 export default function ICDChobharTables() {
     const {
@@ -21,65 +21,65 @@ export default function ICDChobharTables() {
 
     return (
         <>
-            <TariffTable
+            <TableWithHeading
                 title={vehicleEntryCharges.title}
                 data={vehicleEntryCharges.data}
             />
 
             <h1 className="title">Cargo Handling Charges</h1>
-            <TariffTable
+            <TableWithHeading
                 title={loadingUnloadingCharges.title}
                 data={loadingUnloadingCharges.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={terminalHandlingCharges.title}
                 data={terminalHandlingCharges.data}
             />
 
             <h1 className="title">Equipment Charges</h1>
-            <TariffTable
+            <TableWithHeading
                 title={forkliftCharges.title}
                 data={forkliftCharges.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={weightCharges.title}
                 data={weightCharges.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={cleaningCharges.title}
                 data={cleaningCharges.data}
             />
 
             <h1 className="title">Warehousing Charges</h1>
-            <TariffTable
+            <TableWithHeading
                 title={warehousingImports.title}
                 data={warehousingImports.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={warehousingExports.title}
                 data={warehousingExports.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={openYardStorage.title}
                 data={openYardStorage.data}
             />
 
             <h1 className="title">Parking and Storage Charges</h1>
-            <TariffTable
+            <TableWithHeading
                 title={parkingFreightVehicles.title}
                 data={parkingFreightVehicles.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={parkingContainers.title}
                 data={parkingContainers.data}
             />
 
             <h1 className="title">Special Services Charges</h1>
-            <TariffTable
+            <TableWithHeading
                 title={specialServiceCharges.title}
                 data={specialServiceCharges.data}
             />
-            <TariffTable
+            <TableWithHeading
                 title={subLeaseCharges.title}
                 data={subLeaseCharges.data}
             />
@@ -87,7 +87,7 @@ export default function ICDChobharTables() {
             <h1 className="title">{domesticCharges.title}</h1>
             {Object.values(domesticCharges.sections).map(
                 (section: any, idx: number) => (
-                    <TariffTable
+                    <TableWithHeading
                         key={idx}
                         title={section.title}
                         data={section.data}

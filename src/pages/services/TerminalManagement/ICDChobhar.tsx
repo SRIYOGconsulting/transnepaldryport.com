@@ -1,8 +1,7 @@
 import hero from '../../../assets/img/services/ICDChobhar/hero.png';
 import map from '../../../assets/img/services/ICDChobhar/map.png';
+import TableWithHeading from '../../../components/TableWithHeading';
 import Banner from '../../../components/ui/Banner';
-import type { Column } from '../../../components/ui/DataTable';
-import DataTable from '../../../components/ui/DataTable';
 import TextAreaWithHeadingAndLogo from '../../../components/ui/TextAreaWithHeadingAndLogo';
 import {
     ICD_CHOBHAR_FACILITIES,
@@ -14,19 +13,7 @@ const BANNER = {
     subtitle: '',
     hero: hero
 };
-const padding = 'px-4 py-5 sm:px-20 lg:px-25';
 
-type TableData = {
-    id: number;
-    particular: string;
-    unit: string;
-};
-
-const columns: Column<TableData>[] = [
-    { key: 'id', label: 'S.N' },
-    { key: 'particular', label: 'Particular' },
-    { key: 'unit', label: 'Unit' }
-];
 export default function ICDChobhar() {
     return (
         <main>
@@ -36,7 +23,7 @@ export default function ICDChobhar() {
                 img={BANNER.hero}
             />
 
-            <section className={`w-full ${padding} my-10`}>
+            <section className="container">
                 <section>
                     <TextAreaWithHeadingAndLogo
                         title={ICD_CHOBHAR_INFO.title}
@@ -45,10 +32,7 @@ export default function ICDChobhar() {
                 </section>
 
                 <section>
-                    <DataTable
-                        columns={columns}
-                        data={ICD_CHOBHAR_FACILITIES}
-                    />
+                    <TableWithHeading data={ICD_CHOBHAR_FACILITIES} title="" />
                 </section>
 
                 <section className="relative h-auto w-full">

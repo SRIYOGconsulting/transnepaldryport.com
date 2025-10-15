@@ -1,5 +1,5 @@
 import { ICP_BIRATNAGAR } from '../../data/tarrifData/icpBiratnagar';
-import TariffTable from '../TariffTable';
+import TableWithHeading from '../TableWithHeading';
 
 function SectionBlock({
     title,
@@ -12,7 +12,7 @@ function SectionBlock({
         <>
             <h1 className="title">{title}</h1>
             {sections.map((section, idx) => (
-                <TariffTable
+                <TableWithHeading
                     key={idx}
                     title={section.title}
                     data={section.data}
@@ -44,7 +44,7 @@ export default function ICPBiratnagerTables() {
     return (
         <>
             {/* Individual Table */}
-            <TariffTable
+            <TableWithHeading
                 title="Freight Entry Charges"
                 data={freightEntryCharges}
             />

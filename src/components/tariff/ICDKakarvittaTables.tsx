@@ -1,5 +1,5 @@
 import { ICD_KAKARBHITTA } from '../../data/tarrifData/icdKakarbhitta';
-import TariffTable from '../TariffTable';
+import TableWithHeading from '../TableWithHeading';
 
 function SectionBlock({
     title,
@@ -12,7 +12,7 @@ function SectionBlock({
         <>
             <h1 className="title">{title}</h1>
             {sections.map((section, idx) => (
-                <TariffTable
+                <TableWithHeading
                     key={idx}
                     title={section.title}
                     data={section.data}
@@ -37,7 +37,7 @@ export default function ICDKakarvittaTables() {
 
     return (
         <>
-            <TariffTable
+            <TableWithHeading
                 title="Freight Entry Charges"
                 data={freightEntryCharges}
             />
@@ -56,20 +56,26 @@ export default function ICDKakarvittaTables() {
                 ]}
             />
 
-            <TariffTable title="Weighment Charges" data={weighmentCharges} />
-            <TariffTable
+            <TableWithHeading
+                title="Weighment Charges"
+                data={weighmentCharges}
+            />
+            <TableWithHeading
                 title="Warehousing Charges"
                 data={warehousingCharges}
             />
-            <TariffTable
+            <TableWithHeading
                 title="Parking & Storage Charges"
                 data={parkingStorageCharges}
             />
-            <TariffTable
+            <TableWithHeading
                 title="Cleaning & Forklift Charges"
                 data={cleaningAndForkliftCharges}
             />
-            <TariffTable title="Sub Lease Charges" data={subLeaseCharges} />
+            <TableWithHeading
+                title="Sub Lease Charges"
+                data={subLeaseCharges}
+            />
         </>
     );
 }
