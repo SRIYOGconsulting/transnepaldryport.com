@@ -39,7 +39,7 @@ function ContactDetailsSection() {
                             className="text-sm leading-loose font-medium text-blue-900 lg:text-base"
                         >
                             <span>{contact.title}:</span>
-                            <span>{contact.details}</span>
+                            <span>{contact.info}</span>
                         </a>
                     ))}
                 </div>
