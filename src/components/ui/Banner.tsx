@@ -1,3 +1,8 @@
+type BannerProps = {
+    title: string;
+    subtitle: string;
+    img: string;
+};
 export default function Banner({ title, subtitle, img }: BannerProps) {
     return (
         <section

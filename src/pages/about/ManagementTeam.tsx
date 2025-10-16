@@ -1,7 +1,6 @@
 import hero from '../../assets/img/about/managementTeam/hero.png';
 import Members from '../../components/Members';
 import Banner from '../../components/ui/Banner';
-import TeamCard from '../../components/ui/TeamCard';
 import { MANAGEMENT_TEAM } from '../../data/aboutUsData/managementTeam';
 
 const BANNER = {

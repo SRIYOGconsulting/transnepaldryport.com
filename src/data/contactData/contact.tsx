@@ -1,5 +1,11 @@
 import { CiLinkedin } from 'react-icons/ci';
-import { FaFacebook, FaFax, FaYoutube } from 'react-icons/fa';
+import {
+    FaEnvelope,
+    FaFacebook,
+    FaFax,
+    FaPhone,
+    FaYoutube
+} from 'react-icons/fa';
 
 export const CONTACT = {
     overview: {
@@ -16,17 +22,20 @@ export const CONTACT = {
     contact: [
         {
             title: 'Telephone',
-            details: '+977 21 501441',
+            info: '+977 21 501441',
+            icon: <FaPhone />,
             url: 'tel:+977 21 501441'
         },
         {
             title: 'Fax',
-            details: '+977 21501470',
+            info: '+977 21501470',
+            icon: <FaFax />,
             url: 'tel:+977 21501470'
         },
         {
             title: 'Email',
-            details: 'transnepal_brt@transnepaldryport.com',
+            info: 'transnepal_brt@transnepaldryport.com',
+            icon: <FaEnvelope />,
             url: 'mailto:transnepal_brt@transnepaldryport.com'
         }
     ],

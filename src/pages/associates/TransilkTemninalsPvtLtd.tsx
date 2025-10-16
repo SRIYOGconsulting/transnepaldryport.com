@@ -1,7 +1,6 @@
 import hero from '../../assets/img/associates/hero.png';
 import PeopleSection from '../../components/PeopleSection';
 import Banner from '../../components/ui/Banner';
-import { ProfileCard } from '../../components/ui/ProfileCard';
 import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { TRANSILK_TERMINALS } from '../../data/associatesData/transilkTerminalPvtLtd';
 

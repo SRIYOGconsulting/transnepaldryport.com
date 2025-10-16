@@ -1,7 +1,6 @@
 import LogosWithTitle from '../../components/LogosWithTitle';
 import Banner from '../../components/ui/Banner';
 import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
-import { AGENCY_SERVICES } from '../../data/servicesData/agencyServices';
 import { RENTAL_SERVICES } from '../../data/servicesData/rentalServices';
 
 const BANNER = {
