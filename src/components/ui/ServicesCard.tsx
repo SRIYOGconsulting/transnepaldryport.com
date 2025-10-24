@@ -10,22 +10,22 @@ export default function ServicesCard({
     img
 }: ServicesCardProps) {
     return (
-        <div className="inline-flex h-96 w-[420px] flex-col items-center justify-start gap-7 rounded-[5px] bg-white shadow-xl outline-offset-[-1px]">
+        <div className="flex h-auto w-full flex-col items-center justify-start gap-4 rounded-lg bg-white shadow-xl transition-all hover:shadow-2xl sm:gap-5 lg:gap-7">
             {/* Image */}
             <img
                 src={img}
                 alt={title}
-                className="h-60 w-[420px] rounded-tl-[5px] rounded-tr-[5px] object-cover"
+                className="h-48 w-full rounded-t-lg object-cover sm:h-52 lg:h-60"
             />
 
             {/* Content */}
-            <div className="flex w-[380px] flex-col items-start justify-start">
-                <div className="h-8 self-stretch font-['Poppins'] text-base leading-normal font-semibold tracking-tight text-black">
+            <div className="flex w-full flex-col items-start justify-start px-4 pb-4 sm:px-5 sm:pb-5">
+                <h3 className="font-poppins mb-2 w-full text-base leading-normal font-semibold tracking-tight text-black sm:text-lg lg:mb-3">
                     {title}
-                </div>
-                <div className="h-20 self-stretch font-['Poppins'] text-sm leading-snug font-light text-black">
+                </h3>
+                <p className="font-poppins w-full text-sm leading-relaxed font-light text-black sm:leading-snug">
                     {description}
-                </div>
+                </p>
             </div>
         </div>
     );

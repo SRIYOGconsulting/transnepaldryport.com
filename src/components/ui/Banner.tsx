@@ -3,11 +3,12 @@ type BannerProps = {
     subtitle: string;
     img: string;
 };
+
 export default function Banner({ title, subtitle, img }: BannerProps) {
     return (
         <section
             aria-label="Banner"
-            className="relative inline-flex h-[462px] w-full flex-col items-start justify-center gap-2.5 bg-sky-950 px-8 sm:px-12 md:px-16 lg:px-25"
+            className="relative flex h-64 w-full flex-col items-center justify-center bg-sky-950 sm:h-80 md:h-96 lg:h-[462px]"
         >
             {/* Background image */}
             <img
@@ -16,13 +17,16 @@ export default function Banner({ title, subtitle, img }: BannerProps) {
                 className="absolute inset-0 h-full w-full object-cover"
             />
 
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-sky-950/70"></div>
+
             {/* Content */}
-            <div className="relative flex w-full max-w-xl flex-col items-start justify-center gap-6 bg-sky-950/95 px-14 py-16">
-                <div className="flex w-full flex-col items-start justify-center gap-6">
-                    <h1 className="font-['Segoe_UI'] text-5xl font-bold text-white">
+            <div className="relative flex w-full max-w-7xl flex-col items-center justify-center gap-4 px-4 text-center sm:gap-6 sm:px-6 md:px-8 lg:items-start lg:text-left">
+                <div className="flex w-full max-w-3xl flex-col items-center gap-4 lg:items-start lg:gap-6">
+                    <h1 className="font-segoe text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl">
                         {title}
                     </h1>
-                    <p className="font-['Segoe_UI'] text-3xl font-light text-white">
+                    <p className="font-segoe text-lg font-light text-white sm:text-xl md:text-2xl lg:text-3xl">
                         {subtitle}
                     </p>
                 </div>

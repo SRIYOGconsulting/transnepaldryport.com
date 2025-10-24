@@ -10,8 +10,6 @@ const BANNER = {
     hero: hero
 };
 
-const padding = 'px-4 py-5 sm:px-20 lg:px-25';
-
 export default function TransNepalTRSLogiparkPvtLtd() {
     return (
         <main>
@@ -21,22 +19,21 @@ export default function TransNepalTRSLogiparkPvtLtd() {
                 img={BANNER.hero}
             />
 
-            <section className={`w-full ${padding} my-10`}>
+            <section className="container">
                 <TextAreaWithHeadingAndLogo
                     title={TRANSNEPAL_TRSLOGIPARK.overview.title}
                     description={TRANSNEPAL_TRSLOGIPARK.overview.description}
                 />
+                <PeopleSection
+                    title="Board of Directors"
+                    people={TRANSNEPAL_TRSLOGIPARK.boardOfDirectors}
+                />
+
+                <PeopleSection
+                    title="Experience Behind the Wheel"
+                    people={TRANSNEPAL_TRSLOGIPARK.managementCommittee}
+                />
             </section>
-
-            <PeopleSection
-                title="Board of Directors"
-                people={TRANSNEPAL_TRSLOGIPARK.boardOfDirectors}
-            />
-
-            <PeopleSection
-                title="Experience Behind the Wheel"
-                people={TRANSNEPAL_TRSLOGIPARK.managementCommittee}
-            />
         </main>
     );
 }

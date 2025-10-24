@@ -15,7 +15,7 @@ function Event() {
     return (
         <section className="my-8 px-4 sm:px-20 lg:px-10">
             <img
-                className="mb-15 h-115 w-full"
+                className="mb-15 h-full w-full"
                 src={HISTORY_AND_MEMORIES.img}
                 alt="Event"
             />

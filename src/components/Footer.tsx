@@ -126,16 +126,14 @@ function FooterContact() {
             aria-label="Connect With Us"
             className="mt-6 flex flex-col items-start"
         >
-            <ul className="grid grid-cols-2 gap-y-2">
+            <ul className="grid grid-cols-1 gap-y-2 sm:grid-cols-2">
                 {CONTACT.contact.map(({ icon, url, info }, idx) => (
                     <li
                         key={idx}
-                        className={`${
-                            LINK_LIST
-                        } flex w-max items-center ${idx % 2 !== 0 ? 'ml-10' : ''}`}
+                        className={`${LINK_LIST} flex w-full items-center`}
                     >
                         <span className="mr-2 text-white">{icon}</span>
-                        <a href={url} className="hover:underline">
+                        <a href={url} className="truncate hover:underline">
                             {info}
                         </a>
                     </li>
@@ -172,18 +170,19 @@ export default function Footer() {
                     <FooterSocialMedia />
                 </div>
 
-                <div className="mb-5 flex flex-wrap justify-between gap-8">
+                <div className="mb-5 flex flex-col gap-8 lg:flex-row lg:flex-wrap lg:justify-between">
                     <FooterLogoSection />
 
                     <FooterUsefulLinks />
 
-                    <div className="flex max-w-[560px] flex-col">
-                        <p className="font-inter h-40 text-justify text-sm leading-relaxed font-normal text-white/80 capitalize">
+                    <div className="flex w-full flex-col lg:max-w-[560px]">
+                        {/* Removed fixed height and added responsive margin */}
+                        <p className="font-inter mb-6 text-justify text-sm leading-relaxed font-normal text-white/80 capitalize lg:mb-8">
                             TransNepal Freight Services Pvt. Ltd., was
                             incorporated in the year 2002 under the Nepalese
                             Company Act, and started operation from 17th April,
                             2002 by taking over operation and management of the
-                            two ICDs’ at Biratnagar and Bhairahawa on lease for
+                            two ICDs' at Biratnagar and Bhairahawa on lease for
                             a period of ten years from Nepal Intermodal
                             Transport Development Board a body constituted by
                             the Government of Nepal.

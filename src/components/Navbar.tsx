@@ -82,10 +82,12 @@ const DropdownGroup = ({ group }: { group: NavLink }) => (
 
 const DropdownMenu = ({
     items,
-    isMobile = false
+    isMobile = false,
+    onItemClick
 }: {
     items: NavLink[];
     isMobile?: boolean;
+    onItemClick?: () => void;
 }) => {
     const menuClasses = isMobile
         ? 'w-full mt-2 space-y-1'
@@ -103,6 +105,7 @@ const DropdownMenu = ({
                         <Link
                             to={item.path!}
                             className={`block rounded-lg px-3 py-2 whitespace-nowrap transition-colors duration-200 hover:bg-gray-200 ${textColorClass} hover:text-gray-900`}
+                            onClick={onItemClick}
                         >
                             {item.label}
                         </Link>
@@ -146,6 +149,15 @@ const DesktopNavItem = ({ link }: { link: NavLink }) => {
         isActive ? 'bg-white/20' : 'hover:bg-white/10'
     }`;
 
+    // New: manually control hover state
+    const timeoutRef = useRef<number | null>(null);
+    const closeDropdown = () => {
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        timeoutRef.current = window.setTimeout(() => {
+            handleMouseLeave(); // simulate mouse leave
+        }, NAV_CONFIG.animation.mobileDelay);
+    };
+
     return (
         <li
             className="relative"
@@ -188,7 +200,10 @@ const DesktopNavItem = ({ link }: { link: NavLink }) => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
-                    <DropdownMenu items={link.children!} />
+                    <DropdownMenu
+                        items={link.children!}
+                        onItemClick={closeDropdown} // 👈 here we close the dropdown
+                    />
                 </div>
             )}
         </li>

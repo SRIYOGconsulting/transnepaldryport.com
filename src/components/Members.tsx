@@ -14,11 +14,11 @@ type ManagementTeamProps = {
 
 const ManagementTeam = ({ teamData }: ManagementTeamProps) => {
     if (!teamData || teamData.length === 0) {
-        return <p>No team data available.</p>;
+        return <p className="py-10 text-center">No team data available.</p>;
     }
 
     return (
-        <section className="mt-10 flex flex-wrap justify-center gap-8 py-20">
+        <section className="mt-8 flex flex-wrap justify-center gap-6 py-16 sm:mt-10 sm:gap-8 sm:py-20 lg:gap-10">
             {teamData.map(director => (
                 <TeamCard
                     key={director.id}

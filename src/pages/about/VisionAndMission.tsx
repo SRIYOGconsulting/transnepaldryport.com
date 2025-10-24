@@ -9,20 +9,20 @@ const ImageBlock = ({ src, alt, className }: any) => (
 );
 
 const VisionItem = ({ logo, title, statement }: any) => (
-    <article className="flex w-full items-center justify-center gap-5 rounded-tl-[30px] bg-[var(--primary)] p-4 text-white lg:w-[35rem] lg:rounded-tl-[50px] lg:p-0">
-        <div className="flex items-start justify-center gap-4 lg:gap-5">
-            <div className="inline-block rounded-full bg-white p-2 lg:p-0">
+    <article className="flex w-full items-center justify-center gap-4 rounded-tl-3xl bg-[var(--primary)] p-4 text-white sm:gap-5 sm:p-6 lg:w-[35rem] lg:rounded-tl-[50px] lg:p-8">
+        <div className="flex items-start gap-3 sm:gap-4 lg:gap-5">
+            <div className="flex-shrink-0 rounded-full bg-white p-2 sm:p-3">
                 <img
                     src={logo}
                     alt="Vision logo"
-                    className="h-8 w-8 lg:h-auto lg:w-auto"
+                    className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"
                 />
             </div>
-            <div className="flex flex-col gap-3 lg:gap-4">
-                <h2 className="w-full border-b-2 border-white font-['Poppins'] text-lg font-semibold text-white lg:w-20 lg:text-xl">
+            <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4">
+                <h2 className="border-b-2 border-white font-poppins text-base font-semibold text-white sm:text-lg lg:text-xl">
                     {title}
                 </h2>
-                <p className="custom-word-spacing w-full text-justify font-['Poppins'] text-sm font-medium tracking-wider text-white lg:w-96 lg:text-base">
+                <p className="text-justify font-poppins text-xs font-medium leading-relaxed text-white sm:text-sm lg:text-base">
                     {statement}
                 </p>
             </div>
@@ -31,27 +31,29 @@ const VisionItem = ({ logo, title, statement }: any) => (
 );
 
 const MissionItem = ({ logo, title, statements }: any) => (
-    <article className="flex w-full items-center justify-center gap-5 rounded-br-[30px] bg-[var(--primary)] p-4 text-white lg:w-[35rem] lg:rounded-br-[50px] lg:p-6">
-        <div className="flex items-start justify-center gap-4 lg:gap-5">
-            <div className="inline-block rounded-full bg-white p-2 lg:p-0">
+    <article className="flex w-full items-center justify-center gap-4 rounded-br-3xl bg-[var(--primary)] p-4 text-white sm:gap-5 sm:p-6 lg:w-[35rem] lg:rounded-br-[50px] lg:p-8">
+        <div className="flex items-start gap-3 sm:gap-4 lg:gap-5">
+            <div className="flex-shrink-0 rounded-full bg-white p-2 sm:p-3">
                 <img
                     src={logo}
                     alt="Mission logo"
-                    className="h-8 w-8 lg:h-auto lg:w-auto"
+                    className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"
                 />
             </div>
             <div className="flex flex-col gap-2">
-                <h2 className="w-full border-b-2 border-white font-['Poppins'] text-lg font-semibold text-white lg:w-20 lg:text-xl">
+                <h2 className="border-b-2 border-white font-poppins text-base font-semibold text-white sm:text-lg lg:text-xl">
                     {title}
                 </h2>
-                {statements.map((statement: any, idx: any) => (
-                    <p
-                        key={idx}
-                        className="custom-word-spacing w-full text-justify font-['Poppins'] text-sm font-medium tracking-wider text-white lg:w-96 lg:text-base"
-                    >
-                        {statement}
-                    </p>
-                ))}
+                <div className="space-y-2">
+                    {statements.map((statement: any, idx: any) => (
+                        <p
+                            key={idx}
+                            className="text-justify font-poppins text-xs font-medium leading-relaxed text-white sm:text-sm lg:text-base"
+                        >
+                            {statement}
+                        </p>
+                    ))}
+                </div>
             </div>
         </div>
     </article>
@@ -67,8 +69,9 @@ export default function VisionAndMission() {
                 subtitle="See the future, Make it Happen"
                 img={hero}
             />
-            <section className="m-5 flex flex-col items-center gap-6 lg:m-20 lg:gap-10">
-                <section className="flex h-auto flex-col justify-center gap-4 lg:h-50 lg:flex-row lg:gap-5">
+            <section className="mx-4 my-6 flex flex-col items-center gap-6 sm:mx-6 sm:my-8 lg:m-20 lg:gap-10">
+                {/* Vision Section */}
+                <section className="flex w-full max-w-6xl flex-col gap-4 lg:flex-row lg:gap-8">
                     <VisionItem
                         logo={vision.logo}
                         title={vision.title}
@@ -78,15 +81,16 @@ export default function VisionAndMission() {
                     <ImageBlock
                         src={vision.img}
                         alt="Vision"
-                        className="h-48 w-full overflow-hidden rounded-tr-[30px] lg:h-auto lg:w-[35rem] lg:rounded-tr-[50px]"
+                        className="h-48 w-full overflow-hidden rounded-tr-3xl sm:h-56 lg:h-auto lg:w-[35rem] lg:rounded-tr-[50px]"
                     />
                 </section>
 
-                <section className="flex h-auto flex-col justify-center gap-4 lg:h-80 lg:flex-row lg:gap-5">
+                {/* Mission Section */}
+                <section className="flex w-full max-w-6xl flex-col gap-4 lg:flex-row lg:gap-8">
                     <ImageBlock
                         src={mission.img}
                         alt="Mission"
-                        className="h-48 w-full overflow-hidden rounded-bl-[30px] lg:h-auto lg:w-[35rem] lg:rounded-bl-[50px]"
+                        className="h-48 w-full overflow-hidden rounded-bl-3xl sm:h-56 lg:h-auto lg:w-[35rem] lg:rounded-bl-[50px]"
                     />
                     <MissionItem
                         logo={mission.logo}

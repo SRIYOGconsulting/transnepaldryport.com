@@ -11,14 +11,16 @@ const BANNER = {
 
 export default function BoardOfDirector() {
     return (
-        <main>
+        <main className="min-h-screen">
             <Banner
                 title={BANNER.title}
                 subtitle={BANNER.subtitle}
                 img={BANNER.img}
             />
 
-            <Members teamData={BOARD_OF_DIRECTORS} />
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <Members teamData={BOARD_OF_DIRECTORS} />
+            </div>
         </main>
     );
 }

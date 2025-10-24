@@ -12,9 +12,13 @@ export default function TableWithHeading({ title, data }: TableData) {
     const columns = getAvailableColumns(data);
 
     return (
-        <>
-            <h2 className="subTitle">{title}</h2>
-            <DataTable columns={columns} data={data} />
-        </>
+        <div className="w-full">
+            <h2 className="mb-4 text-xl font-semibold text-gray-900 sm:mb-6 sm:text-2xl lg:text-3xl">
+                {title}
+            </h2>
+            <div className="overflow-x-auto">
+                <DataTable columns={columns} data={data} />
+            </div>
+        </div>
     );
 }
