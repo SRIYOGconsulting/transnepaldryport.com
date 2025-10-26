@@ -4,6 +4,7 @@ type DirectorCardProps = {
     role: string;
     description: string;
 };
+
 export default function TeamCard({
     imgSrc,
     name,
@@ -12,37 +13,37 @@ export default function TeamCard({
 }: DirectorCardProps) {
     return (
         <article
-            className="inline-flex h-190 w-150 items-center justify-center gap-2.5 rounded-xl bg-white px-9 py-9 shadow-[0px_1px_5px_0px_rgba(0,0,0,0.25)]"
+            className="flex w-full items-center justify-center rounded-xl bg-white p-4 shadow-[0px_1px_5px_0px_rgba(0,0,0,0.25)] sm:p-6 lg:p-8"
             aria-labelledby="director-name"
         >
-            <div className="flex w-140 flex-col items-center gap-6">
-                <header className="flex w-72 flex-col items-center gap-5">
+            <div className="flex w-full flex-col items-center gap-4 sm:gap-6">
+                <header className="flex w-full flex-col items-center gap-4 sm:gap-5">
                     <img
-                        className="h-72 w-72 rounded-[10px]"
+                        className="h-48 w-48 rounded-[10px] object-cover sm:h-56 sm:w-56 lg:h-64 lg:w-64"
                         src={imgSrc}
                         alt={`Portrait of ${name}`}
                         loading="lazy"
-                        width={286}
-                        height={286}
+                        width={256}
+                        height={256}
                     />
                     <div
-                        className="flex flex-col items-center self-stretch"
+                        className="flex w-full flex-col items-center"
                         role="group"
                         aria-label={`Details for ${name}`}
                     >
                         <h2
                             id="director-name"
-                            className="self-stretch text-center text-2xl leading-normal text-indigo-950"
+                            className="w-full text-center font-poppins text-xl font-semibold text-indigo-950 sm:text-2xl"
                         >
                             {name}
                         </h2>
-                        <p className="self-stretch text-center text-base leading-normal font-normal text-indigo-900/90">
+                        <p className="w-full text-center font-poppins text-base font-normal text-indigo-900/90 sm:text-lg">
                             {role}
                         </p>
                     </div>
                 </header>
                 <section
-                    className="w-[486px] text-justify text-base leading-normal text-black"
+                    className="w-full text-justify font-poppins text-sm leading-relaxed text-black sm:text-base"
                     aria-label={`Biography of ${name}`}
                 >
                     <p>{description}</p>

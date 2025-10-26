@@ -16,8 +16,9 @@ export default function ManagementTeam() {
                 subtitle={BANNER.subtitle}
                 img={BANNER.img}
             />
-
-            <Members teamData={MANAGEMENT_TEAM} />
+            <div className="container">
+                <Members teamData={MANAGEMENT_TEAM} />
+            </div>
         </main>
     );
 }
