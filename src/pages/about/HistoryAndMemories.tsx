@@ -9,8 +9,6 @@ const BANNER = {
     hero: hero
 };
 
-const paddign = 'px-4 py-5 sm:px-20 lg:px-15';
-
 function Event() {
     return (
         <section className="my-8 px-4 sm:px-20 lg:px-10">
@@ -35,7 +33,7 @@ export default function HistoryAndMemories() {
                 subtitle={BANNER.subTitle}
                 img={BANNER.hero}
             />
-            <div className={`w-full ${paddign}`}>
+            <div className="container">
                 <Event />
             </div>
         </main>

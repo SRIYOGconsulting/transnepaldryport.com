@@ -56,7 +56,7 @@ const useHoverWithDelay = (delay: number = 150) => {
 // Sub-Components
 const DropdownGroup = ({ group }: { group: NavLink }) => (
     <div className="mb-3" role="group" aria-label={group.label}>
-        <p className="border-b border-gray-100 px-3 py-2 text-sm font-semibold text-gray-700">
+        <p className="border-b border-gray-100 px-3 py-2 text-sm font-semibold text-white md:text-gray-700">
             {group.label}
         </p>
         <ul className="mt-2">
@@ -65,7 +65,7 @@ const DropdownGroup = ({ group }: { group: NavLink }) => (
                     {child.path ? (
                         <Link
                             to={child.path}
-                            className="block rounded-lg px-3 py-2 text-gray-600 transition-colors duration-200 hover:bg-gray-50 hover:text-gray-900"
+                            className="block rounded-lg px-3 py-2 text-white transition-colors duration-200 hover:bg-gray-50 hover:text-gray-900 md:text-gray-600"
                         >
                             {child.label}
                         </Link>

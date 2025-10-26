@@ -9,8 +9,6 @@ const BANNER = {
     hero: hero
 };
 
-const paddign = 'px-4 py-5 sm:px-20 lg:px-25';
-
 function QualityPolicy() {
     return (
         <section className="py-12">
@@ -70,28 +68,22 @@ export default function QACANDCOC() {
                 subtitle={BANNER.subTitle}
                 img={BANNER.hero}
             />
-            <div className={`w-full ${paddign}`}>
+            <div className="container">
                 <QualityPolicy />
-            </div>
 
-            <div className={`w-full ${paddign}`}>
                 <TextAreaWithHeadingAndLogo
                     title={QAC_AND_COC.codeOfConduct.title}
                     description={QAC_AND_COC.codeOfConduct.description}
                     bold={true}
                 />
-            </div>
-            <div className="px-10">
-                {QAC_AND_COC.codeOfConduct.sections.map(section => (
-                    <div className={`w-full ${paddign}`}>
+                <div className="m-5 px-10">
+                    {QAC_AND_COC.codeOfConduct.sections.map(section => (
                         <TextAreaWithHeadingAndLogo
                             title={section.title}
                             description={section.description}
                         />
-                    </div>
-                ))}
-            </div>
-            <div className={`w-full ${paddign}`}>
+                    ))}
+                </div>
                 <h1 className="mb-10 font-['Poppins'] text-xl font-bold text-blue-900">
                     Policy Management
                 </h1>
