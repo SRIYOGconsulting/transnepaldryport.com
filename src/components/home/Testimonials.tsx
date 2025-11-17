@@ -31,7 +31,7 @@ const TestimonialCard: React.FC<Testimonial> = ({
                 {position}
             </p>
         </div>
-        <p className="justify-start self-stretch text-center font-['Segoe_UI'] text-xs leading-relaxed font-normal text-indigo-950 lg:leading-loose">
+        <p className="justify-start self-stretch text-center font-['Segoe_UI'] text-sm leading-relaxed font-normal text-indigo-950 lg:leading-loose">
             &ldquo;{testimonial}&rdquo;
         </p>
     </article>

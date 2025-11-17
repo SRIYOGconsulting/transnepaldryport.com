@@ -8,7 +8,7 @@ import img7 from '../../../assets/img/services/ICPBiratnager/img7.jpg';
 import img8 from '../../../assets/img/services/ICPBiratnager/img8.jpg';
 
 export const ICP_BIRATNAGAR_INFO = {
-    title: 'Features',
+    title: 'Salient Features',
     description: [
         `Spread over 129 bighas of land, Biratnagar ICP is equipped with Warehouses for Export and Import separately, Cold Storage, Terminal Building, Restaurant, Customs, Immigration, Quarantine, Banks, Resting facility, Currency Exchange, Litigation Shed and Parking & Container Yard, CCTV Surveillance that are required for the clearance of goods and movement of people from a single location, thereby reducing trading & transit cost for traders.`,
 

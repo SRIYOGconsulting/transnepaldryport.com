@@ -4,7 +4,7 @@ import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingA
 import { RENTAL_SERVICES } from '../../data/servicesData/rentalServices';
 
 const BANNER = {
-    title: 'Rental Service',
+    title: 'Rental Services',
     subtitle: '',
     hero: ''
 };

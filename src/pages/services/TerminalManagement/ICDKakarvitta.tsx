@@ -59,7 +59,7 @@ export default function ICDKakarvitta() {
 
                     <section>
                         <h1 className="mt-10 mb-10 text-xl text-blue-900">
-                            / Galleryr
+                            / Gallery
                         </h1>
                         <ImgGrid items={ICD_KAKARBHITTA_GALLERY} grid={3} />
                     </section>

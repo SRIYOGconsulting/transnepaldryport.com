@@ -65,7 +65,7 @@ export const NAV_LINKS: NavLink[] = [
             },
             {
                 label: 'Holidays',
-                path: '/Holidays',
+                path: '/holidays',
                 element: <Holidays />
             }
         ]

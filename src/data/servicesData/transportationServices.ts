@@ -8,14 +8,12 @@ import contract_signing_of_icd_chobhar from '../../assets/img/services/transport
 import trans_silk from '../../assets/img/services/transportation/trans_silk_joint_venture.png';
 
 export const TRANSPORTATION_SERVICES = {
+    Heading:'Welcome to Allcargo Logistics Limited Transportation Services!',
+     Sub:'When it comes to moving goods efficiently and reliably, Allcargo Logistics Limited is your trusted partner. With a wealth of experience in the logistics industry and a commitment to excellence, we provide a comprehensive range of transportation solutions tailored to meet your needs.',
     title: 'Transportation Services',
     introduction: '',
     content: [
-        {
-            title: 'Welcome to Allcargo Logistics Limited Transportation Services!',
-            description:
-                'When it comes to moving goods efficiently and reliably, Allcargo Logistics Limited is your trusted partner. With a wealth of experience in the logistics industry and a commitment to excellence, we provide a comprehensive range of transportation solutions tailored to meet your needs.'
-        },
+       
         {
             title: 'Diverse Modes',
             description:

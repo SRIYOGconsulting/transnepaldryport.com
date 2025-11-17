@@ -19,7 +19,10 @@ export default function BoardOfDirector() {
             />
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <Members teamData={BOARD_OF_DIRECTORS} />
+                <Members teamData={BOARD_OF_DIRECTORS.map(member => ({
+                    ...member,
+                    description: [member.description]
+                }))} />
             </div>
         </main>
     );

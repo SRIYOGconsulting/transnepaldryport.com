@@ -5,7 +5,7 @@ type TeamDataProps = {
     img: string;
     name: string;
     post: string;
-    description: string;
+    description: string[];
 };
 
 type ManagementTeamProps = {

@@ -83,7 +83,9 @@ export default function GetInTouchWithUs() {
                         >
                             <p className="font-poppins text-xs font-light text-black sm:text-sm">
                                 Telephone:{' '}
+                                <a href={'tel:${GET_IN_TOUCH_WITH_US.contact.telephone}'} className='hover:text-grey-500 hover:underline'>
                                 {GET_IN_TOUCH_WITH_US.contact.telephone}
+                                </a>
                             </p>
                             <p className="font-poppins text-xs font-light text-black sm:text-sm">
                                 Fax: {GET_IN_TOUCH_WITH_US.contact.fax}

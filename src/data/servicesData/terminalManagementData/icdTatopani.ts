@@ -1,5 +1,5 @@
 export const ICD_TATOPANI_INFO = {
-    title: 'Features',
+    title: 'Salient Features',
     description: [
         `Tatopani ICD is located in Sidhupachowk, Bagmati Province 114 km north-east of Kathmandu. Tatopani and Rasua are two important cross-border points of Nepal to China. However, Tatopani provides better services and facilitates trade and transit more efficiently than Rasua due to this ICD and better road connectivity.`,
         `With the development of North-South Road Corridors along Koshi, Gandaki, and Karnali rivers, trade between India and China can happen via Nepal. Tatopani ICD will play a crucial role in facilitating north-south trade between India and China.`,

@@ -3,7 +3,7 @@ import { ABOUT_US } from '../../data/homePageData/aboutUs';
 
 type AboutContentProps = {
     title: string;
-    description: string;
+    description: string[];
 };
 
 type AboutImageProps = {
@@ -27,15 +27,24 @@ function AboutImage({ src, alt }: AboutImageProps) {
 
 function AboutContent({ title, description }: AboutContentProps) {
     return (
-        <div className="flex w-full flex-col items-center gap-6 lg:items-start lg:gap-7">
-            <h1 className="font-poppins text-center text-xl leading-snug font-medium text-blue-900 lg:text-left lg:text-2xl">
-                {title}
-            </h1>
-            <p className="font-poppins text-justify text-sm leading-relaxed font-light text-black lg:text-base">
-                {description}
-            </p>
-        </div>
-    );
+  <div className="flex w-full flex-col items-center gap-8 lg:items-start lg:gap-7">
+    <h1 className="font-poppins text-center text-xl leading-snug font-medium text-blue-900 lg:text-left lg:text-2xl">
+      {title}
+    </h1>
+
+    <div className="flex flex-col gap-8"> 
+      {description.map((p, i) => (
+        <p
+          key={i}
+          className="font-poppins text-justify text-sm leading-relaxed font-light text-black lg:text-base"
+        >
+          {p}
+        </p>
+      ))}
+    </div>
+  </div>
+);
+
 }
 
 export default function AboutUs() {

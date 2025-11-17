@@ -21,10 +21,10 @@ export default function TextAreaWithHeadingAndLogo({
                         className="h-10 w-10 object-contain"
                     />
                 )}
-                <h1 className="text-2xl font-bold text-blue-900">{title}</h1>
+                <h1 className="mt-6 text-2xl font-bold text-blue-900">{title}</h1>
             </div>
             <div
-                className={`font-['Poppins'] text-xl text-neutral-600 ${
+                className={`mb-6 font-['Poppins'] text-xl text-neutral-600 ${
                     bold ? 'font-bold' : 'font-medium'
                 }`}
             >

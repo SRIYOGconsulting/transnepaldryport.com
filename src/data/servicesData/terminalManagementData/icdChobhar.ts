@@ -1,5 +1,5 @@
 export const ICD_CHOBHAR_INFO = {
-    title: 'Features',
+    title: 'Salient Features',
     description: [
         `Chobhar ICD is located in the southwestern corner of Kathmandu Valley in Kirtipur district and spreads over 11.77 hectares. It is divided into two sections: EXIM and DOMESTIC. Inland Clearance Depot will allow importers to make customs clearance of their goods in Kathmandu itself, saving them trips to various border checkpoints from where shipments enter Nepal and will help facilitate trade and transit. Operationalization of this ICD would minimize the cost of logistics, time, and problems related to the import and export of goods.`,
 

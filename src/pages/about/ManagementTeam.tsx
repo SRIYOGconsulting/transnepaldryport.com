@@ -17,7 +17,10 @@ export default function ManagementTeam() {
                 img={BANNER.img}
             />
             <div className="container">
-                <Members teamData={MANAGEMENT_TEAM} />
+                <Members teamData={MANAGEMENT_TEAM.map(member => ({
+                    ...member,
+                    description: [member.description]
+                }))} />
             </div>
         </main>
     );
