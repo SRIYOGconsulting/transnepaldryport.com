@@ -4,7 +4,7 @@ import NewsCard from '../components/ui/NewsCard';
 import { CORPORATE_SOCIAL_RESPONSIBILITY } from '../data/csrData/csr';
 
 const BANNER = {
-    title: 'CSR',
+    title: 'Corporate Social Responsibility',
     subtitle: '',
     img: ''
 };

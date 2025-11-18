@@ -1,5 +1,4 @@
 import Banner from '../components/ui/Banner';
-import NewsCard from '../components/ui/NewsCard';
 import hero from '../assets/img/news_and_event/hero.png';
 import our_journey from '../assets/img/news_and_event/our_journey.png';
 import { NEWS_AND_EVENT } from '../data/newsAndEventData/newsAndEvent';
@@ -40,16 +39,7 @@ function NewsSection() {
     return (
         <section className="my-10 w-full">
             <h1 className="title">Latest News</h1>
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
-                {NEWS_AND_EVENT.news.map(item => (
-                    <NewsCard
-                        image={item.img}
-                        date={item.date}
-                        title={item.title}
-                        description={item.description}
-                    />
-                ))}
-            </div>
+           
         </section>
     );
 }
