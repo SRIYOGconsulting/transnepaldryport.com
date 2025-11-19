@@ -34,5 +34,7 @@ export function getAvailableColumns<T extends Record<string, any>>(
 }
 
 function capitalize(str: string): string {
+     if (str === 'sn') return '#';
     return str.charAt(0).toUpperCase() + str.slice(1);
+    
 }

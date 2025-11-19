@@ -306,7 +306,7 @@ const TariffLink = ({ link }: { link: NavLink }) => {
         <nav aria-label="Tariff Navigation">
             <div
                 className={`hidden transition-transform duration-200 hover:scale-105 lg:block ${
-                    isActive ? 'ring-2 ring-white/30' : ''
+                    isActive ? '' : ''
                 }`}
             >
                 <ul className="inline-flex h-12 items-center justify-center rounded-2xl bg-white p-2.5 shadow-lg">

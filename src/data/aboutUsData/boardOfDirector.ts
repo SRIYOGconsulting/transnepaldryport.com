@@ -41,7 +41,7 @@ export const BOARD_OF_DIRECTORS: BoardMember[] = [
         name: 'Pankaj Rathi',
         post: 'Director',
         description:
-            'Mr. Pankaj Rathi, the youngest director in the board is an MBA (International Business and Finance) and leading the BAGMATI PLASTIC INDUSTRIES PVT.LTD. as its chairman. He has an understanding of the macroeconomic Dynamics of Nepal due to exposure to various international markets. He has an analytical bent of mind with a passion for entrepreneurship and financial markets.',
+            'Mr. Pankaj Rathi, the youngest director in the board is an MBA (International Business and Finance) and leading the BAGMATI PLASTIC INDUSTRIES PVT. LTD. as its chairman. He has an understanding of the macroeconomic Dynamics of Nepal due to exposure to various international markets. He has an analytical bent of mind with a passion for entrepreneurship and financial markets.',
         img: pankaj_rathi
     }
 ];
