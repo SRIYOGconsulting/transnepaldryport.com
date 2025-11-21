@@ -14,38 +14,46 @@ const BANNER = {
 
 
 export default function Transportation() {
-    return (
-        <main>
-            <Banner
-                title={BANNER.title}
-                subtitle={BANNER.subtitle}
-                img={BANNER.hero}
-            />
-
-            <section className="container">
-                <TextAreaWithHeadingAndLogo
-                    title={TRANSPORTATION_SERVICES.Heading}
-                    description={TRANSPORTATION_SERVICES.Sub}
-                />
-
-                <div className="mt-10 flex flex-col gap-0 px-5 lg:flex-row lg:gap-20">
-                       <section className="container mx-auto px-5 py-10">
-  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {TRANSPORTATION_SERVICES.content.map((item, index) => (
-      <ServiceCard
-        key={index}
-        title={item.title}
-        description={item.description}
-        logo={item.logo}
+  return (
+    <main>
+      <Banner
+        title={BANNER.title}
+        subtitle={BANNER.subtitle}
+        img={BANNER.hero}
       />
-    ))}
-  </div>
-</section>
-                 
 
-                    
-                </div>
-            </section>
-        </main>
-    );
+      <section className="container mx-auto px-5">
+        <TextAreaWithHeadingAndLogo
+          title={TRANSPORTATION_SERVICES.Heading}
+          description={TRANSPORTATION_SERVICES.Sub}
+        />
+
+        {/* MAIN GRID */}
+        <div className="mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {/* TOP ROW → 2 centered cards */}
+            <div className="lg:col-span-3 flex flex-col sm:flex-row justify-center gap-8">
+              <div className="flex-1 sm:flex-none lg:w-1/3">
+                <ServiceCard {...TRANSPORTATION_SERVICES.content[0]} />
+              </div>
+
+              <div className="flex-1 sm:flex-none lg:w-1/3">
+                <ServiceCard {...TRANSPORTATION_SERVICES.content[1]} />
+              </div>
+            </div>
+
+            {/* BOTTOM ROW → 3 even cards */}
+            {TRANSPORTATION_SERVICES.content.slice(2, 5).map((item, index) => (
+              <div key={index} className="flex-1 lg:w-auto">
+                <ServiceCard {...item} />
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
+

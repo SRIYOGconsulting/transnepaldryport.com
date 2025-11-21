@@ -12,7 +12,7 @@ const BANNER = {
 function QualityPolicy() {
     return (
         <section className="py-12">
-            <h1 className="mb-6 text-2xl font-semibold text-indigo-950">
+            <h1 className="ml-6 mb-6 text-2xl font-semibold text-indigo-950">
                 {QAC_AND_COC.qualityPolicy.title}
             </h1>
 
@@ -44,7 +44,7 @@ function PolicyManagement({ title, description }: PolicyManagementProps) {
             <div className="relative mx-auto w-96">
                 {/* Paragraph background card */}
                 <div className="relative z-0 h-52 w-full rounded-2xl bg-indigo-50 px-10 py-10">
-                    <p className="text-base tracking-tight text-sky-950">
+                    <p className="ml-6text-base tracking-tight text-sky-950">
                         {description}
                     </p>
                 </div>
@@ -70,12 +70,14 @@ export default function QACANDCOC() {
             />
             <div className="container">
                 <QualityPolicy />
+                <div className="ml-6">
 
                 <TextAreaWithHeadingAndLogo
                     title={QAC_AND_COC.codeOfConduct.title}
                     description={QAC_AND_COC.codeOfConduct.description}
                     bold={true}
                 />
+                </div>
                 <div className="m-5 px-10">
                     {QAC_AND_COC.codeOfConduct.sections.map(section => (
                         <TextAreaWithHeadingAndLogo
@@ -84,7 +86,7 @@ export default function QACANDCOC() {
                         />
                     ))}
                 </div>
-                <h1 className="mb-10 font-['Poppins'] text-xl font-bold text-blue-900">
+                <h1 className="ml-16 mb-10 font-['Poppins'] text-xl font-bold text-blue-900">
                     Policy Management
                 </h1>
                 <div className="mb-10 flex flex-col items-center justify-center gap-12 lg:flex-row">

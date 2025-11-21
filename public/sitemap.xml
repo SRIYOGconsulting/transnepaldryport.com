@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Home -->
   <url>
     <loc>https://transnepaldryport.com/</loc>
     <lastmod>2025-11-20</lastmod>
@@ -9,7 +8,6 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- About Us Subpages -->
   <url>
     <loc>https://transnepaldryport.com/board-of-director</loc>
     <lastmod>2025-11-20</lastmod>
@@ -53,7 +51,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Services Subpages -->
   <url>
     <loc>https://transnepaldryport.com/icp-biratnagar</loc>
     <lastmod>2025-11-20</lastmod>
@@ -97,7 +94,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Associates Subpages -->
   <url>
     <loc>https://transnepaldryport.com/transnepal-trs-logipark-pvt-ltd</loc>
     <lastmod>2025-11-20</lastmod>
@@ -111,7 +107,6 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Other Pages -->
   <url>
     <loc>https://transnepaldryport.com/gallery</loc>
     <lastmod>2025-11-20</lastmod>
