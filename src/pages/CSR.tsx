@@ -45,7 +45,7 @@ export default function CSR() {
             <section className="container">
                 <div className="mb-10 flex flex-col gap-10 lg:flex-row lg:gap-25">
                     <img
-                        className="h-full w-full rounded-2xl md:h-80 md:w-150"
+                        className="h-80 w-full rounded-2xl object-cover lg:w-1/2"
                         src={top_img}
                         alt="CSR"
                     />

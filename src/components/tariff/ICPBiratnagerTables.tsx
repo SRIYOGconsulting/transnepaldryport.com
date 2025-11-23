@@ -51,7 +51,7 @@ export default function ICPBiratnagerTables() {
 
             {/* Grouped Sections */}
             <SectionBlock
-                title="Cargo Handling Charges"
+                title=""
                 sections={[
                     {
                         title: 'Cargo Handling Charges',
