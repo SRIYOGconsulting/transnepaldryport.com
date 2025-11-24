@@ -7,7 +7,7 @@ import {
     ICD_CHOBHAR_FACILITIES,
     ICD_CHOBHAR_INFO
 } from '../../../data/servicesData/terminalManagementData/icdChobhar';
-
+import { useMeta } from '../../../utils/useMeta';
 const BANNER = {
     title: 'ICD Chobhar',
     subtitle: '',
@@ -15,6 +15,12 @@ const BANNER = {
 };
 
 export default function ICDChobhar() {
+    useMeta({
+    title: " ICD Chobhar  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

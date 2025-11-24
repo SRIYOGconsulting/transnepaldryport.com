@@ -2,7 +2,7 @@ import hero from '../../assets/img/about/qacAndCoc/hero.png';
 import Banner from '../../components/ui/Banner';
 import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { QAC_AND_COC } from '../../data/aboutUsData/qacAndCoc';
-
+import { useMeta } from '../../utils/useMeta';
 const BANNER = {
     title: 'Quality Assurance & Code of Conduct',
     subTitle: '',
@@ -10,6 +10,12 @@ const BANNER = {
 };
 
 function QualityPolicy() {
+    useMeta({
+    title: " QAC & COC  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://test.transnepaldryport.com/tariff"
+  });
     return (
         <section className="py-12">
             <h1 className="ml-6 mb-6 text-2xl font-semibold text-indigo-950">

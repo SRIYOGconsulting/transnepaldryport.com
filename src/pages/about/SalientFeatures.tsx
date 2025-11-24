@@ -4,7 +4,7 @@ import Banner from '../../components/ui/Banner';
 import EvStorageSolution from '../../components/about/EvStorageSolution';
 import FeatureSection from '../../components/about/AdvancedStorageSolution';
 import { SALIENT_FEATURES } from '../../data/aboutUsData/salientFeatures';
-
+import { useMeta } from '../../utils/useMeta';
 const BANNER = {
     title: 'Salient Features',
     subtitle: 'Key strengths that drive our success',
@@ -14,6 +14,12 @@ const BANNER = {
 const paddign = 'px-4 py-5 sm:px-20 lg:px-15';
 
 export default function SalientFeatures() {
+    useMeta({
+    title: " Sailent Features  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://test.transnepaldryport.com/tariff"
+  });
     return (
         <main className="w-full">
             <Banner

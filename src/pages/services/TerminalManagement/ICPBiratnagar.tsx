@@ -8,7 +8,7 @@ import {
     ICP_BIRATNAGER_GALLERY
 } from '../../../data/servicesData/terminalManagementData/icpBiratnagar';
 import TableWithHeading from '../../../components/TableWithHeading';
-
+import { useMeta } from '../../../utils/useMeta';
 const BANNER = {
     title: 'ICP Biratnagar',
     subtitle: '',
@@ -16,6 +16,12 @@ const BANNER = {
 };
 
 export default function ICPBiratnagar() {
+    useMeta({
+    title: " ICP Biratnagar  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

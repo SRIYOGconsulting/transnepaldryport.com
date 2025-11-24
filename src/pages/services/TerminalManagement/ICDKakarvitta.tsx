@@ -6,7 +6,7 @@ import {
     ICD_KAKARBHITTA_GALLERY
 } from '../../../data/servicesData/terminalManagementData/icdKakarvitta';
 import TableWithHeading from '../../../components/TableWithHeading';
-
+import { useMeta } from '../../../utils/useMeta';
 const BANNER = {
     title: 'ICD Kakarvitta',
     subtitle: '',
@@ -14,6 +14,12 @@ const BANNER = {
 };
 
 export default function ICDKakarvitta() {
+    useMeta({
+    title: " ICD Kakarvitta  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

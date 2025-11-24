@@ -2,7 +2,7 @@ import top_img from '../assets/img/csr/top_img.jpg';
 import Banner from '../components/ui/Banner';
 import NewsCard from '../components/ui/NewsCard';
 import { CORPORATE_SOCIAL_RESPONSIBILITY } from '../data/csrData/csr';
-
+import { useMeta } from '../utils/useMeta';
 const BANNER = {
     title: 'Corporate Social Responsibility',
     subtitle: '',
@@ -16,7 +16,14 @@ type Props = {
 };
 
 function TopSection({ logo, title, description }: Props) {
+    useMeta({
+    title: " CSR  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
+        
         <section className="flex gap-6 lg:gap-10">
             <img
                 src={logo}

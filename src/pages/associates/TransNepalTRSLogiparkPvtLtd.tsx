@@ -9,8 +9,14 @@ const BANNER = {
     subtitle: '',
     hero: hero
 };
-
+import { useMeta } from '../../utils/useMeta';
 export default function TransNepalTRSLogiparkPvtLtd() {
+    useMeta({
+    title: " TransNepal TRS LogicPark Pvt Ltd  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

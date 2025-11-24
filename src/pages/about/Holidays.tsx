@@ -2,7 +2,7 @@ import hero from '../../assets/img/about/holidays/hero.png';
 import Banner from '../../components/ui/Banner';
 import DataTable, { type Column } from '../../components/ui/DataTable';
 import { HOLIDAYS } from '../../data/aboutUsData/holidays';
-
+import { useMeta } from '../../utils/useMeta';
 const BANNER = {
     title: 'Holidays',
     subtitle: 'Keep Track of Time-Off Schedule',
@@ -21,6 +21,12 @@ const columns: Column<Holiday>[] = [
 ];
 
 export default function Holidays() {
+    useMeta({
+    title: " Holidays  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://test.transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

@@ -4,7 +4,7 @@ import Banner from '../components/ui/Banner';
 import { CONTACT } from '../data/contactData/contact';
 import { IoLocation } from 'react-icons/io5';
 import { IoIosTimer } from 'react-icons/io';
-
+import { useMeta } from '../utils/useMeta'; 
 const BANNER = {
     title: 'Contact Us',
     subtitle: 'Get in Touch for Any Assistance',
@@ -12,6 +12,12 @@ const BANNER = {
 };
 
 function ContactDetailsSection() {
+    useMeta({
+    title: " Contacts  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <div className="flex flex-col gap-6 lg:gap-10">
             <section className="flex gap-3 lg:gap-4">

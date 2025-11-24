@@ -3,7 +3,7 @@ import Banner from '../../components/ui/Banner';
 import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { TRANSPORTATION_SERVICES } from '../../data/servicesData/transportationServices';
 import ServiceCard from '../../components/ui/ServiceCard';
-
+import { useMeta } from '../../utils/useMeta';
 
 const BANNER = {
     title: 'Transportation',
@@ -14,6 +14,12 @@ const BANNER = {
 
 
 export default function Transportation() {
+  useMeta({
+    title: " Transportation  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
   return (
     <main>
       <Banner

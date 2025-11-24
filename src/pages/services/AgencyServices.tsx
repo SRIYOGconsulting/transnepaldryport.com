@@ -3,7 +3,7 @@ import LogosWithTitle from '../../components/LogosWithTitle';
 import Banner from '../../components/ui/Banner';
 import TextAreaWithHeadingAndLogo from '../../components/ui/TextAreaWithHeadingAndLogo';
 import { AGENCY_SERVICES } from '../../data/servicesData/agencyServices';
-
+import { useMeta } from '../../utils/useMeta';
 const BANNER = {
     title: 'Agency Services',
     subtitle: '',
@@ -11,6 +11,12 @@ const BANNER = {
 };
 
 export default function AgencyServices() {
+    useMeta({
+    title: " Agency Services  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

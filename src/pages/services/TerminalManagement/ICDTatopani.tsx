@@ -6,7 +6,7 @@ import {
     ICD_TATOPANI_FACILITIES,
     ICD_TATOPANI_INFO
 } from '../../../data/servicesData/terminalManagementData/icdTatopani';
-
+import { useMeta } from '../../../utils/useMeta';
 const BANNER = {
     title: 'ICD Tatopani',
     subtitle: '',
@@ -14,6 +14,12 @@ const BANNER = {
 };
 
 export default function ICDTatopani() {
+    useMeta({
+    title: " ICD Tatopani  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
         <main>
             <Banner

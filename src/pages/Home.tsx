@@ -10,9 +10,17 @@ import {
     MobileContactUsButton
 } from '../components/ui/ContactUsButton';
 import HomeHeroBanner from '../components/ui/HomeHeroBanner';
+import { useMeta } from '../utils/useMeta';
 
 export default function Home() {
+   useMeta({
+            title: "TransNepal Freight Services Pvt. Ltd.",
+            description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+            ogImage: "",
+            canonical: "https://transnepaldryport.com/tariff"
+          });
     return (
+        
         <main>
             <HomeHeroBanner />
             <DetailsTransNepal />

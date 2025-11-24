@@ -2,7 +2,7 @@ import Banner from '../components/ui/Banner';
 import hero from '../assets/img/news_and_event/hero.png';
 import our_journey from '../assets/img/news_and_event/our_journey.png';
 import { NEWS_AND_EVENT } from '../data/newsAndEventData/newsAndEvent';
-
+import { useMeta } from '../utils/useMeta';
 const BANNER = {
     title: 'News & Events',
     subtitle: '',
@@ -45,7 +45,14 @@ function NewsSection() {
 }
 
 export default function NewsAndEvent() {
+    useMeta({
+    title: " News & Events  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://transnepaldryport.com/tariff"
+  });
     return (
+        
         <main>
             <Banner
                 title={BANNER.title}

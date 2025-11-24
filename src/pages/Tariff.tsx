@@ -5,7 +5,7 @@ import Banner from '../components/ui/Banner';
 import ICDKakarbhittaTables from '../components/tariff/ICDKakarvittaTables';
 import ICDTatopaniTables from '../components/tariff/ICDTatpaniTables';
 import ICDChobharTables from '../components/tariff/ICPChobharTables';
-
+import { useMeta } from '../utils/useMeta';
 // Constants
 const BANNER_CONFIG = {
     title: 'Tariff Information',
@@ -102,6 +102,12 @@ const TableSection = ({ selectedTable }: TableSectionProps) => {
 
 // Main Component
 export default function Tariff() {
+    useMeta({
+    title: " Tariff  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://test.transnepaldryport.com/tariff"
+  });
     const [selectedTable, setSelectedTable] =
         useState<TableKey>('icpBiratnagar');
 

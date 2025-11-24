@@ -1,7 +1,7 @@
 import hero from '../../assets/img/about/visionAndMission/hero.png';
 import Banner from '../../components/ui/Banner';
 import { VISION_AND_MISSION } from '../../data/aboutUsData/visionAndMission';
-
+import { useMeta } from '../../utils/useMeta';
 const ImageBlock = ({ src, alt, className }: any) => (
     <figure className={className}>
         <img src={src} alt={alt} className="h-full w-full object-cover" />
@@ -61,6 +61,13 @@ const MissionItem = ({ logo, title, statements }: any) => (
 
 export default function VisionAndMission() {
     const { vision, mission } = VISION_AND_MISSION;
+   useMeta({
+    title: " Vision & Mission  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    ogImage: "",
+    canonical: "https://test.transnepaldryport.com/tariff"
+  });
+
 
     return (
         <main>
