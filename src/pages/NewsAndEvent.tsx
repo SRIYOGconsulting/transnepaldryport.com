@@ -47,9 +47,9 @@ function NewsSection() {
 export default function NewsAndEvent() {
     useMeta({
     title: " News & Events  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Latest company updates, announcements, and achievements.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/newandevents"
   });
     return (
         

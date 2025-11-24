@@ -63,9 +63,9 @@ export default function VisionAndMission() {
     const { vision, mission } = VISION_AND_MISSION;
    useMeta({
     title: " Vision & Mission  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Our goals and commitment to better logistics.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/vision-mission"
   });
 
 

@@ -11,10 +11,10 @@ const BANNER = {
 
 function Event() {
     useMeta({
-    title: " Tariff  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    title: " History & Memories  |  TransNepal Freight Services Pvt. Ltd.",
+    description: "Our journey and milestones over the years.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/history-and-memories"
   });
     return (
         <section className="my-8 px-4 sm:px-20 lg:px-10">

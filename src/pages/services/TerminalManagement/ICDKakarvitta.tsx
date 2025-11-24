@@ -16,9 +16,9 @@ const BANNER = {
 export default function ICDKakarvitta() {
     useMeta({
     title: " ICD Kakarvitta  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/icd-kakarvitta"
   });
     return (
         <main>

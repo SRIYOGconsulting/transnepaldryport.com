@@ -18,9 +18,9 @@ type Props = {
 function TopSection({ logo, title, description }: Props) {
     useMeta({
     title: " CSR  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Initiatives supporting communities and sustainable impact.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/tariff"
   });
     return (
         

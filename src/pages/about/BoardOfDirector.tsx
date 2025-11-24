@@ -14,7 +14,7 @@ export default function BoardOfDirector() {
     title: " Board of Director  |  TransNepal Freight Services Pvt. Ltd.",
     description: "Meet the executive board and leadership team of TransNepal Dry Port.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/board-of-director"
   });
     return (
         <main className="min-h-screen">

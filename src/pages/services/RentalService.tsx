@@ -18,9 +18,9 @@ type InfoCardProps = {
 function InfoCard({ title, description, logo: icon }: InfoCardProps) {
     useMeta({
     title: " Rental Services  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Vehicle and equipment rentals for logistics needs.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/rental-services"
   });
     return (
         <div className="relative flex h-auto w-full max-w-sm flex-col items-center justify-start gap-6 rounded-2xl bg-slate-100 px-6 py-7 md:w-80">

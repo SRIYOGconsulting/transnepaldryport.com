@@ -16,9 +16,9 @@ const paddign = 'px-4 py-5 sm:px-20 lg:px-15';
 export default function SalientFeatures() {
     useMeta({
     title: " Sailent Features  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Core strengths that define our service quality.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/salient-features"
   });
     return (
         <main className="w-full">

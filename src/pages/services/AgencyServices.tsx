@@ -13,9 +13,9 @@ const BANNER = {
 export default function AgencyServices() {
     useMeta({
     title: " Agency Services  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Professional agency support for freight operations.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/agency-services"
   });
     return (
         <main>

@@ -11,9 +11,9 @@ const BANNER = {
 export default function ManagementTeam() {
     useMeta({
     title: " Management Team  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Leadership guiding our logistics excellence of TransNepal Dry Port.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/management-team"
   });
     return (
         <main>

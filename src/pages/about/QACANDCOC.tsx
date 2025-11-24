@@ -12,9 +12,9 @@ const BANNER = {
 function QualityPolicy() {
     useMeta({
     title: " QAC & COC  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Standards ensuring reliable and efficient services.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/qac-coc"
   });
     return (
         <section className="py-12">

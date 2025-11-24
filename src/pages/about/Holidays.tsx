@@ -22,10 +22,10 @@ const columns: Column<Holiday>[] = [
 
 export default function Holidays() {
     useMeta({
-    title: " Holidays  |  TransNepal Freight Services Pvt. Ltd.",
+    title: " Official company holidays and service schedules..",
     description: "Meet the executive board and leadership team of TransNepal Dry Port.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/Holidays"
   });
     return (
         <main>

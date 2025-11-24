@@ -16,9 +16,9 @@ const BANNER = {
 export default function Transportation() {
   useMeta({
     title: " Transportation  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Domestic and international cargo transport solutions.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/transportation"  
   });
   return (
     <main>

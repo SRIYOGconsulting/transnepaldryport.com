@@ -104,7 +104,7 @@ const TableSection = ({ selectedTable }: TableSectionProps) => {
 export default function Tariff() {
     useMeta({
     title: " Tariff  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Transparent pricing for transport and logistics services.",
     ogImage: "",
     canonical: "https://test.transnepaldryport.com/tariff"
   });

@@ -14,9 +14,9 @@ import { useMeta } from '../../utils/useMeta';
 export default function TransilkTemninalsPvtLtd() {
     useMeta({
     title: " Transilk Terminals Pvt Ltd  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/transilk-terminals-pvt-ltd"
   });
     return (
         <main>

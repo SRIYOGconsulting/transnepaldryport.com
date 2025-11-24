@@ -15,9 +15,9 @@ import { useMeta } from '../utils/useMeta';
 export default function Home() {
    useMeta({
             title: "TransNepal Freight Services Pvt. Ltd.",
-            description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+            description: "Reliable logistics and transport services across Nepal.",
             ogImage: "",
-            canonical: "https://transnepaldryport.com/tariff"
+            canonical: "https://test.transnepaldryport.com/"
           });
     return (
         

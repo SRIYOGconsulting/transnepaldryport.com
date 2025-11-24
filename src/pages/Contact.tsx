@@ -14,9 +14,9 @@ const BANNER = {
 function ContactDetailsSection() {
     useMeta({
     title: " Contacts  |  TransNepal Freight Services Pvt. Ltd.",
-    description: "Meet the executive board and leadership team of TransNepal Dry Port.",
+    description: "Reach our team for support and inquiries.",
     ogImage: "",
-    canonical: "https://transnepaldryport.com/tariff"
+    canonical: "https://test.transnepaldryport.com/contact"
   });
     return (
         <div className="flex flex-col gap-6 lg:gap-10">
