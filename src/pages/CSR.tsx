@@ -49,14 +49,16 @@ export default function CSR() {
                 img={BANNER.img}
             />
 
-            <section className="container">
-                <div className="mb-10 flex flex-col gap-10 lg:flex-row lg:gap-25">
+            <section className="container mx-auto px-4">
+                {/* TOP SECTION */}
+                <div className="mb-10 flex flex-col gap-10 lg:flex-row lg:gap-12">
                     <img
-                        className="h-80 w-full rounded-2xl object-cover lg:w-1/2"
+                        className="w-full h-64 rounded-2xl object-cover md:h-80 lg:w-1/2"
                         src={top_img}
                         alt="CSR"
                     />
-                    <div className="space-y-6">
+
+                    <div className="flex flex-col gap-6 lg:w-1/2">
                         {CORPORATE_SOCIAL_RESPONSIBILITY.csr.map(csr => (
                             <TopSection
                                 key={csr.title}
@@ -68,9 +70,11 @@ export default function CSR() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 space-y-6 sm:grid-cols-2 md:grid-cols-3">
+                {/* NEWS GRID */}
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
                     {CORPORATE_SOCIAL_RESPONSIBILITY.news.map(news => (
                         <NewsCard
+                            key={news.title}
                             date={news.date}
                             title={news.title}
                             description={news.description}
@@ -82,3 +86,4 @@ export default function CSR() {
         </main>
     );
 }
+
