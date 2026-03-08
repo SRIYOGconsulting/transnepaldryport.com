@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import hero from '../assets/img/tariff/hero.png';
 import ICPBiratnagerTablesRoad from '../components/tariff/ICPBiratnagerTablesRoad';
-import ICPBiratnagerTablesRail from '../components/tariff/IPCBiratnagarRailTable';
+import ICPBiratnagarRailTables from '../components/tariff/IPCBiratnagarRailTable';
 import Banner from '../components/ui/Banner';
 import ICDKakarbhittaTables from '../components/tariff/ICDKakarvittaTables';
 import ICDTatopaniTables from '../components/tariff/ICDTatpaniTables';
@@ -28,7 +28,7 @@ const TARIFF_TABLES = {
     icpBiratnagarRail: {
         key: 'icpBiratnagarRail',
         label: 'ICP Biratnagar (Rail)',
-        component: ICPBiratnagerTablesRail
+        component: ICPBiratnagarRailTables
     },
     icdKakarbhitta: {
         key: 'icdKakarbhitta',
