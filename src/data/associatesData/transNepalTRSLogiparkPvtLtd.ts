@@ -3,6 +3,7 @@ import bhim_raj_joshi from '../../assets/img/associates/transnepalTRSlogiparkPvt
 import anand_kumar_singh from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/anand_kumar_singh.svg';
 import capt_mayur_paralkar from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/capt_mayur_paralkar.svg';
 import male_place_holder from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/male_place_holder.svg';
+import suresh_kumar_r from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/suresh-kumar-r.png';
 
 export const TRANSNEPAL_TRSLOGIPARK = {
     company: 'TransNepal TRS Logipark Pvt. Ltd.',
@@ -30,7 +31,7 @@ export const TRANSNEPAL_TRSLOGIPARK = {
         {
             name: 'Suresh Kumar R',
             designation: 'Director',
-            img: male_place_holder
+            img: suresh_kumar_r
         },
         { name: 'Bhimraj Joshi', designation: 'Director', img: bhim_raj_joshi },
         {

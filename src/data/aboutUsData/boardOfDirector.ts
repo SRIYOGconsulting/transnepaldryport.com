@@ -2,6 +2,7 @@ import adarsha_hegde from '../../assets/img/about/boardOfDirectors/adarsh_hegde.
 import mukesh_kumar_rathi from '../../assets/img/about/boardOfDirectors/mukesh_kumar_rathi.png';
 import bhim_raj_joshi from '../../assets/img/about/boardOfDirectors/bhim_raj_joshi.png';
 import pankaj_rathi from '../../assets/img/about/boardOfDirectors/pankaj_rathi.png';
+import suresh_kumar_r from '../../assets/img/about/boardOfDirectors/suresh-kumar-r.png';
 
 type BoardMember = {
     id: number;
@@ -30,6 +31,14 @@ export const BOARD_OF_DIRECTORS: BoardMember[] = [
     },
     {
         id: 3,
+        name: 'Suresh Kumar R',
+        post: 'Director',
+        description:
+            'Suresh Kumar R is a seasoned professional with over 30 years of experience in Telecom, Logistics, Consumer, and Media industries. In a variety of leadership and operational roles he has launched and nurtured businesses creating strong consumer and channel equity. Recognised for managing businesses of scale including in periods of transformation and turbulence across a variety of markets and delivering sustainable value. He is a Mechanical Engineer and a post graduate from IIM Bangalore.',
+        img: suresh_kumar_r
+    },    
+    {
+        id: 4,
         name: 'Bhim Raj Joshi',
         post: 'Director',
         description:
@@ -37,11 +46,12 @@ export const BOARD_OF_DIRECTORS: BoardMember[] = [
         img: bhim_raj_joshi
     },
     {
-        id: 4,
+        id: 5,
         name: 'Pankaj Rathi',
         post: 'Director',
         description:
             'Mr. Pankaj Rathi, the youngest director in the board is an MBA (International Business and Finance) and leading the BAGMATI PLASTIC INDUSTRIES PVT. LTD. as its chairman. He has an understanding of the macroeconomic Dynamics of Nepal due to exposure to various international markets. He has an analytical bent of mind with a passion for entrepreneurship and financial markets.',
         img: pankaj_rathi
-    }
+    },
+    
 ];

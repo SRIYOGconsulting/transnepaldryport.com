@@ -13,7 +13,7 @@ export const SERVICES: Services[] = [
         id: 1,
         title: 'Storage',
         description:
-            'Covered Warehouse of 55 x 25 meter with 1.2 meter high level platform in both the ICP Biratnagar and ICD Bhairahawa.',
+            'Covered Warehouse of 55 x 25 meter with 1.2 meter high level platform to provide the best storage facility.',
         img: storage
     },
     {
