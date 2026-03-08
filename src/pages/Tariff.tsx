@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import hero from '../assets/img/tariff/hero.png';
 import ICPBiratnagerTablesRoad from '../components/tariff/ICPBiratnagerTablesRoad';
-import ICPBiratnagarRailTables from '../components/tariff/IPCBiratnagarRail';
+import ICPBiratnagarRailTables from '../components/tariff/ICPBiratnagarRail';
 
 import Banner from '../components/ui/Banner';
 import ICDKakarbhittaTables from '../components/tariff/ICDKakarvittaTables';
