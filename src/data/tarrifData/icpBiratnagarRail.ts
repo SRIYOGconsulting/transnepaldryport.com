@@ -1,5 +1,4 @@
 export const ICP_BIRATNAGAR = {
-    
     freightEntryCharges: [
         {
             sn: 1,
