@@ -3,7 +3,7 @@ export const ICD_TATOPANI = {
         {
             sn: 1,
             activities: 'Truck / Tanker / Tractor / Trailor',
-            vehicle: 259.31
+            vehicle: 259.39
         },
         {
             sn: 2,
@@ -19,7 +19,7 @@ export const ICD_TATOPANI = {
         {
             sn: 5,
             activities: 'Trailor / Flat Truck / Articulated Vehicles',
-            teu: 518.64,
+            teu: 518.74,
             feu: 778.13
         }
     ],

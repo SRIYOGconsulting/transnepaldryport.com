@@ -17,7 +17,7 @@ export const CONTACT = {
     },
     address: {
         line1: 'TransNepal Tower, Piyush Marg',
-        city: 'Biratnagar-05 Nepal'
+        city: 'Biratnagar-05, Nepal'
     },
     contact: [
         {
@@ -27,16 +27,16 @@ export const CONTACT = {
             url: 'tel:+977 21 501441'
         },
         {
-            title: 'Fax',
-            info: '+977 21501470',
+            title: 'Mobile',
+            info: '+977 9802700159',
             icon: <FaFax />,
-            url: 'tel:+977 21501470'
+            url: 'tel:+977 9802700159'
         },
         {
             title: 'Email',
-            info: 'transnepal_brt@transnepaldryport.com',
+            info: 'brt@transnepaldryport.com',
             icon: <FaEnvelope />,
-            url: 'mailto:transnepal_brt@transnepaldryport.com'
+            url: 'mailto:brt@transnepaldryport.com'
         }
     ],
     workingHours: {

@@ -13,7 +13,7 @@ export const GALLERY = [
         img: certificate
     },
     {
-        title: 'ICD Inauguration 2022',
+        title: 'ICD Inauguration 2002',
         img: icd_inaugration_2022
     },
     {

@@ -23,7 +23,7 @@ export const TRANSNEPAL_TRSLOGIPARK = {
             img: male_place_holder
         },
         {
-            name: 'Debangshu Mukherjee',
+            name: 'Aditya Roy',
             designation: 'Director',
             img: male_place_holder
         },
@@ -41,8 +41,8 @@ export const TRANSNEPAL_TRSLOGIPARK = {
     ],
     managementCommittee: [
         {
-            name: 'Debangshu Mukherjee',
-            designation: 'Management Committee Member',
+            name: 'Aditya Roy',
+            designation: 'Management Committee Member and CFO',
             img: male_place_holder
         },
         {
@@ -55,11 +55,7 @@ export const TRANSNEPAL_TRSLOGIPARK = {
             designation: 'Management Committee Member',
             img: anand_kumar_singh
         },
-        {
-            name: 'Aditya Roy',
-            designation: 'Management Committee Member and CFO',
-            img: male_place_holder
-        },
+        
         {
             name: 'Ravi Vidyarthi',
             designation: 'Chief Executive Officer',

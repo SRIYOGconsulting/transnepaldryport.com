@@ -13,7 +13,7 @@ export default function ManagementTeam() {
     title: " Management Team  |  TransNepal Freight Services Pvt. Ltd.",
     description: "Leadership guiding our logistics excellence of TransNepal Dry Port.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/management-team"
+    canonical: "https://transnepaldryport.com/management-team"
   });
     return (
         <main>

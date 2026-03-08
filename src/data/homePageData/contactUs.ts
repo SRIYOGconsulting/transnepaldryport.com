@@ -10,6 +10,6 @@ export const CONTACT_US = [
         id: 2,
         type: 'mobile',
         title: 'Call Us For Your Queries',
-        contact: '+977-21- 501441'
+        contact: '+977-21-501441'
     }
 ];

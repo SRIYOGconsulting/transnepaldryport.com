@@ -1,4 +1,4 @@
-import home_banner from '../../assets/img/home_banner.png';
+import home_banner from '../../assets/img/hero.jpg';
 
 export default function HomeHeroBanner() {
     return (

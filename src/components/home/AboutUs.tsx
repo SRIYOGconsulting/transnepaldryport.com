@@ -1,4 +1,4 @@
-import aboutUsImage from '../../assets/img/home/about_us.png';
+import aboutUsImage from '../../assets/img/home/about.jpg';
 import { ABOUT_US } from '../../data/homePageData/aboutUs';
 
 type AboutContentProps = {

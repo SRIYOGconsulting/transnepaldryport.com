@@ -150,10 +150,14 @@ function FooterCopyright() {
             aria-label="Copyright"
         >
             <p className={COPYRIGHT_PARAGRAPH}>
-                All Rights Reserved | Copyright © 2025 Trans Nepal Freight
+                All Rights Reserved | Copyright © 2026 Trans Nepal Freight
                 Services Pvt. Ltd.
             </p>
-            <p className={COPYRIGHT_PARAGRAPH}>Site By : SRIYOG Consulting</p>
+            <p className={COPYRIGHT_PARAGRAPH}>
+  Site By : <a href="https://sriyog.com" target="_blank" rel="noopener">
+    SRIYOG Consulting
+  </a>
+</p>
         </section>
     );
 }

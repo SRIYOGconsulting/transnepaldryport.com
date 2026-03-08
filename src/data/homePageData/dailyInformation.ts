@@ -7,7 +7,7 @@ export const DAILY_INFORMATION = {
     addredd: {
         title: 'ADDRESS INFORMATON',
         email: 'transnepal_brt@transnepaldryport.com',
-        location: 'TransNepal Tower Piyush Marg, Biratnagar- 05 Nepal'
+        location: 'TransNepal Tower, Piyush Marg, Biratnagar- 05 Nepal'
     },
     contactInfor: {
         title: 'CONTACT INFORMATION',

@@ -4,7 +4,7 @@ import { BOARD_OF_DIRECTORS } from '../../data/aboutUsData/boardOfDirector';
 import Members from '../../components/Members';
 import { useMeta } from '../../utils/useMeta';
 const BANNER = {
-    title: 'Board of Directors',
+    title: 'Board of Director',
     subtitle: 'Guiding towards excellence',
     img: hero
 };

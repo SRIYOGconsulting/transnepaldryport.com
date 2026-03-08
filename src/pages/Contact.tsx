@@ -13,10 +13,10 @@ const BANNER = {
 
 function ContactDetailsSection() {
     useMeta({
-    title: " Contacts  |  TransNepal Freight Services Pvt. Ltd.",
+    title: " Contact Us  |  TransNepal Freight Services Pvt. Ltd.",
     description: "Reach our team for support and inquiries.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/contact"
+    canonical: "https://transnepaldryport.com/contact"
   });
     return (
         <div className="flex flex-col gap-6 lg:gap-10">

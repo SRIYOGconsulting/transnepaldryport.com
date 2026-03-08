@@ -36,7 +36,7 @@ export default function TransNepalTRSLogiparkPvtLtd() {
                 />
 
                 <PeopleSection
-                    title="Experience Behind the Wheel"
+                    title="Experience Behind the Wheels"
                     people={TRANSNEPAL_TRSLOGIPARK.managementCommittee}
                 />
             </section>

@@ -88,7 +88,7 @@ export default function GetInTouchWithUs() {
                                 </a>
                             </p>
                             <p className="font-poppins text-xs font-light text-black sm:text-sm">
-                                Fax: {GET_IN_TOUCH_WITH_US.contact.fax}
+                                Mobile Phone: +977 9802700159
                             </p>
                         </InfoCard>
                     </div>

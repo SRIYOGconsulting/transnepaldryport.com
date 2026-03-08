@@ -59,7 +59,7 @@ export const FEATURES: Features[] = [
     {
         title: 'Banking',
         description:
-            'n order to make transactions easy and secure, TransNepal provides banking facilities including all types of secured and unsecured banking facilities, loans, advances, credit facilities, and financial arrangements.',
+            'In order to make transactions easy and secure, TransNepal provides banking facilities including all types of secured and unsecured banking facilities, loans, advances, credit facilities, and financial arrangements.',
         img: banking
     },
     {

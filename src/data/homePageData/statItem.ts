@@ -10,7 +10,7 @@ export const STAT_ITEM: StatItem[] = [
     },
     {
         title: 'Projects',
-        count: 3
+        count: 4
     },
     {
         title: 'Tariffs',
@@ -22,6 +22,6 @@ export const STAT_ITEM: StatItem[] = [
     },
     {
         title: 'Years',
-        count: 19
+        count: 24
     }
 ];

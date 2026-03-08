@@ -12,14 +12,14 @@ export const GET_IN_TOUCH_WITH_US = {
     address: {
         logo: address,
         title: 'ADDRESS INFORMATION',
-        email: 'transnepal_brt@transnepaldryport.com',
-        location: 'TransNepal Tower Piyush Marg, Biratnagar-05, Nepal'
+        email: 'brt@transnepaldryport.com',
+        location: 'TransNepal Tower, Piyush Marg, Biratnagar-05, Nepal'
     },
 
     contact: {
         logo: contact,
         title: 'CONTACT INFORMATION',
         telephone: '+977 21 501441',
-        fax: '+977 21 501441'
+        mobile: '+977 9802700159'
     }
 };

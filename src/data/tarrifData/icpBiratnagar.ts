@@ -3,81 +3,82 @@ export const ICP_BIRATNAGAR = {
         {
             sn: 1,
             activities: 'Truck / Tanker / Tractor / Trailor',
-            vehicle: 259.31
+            vehicle: 285.33
         },
         {
             sn: 2,
             activities: 'Light Vehicles, Bullock Cart (Up to 5 Ton)',
-            vehicle: 129.69
+            vehicle: 142.6
         },
-        { sn: 3, activities: 'Rickshaw / Hand Trolley', vehicle: 38.94 },
+        { sn: 3, activities: 'Rickshaw / Hand Trolley', vehicle: 42.83 },
         {
             sn: 4,
             activities: 'Container Truck (Fixed Container)',
-            vehicle: 389.06
+            vehicle: 427.97
         },
         {
             sn: 5,
             activities: 'Trailor / Flat Truck / Articulated',
-            teu: 518.64,
-            feu: 778.13
+            teu: 570.61,
+            feu: 855.94
         }
     ],
 
     cargoHandlingCharges: [
-        { sn: 1, activities: 'All Activities', teu: 2593.75, feu: 4668.74 },
-        { sn: 2, activities: 'Containerized Cargo', vehicle: 181.57 },
+        { sn: 1, activities: 'All Activities', teu: 2853.13, feu: 5135.61 
+ },
+        { sn: 2, activities: 'Containerized Cargo', vehicle: 199.73 },
         {
             sn: 3,
             activities: 'Non-Containerized (Break Bulk, Bagged)',
-            vehicle: 181.57
+            vehicle: 199.73
         },
         {
             sn: 4,
             activities: 'Non-Containerized (Bulk Loose)',
-            vehicle: 129.69
+            vehicle: 142.66
         },
         {
             sn: 5,
             activities: 'Terminal Handling - Loaded Container',
-            teu: 2593.75,
-            feu: 4150
+            teu: 2853.13,
+            feu: 4565
         },
         {
             sn: 6,
             activities: 'Terminal Handling - Unloaded Container',
-            teu: 1296.89,
-            feu: 2075.01
+            teu: 1426.58,
+            feu: 2282.51
         },
-        { sn: 7, activities: 'Terminal Handling - LCL Cargo', vehicle: 518.74 },
-        { sn: 8, activities: 'Weighment Charge', vehicle: 259.39 }
+        { sn: 7, activities: 'Terminal Handling - LCL Cargo', vehicle: 570.61 },
+        { sn: 8, activities: 'Weighment Charge', vehicle: 285.33 }
     ],
 
     warehousingChargesImports: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.16 },
-        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.21 },
-        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.31 }
+        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.17 },
+        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.23 },
+        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.34 }
     ],
 
     warehousingChargesExports: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.08 },
-        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.1 },
-        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.13 }
+        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.09 },
+        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.11 },
+        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.14 }
     ],
 
     warehousingOpenYardStorage: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.08 },
-        { sn: 2, activities: 'Day 9 onwards', vehicle: 0.13 }
+        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.09 },
+        { sn: 2, activities: 'Day 9 onwards', vehicle: 0.14 }
     ],
 
     parkingStorageFreightVehicle: [
-        { sn: 1, activities: 'Day 2 to 7', vehicle: 389.06, teu: 518.74 },
+        { sn: 1, activities: 'Day 2 to 7', vehicle: 570.61, teu: 518.74 },
         {
             sn: 2,
             activities: 'Day 8 onwards',
-            vehicle: 518.74,
-            teu: 518.74,
-            feu: 778.13
+            vehicle: 855.94,
+            teu: 0,
+            feu: 855.94
         }
     ],
 

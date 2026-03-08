@@ -38,7 +38,7 @@ export default function TransilkTemninalsPvtLtd() {
                 />
 
                 <PeopleSection
-                    title="Experience Behind the Wheel"
+                    title="Experience Behind the Wheels"
                     people={TRANSILK_TERMINALS.managementCommittee}
                 />
             </section>

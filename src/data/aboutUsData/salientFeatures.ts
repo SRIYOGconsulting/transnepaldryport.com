@@ -1,4 +1,4 @@
-import nepal_flag from '../../assets/img/about/salientFeatures/nepal_flag.png';
+import nepal_flag from '../../assets/img/about/salientFeatures/transNepal-projects.jpg';
 import ev_storage_solution from '../../assets/img/about/salientFeatures/ev_storage_solution.jpg';
 
 export const SALIENT_FEATURES = {

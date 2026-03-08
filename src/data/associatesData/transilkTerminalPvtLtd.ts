@@ -3,6 +3,7 @@ import bhimraj_joshi from '../../assets/img/associates/transilkTerminalsPvtLtd/b
 import capt_mayur_paralkar from '../../assets/img/associates/transilkTerminalsPvtLtd/capt_mayur_paralkar.svg';
 import anand_kumar_singh from '../../assets/img/associates/transilkTerminalsPvtLtd/anand_kumar_singh.svg';
 import male_place_holder from '../../assets/img/associates/transilkTerminalsPvtLtd/male_place_holder.svg';
+import suresh_kumar_r from '../../assets/img/associates/transilkTerminalsPvtLtd/mr_suresh_kumar_r.svg';
 
 export const TRANSILK_TERMINALS = {
     company: 'TranSilk Terminals Pvt. Ltd.',
@@ -30,7 +31,7 @@ export const TRANSILK_TERMINALS = {
         {
             name: 'Suresh Kumar R',
             designation: 'Director',
-            img: male_place_holder
+            img: suresh_kumar_r
         },
         {
             name: 'Bijay Sherpa',
