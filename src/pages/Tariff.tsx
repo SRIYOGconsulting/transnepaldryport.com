@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import hero from '../assets/img/tariff/hero.png';
-import ICPBiratnagerTables from '../components/tariff/ICPBiratnagerTables';
+import ICPBiratnagerTablesRoad from '../components/tariff/ICPBiratnagerTablesRoad';
+import ICPBiratnagerTablesRail from '../components/tariff/IPCBiratnagarRailTable';
 import Banner from '../components/ui/Banner';
 import ICDKakarbhittaTables from '../components/tariff/ICDKakarvittaTables';
 import ICDTatopaniTables from '../components/tariff/ICDTatpaniTables';
@@ -14,10 +15,20 @@ const BANNER_CONFIG = {
 } as const;
 
 const TARIFF_TABLES = {
-    icpBiratnagar: {
-        key: 'icpBiratnagar',
-        label: 'ICP Biratnagar',
-        component: ICPBiratnagerTables
+    // icpBiratnagar: {
+    //     key: 'icpBiratnagar',
+    //     label: 'ICP Biratnagar',
+    //     component: ICPBiratnagerTables
+    // },
+    icpBiratnagarRoad: {
+        key: 'icpBiratnagarRoad',
+        label: 'ICP Biratnagar (Road)',
+        component: ICPBiratnagerTablesRoad
+    },
+    icpBiratnagarRail: {
+        key: 'icpBiratnagarRail',
+        label: 'ICP Biratnagar (Rail)',
+        component: ICPBiratnagerTablesRail
     },
     icdKakarbhitta: {
         key: 'icdKakarbhitta',
@@ -109,7 +120,7 @@ export default function Tariff() {
     canonical: "https://test.transnepaldryport.com/tariff"
   });
     const [selectedTable, setSelectedTable] =
-        useState<TableKey>('icpBiratnagar');
+    useState<TableKey>('icpBiratnagarRoad');
 
     const handleTableSelect = (table: TableKey) => {
         setSelectedTable(table);
