@@ -1,164 +1,87 @@
-export const ICP_BIRATNAGAR = {
-    freightEntryCharges: [
-        {
-            sn: 1,
-            activities: 'Truck / Tanker / Tractor / Trailor',
-            vehicle: 285.33
-        },
-        {
-            sn: 2,
-            activities: 'Light Vehicles, Bullock Cart (Up to 5 Ton)',
-            vehicle: 142.6
-        },
-        { sn: 3, activities: 'Rickshaw / Hand Trolley', vehicle: 42.83 },
-        {
-            sn: 4,
-            activities: 'Container Truck (Fixed Container)',
-            vehicle: 427.97
-        },
-        {
-            sn: 5,
-            activities: 'Trailor / Flat Truck / Articulated',
-            teu: 570.61,
-            feu: 855.94
-        }
-    ],
-
-    cargoHandlingCharges: [
-        { sn: 1, activities: 'All Activities', teu: 2853.13, feu: 5135.61 
- },
-        { sn: 2, activities: 'Containerized Cargo', vehicle: 199.73 },
-        {
-            sn: 3,
-            activities: 'Non-Containerized (Break Bulk, Bagged)',
-            vehicle: 199.73
-        },
-        {
-            sn: 4,
-            activities: 'Non-Containerized (Bulk Loose)',
-            vehicle: 142.66
-        },
-        {
-            sn: 5,
-            activities: 'Terminal Handling - Loaded Container',
-            teu: 2853.13,
-            feu: 4565
-        },
-        {
-            sn: 6,
-            activities: 'Terminal Handling - Unloaded Container',
-            teu: 1426.58,
-            feu: 2282.51
-        },
-        { sn: 7, activities: 'Terminal Handling - LCL Cargo', vehicle: 570.61 },
-        { sn: 8, activities: 'Weighment Charge', vehicle: 285.33 }
-    ],
-
-    warehousingChargesImports: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.17 },
-        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.23 },
-        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.34 }
-    ],
-
-    warehousingChargesExports: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.09 },
-        { sn: 2, activities: 'Day 9 to 30', vehicle: 0.11 },
-        { sn: 3, activities: 'Day 31 onwards', vehicle: 0.14 }
-    ],
-
-    warehousingOpenYardStorage: [
-        { sn: 1, activities: 'Day 2 to 8', vehicle: 0.09 },
-        { sn: 2, activities: 'Day 9 onwards', vehicle: 0.14 }
-    ],
-
-    parkingStorageFreightVehicle: [
-        { sn: 1, activities: 'Day 2 to 7', vehicle: 570.61, teu: 518.74 },
-        {
-            sn: 2,
-            activities: 'Day 8 onwards',
-            vehicle: 855.94,
-            teu: 0,
-            feu: 855.94
-        }
-    ],
-
-    parkingStorageContainer: [
-        { sn: 1, activities: 'Day 2 to 7', teu: 389.06, feu: 518.74 },
-        { sn: 2, activities: 'Day 8 onwards', teu: 518.74, feu: 778.13 }
-    ],
-
-    cleaningOfContainers: [
-        { sn: 1, activities: 'Cleaning of TEU', teu: 259.39 },
-        { sn: 2, activities: 'Cleaning of FEU', feu: 389.06 }
-    ],
-
-    subLeaseCharges: [
-        {
-            sn: 1,
-            activities: 'Unfurnished Room (Per m²/month)',
-            vehicle: 1071.81
-        }
-    ],
-
-    forkliftCharges: [
-        { sn: 1, activities: 'Complete Cycle', teu: 3865.22, feu: 7730.45 },
-        { sn: 2, activities: 'Single Cycle', teu: 2013.8, feu: 4026.28 },
-        { sn: 3, activities: 'Non-containerised Per Ton', vehicle: 242.42 }
-    ],
-
-    railHandlingChargesImport: [
-        { sn: 1, activities: 'Factory Destuffing', teu: 7054.3, feu: 9716.3 },
-        { sn: 2, activities: 'ICP Destuffing', teu: 9111.3, feu: 12136.3 },
-        { sn: 3, activities: 'Warehouse Delivery', teu: 9111.3, feu: 12136.3 }
-    ],
-
-    railHandlingChargesExport: [
-        { sn: 1, activities: 'Factory Destuffing', teu: 7054.3, feu: 9716.3 },
-        { sn: 2, activities: 'ICP Destuffing', teu: 9111.3, feu: 12136.3 },
-        { sn: 3, activities: 'Warehouse Delivery', teu: 9111.3, feu: 12136.3 }
-    ],
-
-    railHandlingBreakup: [
-        {
-            sn: 1,
-            activities: 'Loaded Container Handling',
-            teu: 3993,
-            feu: 5390.55
-        },
-        {
-            sn: 2,
-            activities: 'Empty Container Handling',
-            teu: 865.15,
-            feu: 1331
-        },
-        {
-            sn: 3,
-            activities: 'Transfer Empty Container + Survey',
-            teu: 1331,
-            feu: 1663.75
-        },
-        {
-            sn: 4,
-            activities: 'Transfer Loaded Container + Survey',
-            teu: 865.15,
-            feu: 1311
-        },
-        { sn: 5, activities: 'Labour Charge', teu: 2057, feu: 2420 },
-        {
-            sn: 6,
-            activities: 'Total Terminal Handling Charges',
-            teu: 7054.3,
-            feu: 9716.3
-        },
-        { sn: 7, activities: 'ICP Destuffing Total', teu: 9111.3, feu: 12136.3 }
-    ],
-
-    railHandlingBulkCargo: [
-        {
-            sn: 1,
-            activities: 'Bagged / Break Bulk Cargo (per MT)',
-            vehicle: 271.04
-        },
-        { sn: 2, activities: 'Bulk Loose Cargo (per MT)', vehicle: 399.3 }
+export const ICP_BIRATNAGAR_RAIL = {
+  // Freight Vehicle Entry Charges
+  freightVehicleEntry: {
+    title: "Freight Vehicle Entry Per Entry/Trip",
+    data: [
+      { sn: 1, activities: "Commercial Vehicle up to 10 ton", fy82_83: 161.05, fy83_85: 177.16, fy85_87: 194.87, fy87_88: 214.38 },
+      { sn: 2, activities: "Commercial Vehicle above 10 ton", fy82_83: 322.10, fy83_85: 354.31, fy85_87: 389.74, fy87_88: 428.72 },
+      { sn: 3, activities: "Light Vehicle / Bullock Cart up to 5 ton", fy82_83: 80.53, fy83_85: 88.58, fy85_87: 97.44, fy87_88: 107.18 },
+      { sn: 4, activities: "Rickshaw / Hand Trolley", fy82_83: 24.86, fy83_85: 27.38, fy85_87: 30.12, fy87_88: 33.13 }
     ]
+  },
+
+  // Loading / Unloading / Stuffing / Destuffing Charges
+  loadingUnloadingCharges: {
+    title: "Loading / Unloading / Stuffing / Destuffing (all activities)",
+    data: [
+      { sn: 1, type: "Containerized cargo", fy82_83: 2662, fy83_85: 2928.2, fy85_87: 3221.02, fy87_88: 3543.12 },
+      { sn: 2, type: "Non-Containerized break bulk / packaged cargo", fy82_83: 298.14, fy83_85: 327.96, fy85_87: 360.75, fy87_88: 396.83 },
+      { sn: 3, type: "Non-Containerized bulk / loose cargo", fy82_83: 439.23, fy83_85: 483.15, fy85_87: 531.47, fy87_88: 584.61 }
+    ]
+  },
+
+  // Terminal Handling Charges
+  terminalHandlingCharges: {
+    title: "Terminal Handling Charges",
+    data: [
+      { sn: 1, type: "Loaded container (complete cycle of handling)", fy82_83: 4392.30, fy83_85: 4831.53, fy85_87: 5314.68, fy87_88: 5929.61 },
+      { sn: 2, type: "Empty container (complete cycle of handling)", fy82_83: 951.67, fy83_85: 1046.83, fy85_87: 1151.51, fy87_88: 1464.10 },
+      { sn: 3, type: "Handling of LCL cargo (including container handling/loading/unloading & stuffing/destuffing)", fy82_83: 366.03, fy83_85: 402.63, fy85_87: 442.89, fy87_88: 457.18 },
+      { sn: 4, type: "Transfer of loaded container for survey and other purpose (one time operation)", fy82_83: 1464.10, fy83_85: 1610.51, fy85_87: 1771.56, fy87_88: 1830.13 },
+      { sn: 5, type: "Transfer of Empty container for survey and other purposes (one time operation)", fy82_83: 951.67, fy83_85: 1046.83, fy85_87: 1151.51, fy87_88: 1464.10 },
+      { sn: 6, type: "Special charges for over dimensional container (ODC)", rate: "25% additional" }
+    ]
+  },
+
+  // Weighment Charges
+  weighmentCharges: {
+    title: "Weighment Charges (per activity of loaded/empty vehicles)",
+    data: [
+      { sn: 1, activity: "4-10 days", fy82_83: 161.05, fy83_85: 177.16, fy85_87: 194.87, fy87_88: 214.36 },
+      { sn: 2, activity: "11-30 days", fy82_83: 161.05, fy83_85: 177.16, fy85_87: 194.87, fy87_88: 214.36 },
+      { sn: 3, activity: "31 days onwards", fy82_83: 161.05, fy83_85: 177.16, fy85_87: 194.87, fy87_88: 214.36 }
+    ]
+  },
+
+  // Open Yard Storage Charges
+  openYardStorage: {
+    title: "Open Yard Storage (per kg/day)",
+    data: [
+      { sn: 1, type: "Imports Freight Vehicles", "4-10 days": 8.78, "11-30 days": 5.86, "31 days onwards": 5.86 },
+      { sn: 2, type: "Exports Freight Vehicles", "4-10 days": 7.32, "11-30 days": 10.25, "31 days onwards": 13.18 },
+      { sn: 3, type: "Open yard storage 24 hours", rate: 20.50 },
+      { sn: 4, type: "Open yard storage 2-7 days", rate: 10.25 },
+      { sn: 5, type: "Open yard storage 8 days onwards", rate: 10.25 }
+    ]
+  },
+
+  // Warehousing Charges
+  warehousingCharges: {
+    title: "Warehousing Charges (per container/day)",
+    data: [
+      { sn: 1, type: "CFS/Goods Shed 72 hours free", fy82_83: 241.58, fy83_85: 322.10, fy85_87: 354.31, fy87_88: 389.74 },
+      { sn: 2, type: "Containers 24 hours free", fy82_83: 0, fy83_85: 0, fy85_87: 0, fy87_88: 0 },
+      { sn: 3, type: "Containers 2-7 days", fy82_83: 0, fy83_85: 292.31, fy85_87: 321.53, fy87_88: 428.72 },
+      { sn: 4, type: "Containers 8 days onwards", fy82_83: 322.10, fy83_85: 389.74, fy85_87: 531.47, fy87_88: 584.62 }
+    ]
+  },
+
+  // Sublease Charges
+  subleaseCharges: {
+    title: "Sublease Charges (unfurnished room on main terminal building)",
+    data: [
+      { sn: 1, type: "Room rent", fy82_83: 0.0, fy83_85: 0.0, fy85_87: 241.58, fy87_88: 322.10, rate: "Rs. 805.26/m2 per month" }
+    ]
+  },
+
+  // Railway Freight Charges
+  railwayFreight: {
+    title: "Railway Freight to and from ICD to international border",
+    data: [
+      { sn: 1, type: "20' TEU", fy82_83: 585.64, fy83_85: 644.20, fy85_87: 708.62, fy87_88: 779.49 },
+      { sn: 2, type: "40' FEU", fy82_83: 878.46, fy83_85: 966.31, fy85_87: 1062.94, fy87_88: 1169.23 },
+      { sn: 3, type: "Break Bulk cargo", fy82_83: 22.63, fy83_85: 24.89, fy85_87: 27.38, fy87_88: 30.12 },
+      { sn: 4, type: "Bulk cargo / Loose cargo", fy82_83: 17.30, fy83_85: 19.03, fy85_87: 20.94, fy87_88: 23.03 }
+    ]
+  }
 };
