@@ -1,4 +1,4 @@
-import { ICP_BIRATNAGAR_RAIL} from '../../data/tarrifData/icpBiratnagarRail'
+import { ICP_BIRATNAGAR_RAIL } from '../../data/tarrifData/icpBiratnagarRail'
 import TableWithHeading from '../TableWithHeading';
 
 export default function ICPBiratnagarRailTables() {
