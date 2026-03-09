@@ -2,93 +2,98 @@ import { ICP_BIRATNAGAR_RAIL } from '../../data/tarrifData/icpBiratnagarRail';
 import TableWithHeading from '../TableWithHeading';
 
 function SectionBlock({
-    title,
-    sections
+  title,
+  sections
 }: {
-    title: string;
-    sections: { title: string; data: any[] }[];
+  title: string;
+  sections: any[];
 }) {
-    return (
-        <>
-            <h1 className="title">{title}</h1>
-            {sections.map((section, idx) => (
-                <TableWithHeading
-                    key={idx}
-                    title={section.title}
-                    data={section.data}
-                />
-            ))}
-        </>
-    );
+
+  const validSections = sections.filter(Boolean);
+
+  if (validSections.length === 0) return null;
+
+  return (
+    <>
+      <h1 className="title">{title}</h1>
+
+      {validSections.map((section, idx) => (
+        <TableWithHeading
+          key={idx}
+          title={section.title}
+          data={section.data}
+        />
+      ))}
+    </>
+  );
 }
 
-// 🧾 Main Component
-export default function ICPBiratnagerTables() {
-    const {
-        freightVehicleEntry,
-        loadingUnloadingCharges,
-        terminalHandlingCharges,
-        weighmentCharges,
-        openYardStorage,
-        warehousingCharges,
-        subleaseCharges,
-        railwayFreight
-    } = ICP_BIRATNAGAR_RAIL;
+export default function ICPBiratnagarRailTables() {
 
-    return (
-        <>
-            {/* Individual Table */}
-            <TableWithHeading
-                title={freightVehicleEntry.title}
-                data={freightVehicleEntry.data}
-            />
+  const {
+    freightVehicleEntry,
+    loadingUnloadingCharges,
+    terminalHandlingCharges,
+    weighmentCharges,
+    warehousingCharges,
+    openYardStorage,
+    parkingCharges,
+    subleaseCharges,
+    railwayFreight
+  } = ICP_BIRATNAGAR_RAIL;
 
-            {/* Grouped Sections */}
-            <SectionBlock
-                title="Cargo Handling Charges"
-                sections={[
-                    {
-                        title: loadingUnloadingCharges.title,
-                        data: loadingUnloadingCharges.data
-                    },
-                    {
-                        title: terminalHandlingCharges.title,
-                        data: terminalHandlingCharges.data
-                    },
-                    {
-                        title: weighmentCharges.title,
-                        data: weighmentCharges.data
-                    }
-                ]}
-            />
+  return (
+    <>
+      {/* Freight Vehicle Entry */}
+      <TableWithHeading
+        title={freightVehicleEntry.title}
+        data={freightVehicleEntry.data}
+      />
 
-            <SectionBlock
-                title="Storage and Charges"
-                sections={[
-                    {
-                        title: openYardStorage.title,
-                        data: openYardStorage.data
-                    },
-                    {
-                        title: warehousingCharges.title,
-                        data: warehousingCharges.data
-                    },
-                    {
-                        title: subleaseCharges.title,
-                        data: subleaseCharges.data
-                    }
-                ]}
-            />
+      {/* Cargo Handling Charges */}
+      <SectionBlock
+        title="Cargo Handling Charges"
+        sections={[loadingUnloadingCharges]}
+      />
 
-            <SectionBlock
-                title="Railway Freight Charges"
-                sections={[
-                    {
-                        title: railwayFreight.title,
-                        data: railwayFreight.data
-                    }
-                ]}
-            />
-        </>
-    );
+      {/* Terminal Handling Charges */}
+      <SectionBlock
+        title="Terminal Handling Charges"
+        sections={[terminalHandlingCharges]}
+      />
+
+      {/* Weighment Charges */}
+      <SectionBlock
+        title="Weighment Charges"
+        sections={[weighmentCharges]}
+      />
+
+      {/* Warehousing Charges */}
+      <SectionBlock
+        title="Warehousing Charges"
+        sections={[
+          warehousingCharges,
+          openYardStorage
+        ]}
+      />
+
+      {/* Parking & Storage Charges */}
+      <SectionBlock
+        title="Parking & Storage Charges"
+        sections={[parkingCharges]}
+      />
+
+      {/* Sublease Charges */}
+      <SectionBlock
+        title="Sublease Charges"
+        sections={[subleaseCharges]}
+      />
+
+      {/* Railway Freight */}
+      <SectionBlock
+        title="Railway Freight"
+        sections={[railwayFreight]}
+      />
+    </>
+  );
 }
