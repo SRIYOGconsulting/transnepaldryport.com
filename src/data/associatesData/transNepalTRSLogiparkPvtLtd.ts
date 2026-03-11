@@ -4,6 +4,11 @@ import anand_kumar_singh from '../../assets/img/associates/transnepalTRSlogipark
 import capt_mayur_paralkar from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/capt_mayur_paralkar.svg';
 import male_place_holder from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/male_place_holder.svg';
 import suresh_kumar_r from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/suresh-kumar-r.png';
+import Raghvendra_Pratap_Singh from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/raghvendra-pratap-singh.png'
+import aditya_roy from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/aditya-roy.png'
+import dipendra_sign from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/dipendra-pratap-singh.png'
+import ravi_vidyarithi from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/ravi-vidyarthi.png'
+
 
 export const TRANSNEPAL_TRSLOGIPARK = {
     company: 'TransNepal TRS Logipark Pvt. Ltd.',
@@ -21,12 +26,12 @@ export const TRANSNEPAL_TRSLOGIPARK = {
         {
             name: 'Raghvendra Pratap Singh',
             designation: 'Director',
-            img: male_place_holder
+            img: Raghvendra_Pratap_Singh
         },
         {
             name: 'Aditya Roy',
             designation: 'Director',
-            img: male_place_holder
+            img: aditya_roy
         },
         {
             name: 'Suresh Kumar R',
@@ -37,7 +42,7 @@ export const TRANSNEPAL_TRSLOGIPARK = {
         {
             name: 'Dipendra Pratap Singh',
             designation: 'Director',
-            img: male_place_holder
+            img:dipendra_sign
         }
     ],
     managementCommittee: [
@@ -60,7 +65,7 @@ export const TRANSNEPAL_TRSLOGIPARK = {
         {
             name: 'Ravi Vidyarthi',
             designation: 'Chief Executive Officer',
-            img: male_place_holder
+            img: ravi_vidyarithi
         }
     ]
 };

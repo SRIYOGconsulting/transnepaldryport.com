@@ -2,8 +2,12 @@ import mukesh_kumar_athi from '../../assets/img/associates/transilkTerminalsPvtL
 import bhimraj_joshi from '../../assets/img/associates/transilkTerminalsPvtLtd/bhim_raj_joshi.svg';
 import capt_mayur_paralkar from '../../assets/img/associates/transilkTerminalsPvtLtd/capt_mayur_paralkar.svg';
 import anand_kumar_singh from '../../assets/img/associates/transilkTerminalsPvtLtd/anand_kumar_singh.svg';
-import male_place_holder from '../../assets/img/associates/transilkTerminalsPvtLtd/male_place_holder.svg';
+
 import suresh_kumar_r from '../../assets/img/associates/transilkTerminalsPvtLtd/mr_suresh_kumar_r.svg';
+import raj_sapkota from '../../assets/img/associates/transilkTerminalsPvtLtd/raj-sapkota.png'
+import ramesh_sherpa from '../../assets/img/associates/transilkTerminalsPvtLtd/ramesh-sherpa.png';
+import bijaya_Sherpa from '../../assets/img/associates/transilkTerminalsPvtLtd/bIjay-sherpa.png'
+import anirudra_thapa from '../../assets/img/associates/transilkTerminalsPvtLtd/anirudra-thapa.png'
 
 export const TRANSILK_TERMINALS = {
     company: 'TranSilk Terminals Pvt. Ltd.',
@@ -21,7 +25,7 @@ export const TRANSILK_TERMINALS = {
         {
             name: 'Ramesh Sherpa',
             designation: 'Joint Managing Director',
-            img: male_place_holder
+            img: ramesh_sherpa
         },
         {
             name: 'Bhimraj Joshi',
@@ -36,7 +40,7 @@ export const TRANSILK_TERMINALS = {
         {
             name: 'Bijay Sherpa',
             designation: 'Director',
-            img: male_place_holder
+            img: bijaya_Sherpa
         }
     ],
     managementCommittee: [
@@ -53,12 +57,12 @@ export const TRANSILK_TERMINALS = {
         {
             name: 'Anirudra Thapa',
             designation: 'Chief Executive Officer',
-            img: male_place_holder
+            img: anirudra_thapa
         },
         {
             name: 'Raj Sapkota',
             designation: 'Chief Financial Officer',
-            img: male_place_holder
+            img: raj_sapkota
         }
     ]
 };

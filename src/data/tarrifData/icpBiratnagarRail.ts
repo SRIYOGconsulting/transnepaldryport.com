@@ -114,7 +114,10 @@ export const ICP_BIRATNAGAR_RAIL = {
       {
         sn: 6,
         type: "Special charges for ODC",
-        rate: "25% additional"
+        fy82_83: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+        fy83_85: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+        fy85_87: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+        fy87_88: { vehicle: "-", teu: "25% additional", feu: "25% additional" }
       }
     ]
   },
@@ -136,15 +139,12 @@ export const ICP_BIRATNAGAR_RAIL = {
   warehousingCharges: {
     title: "Warehousing Charges (72 hours free)",
     data: [
-
       { category: "Imports 4-10 days", fy82_83: "10.25 paisa/kg/day", fy83_85: "11.27 paisa/kg/day", fy85_87: "12.40 paisa/kg/day", fy87_88: "13.64 paisa/kg/day" },
       { category: "Imports 11-30 days", fy82_83: "13.18 paisa/kg/day", fy83_85: "14.49 paisa/kg/day", fy85_87: "15.94 paisa/kg/day", fy87_88: "17.54 paisa/kg/day" },
       { category: "Imports 31 days onwards", fy82_83: "20.50 paisa/kg/day", fy83_85: "22.55 paisa/kg/day", fy85_87: "24.80 paisa/kg/day", fy87_88: "27.28 paisa/kg/day" },
-
       { category: "Exports 4-10 days", fy82_83: "5.86 paisa/kg/day", fy83_85: "6.44 paisa/kg/day", fy85_87: "7.09 paisa/kg/day", fy87_88: "7.79 paisa/kg/day" },
       { category: "Exports 11-30 days", fy82_83: "7.32 paisa/kg/day", fy83_85: "8.05 paisa/kg/day", fy85_87: "8.86 paisa/kg/day", fy87_88: "9.74 paisa/kg/day" },
       { category: "Exports 31 days onwards", fy82_83: "10.25 paisa/kg/day", fy83_85: "11.27 paisa/kg/day", fy85_87: "12.40 paisa/kg/day", fy87_88: "13.64 paisa/kg/day" }
-
     ]
   },
 
@@ -173,6 +173,20 @@ export const ICP_BIRATNAGAR_RAIL = {
         fy83_85: { vehicle: 354.31, teu: 354.31, feu: 531.47 },
         fy85_87: { vehicle: 389.74, teu: 389.74, feu: 584.62 },
         fy87_88: { vehicle: 428.72, teu: 428.72, feu: 643.08 }
+      },
+      {
+        type: "Containers 2-7 days",
+        fy82_83: { vehicle: "Free", teu: 241.58, feu: 322.10 },
+        fy83_85: { vehicle: "Free", teu: 265.73, feu: 354.31 },
+        fy85_87: { vehicle: "Free", teu: 292.31, feu: 389.74 },
+        fy87_88: { vehicle: "Free", teu: 321.54, feu: 428.72 }
+      },
+      {
+        type: "Containers 8 days onwards",
+        fy82_83: { vehicle: "Free", teu: 322.10, feu: 483.15 },
+        fy83_85: { vehicle: "Free", teu: 354.31, feu: 531.47 },
+        fy85_87: { vehicle: "Free", teu: 389.74, feu: 584.62 },
+        fy87_88: { vehicle: "Free", teu: 428.72, feu: 643.08 }
       }
     ]
   },
@@ -196,28 +210,9 @@ export const ICP_BIRATNAGAR_RAIL = {
     data: [
       { type: "20' TEU", fy82_83: 585.64, fy83_85: 644.20, fy85_87: 708.62, fy87_88: 779.49 },
       { type: "40' FEU", fy82_83: 878.46, fy83_85: 966.31, fy85_87: 1062.94, fy87_88: 1169.23 },
-      { type: "Break bulk cargo (per ton)", fy82_83: 22.63, fy83_85: 24.89, fy85_87: 27.38, fy87_88: 30.12 },
+      { type: "Break Bulk cargo (per ton)", fy82_83: 22.63, fy83_85: 24.89, fy85_87: 27.38, fy87_88: 30.12 },
       { type: "Bulk / loose cargo (per ton)", fy82_83: 17.30, fy83_85: 19.03, fy85_87: 20.94, fy87_88: 23.03 }
-    ],
-    containerParkingCharges: {
-  title: "Container Parking Charges",
-  data: [
-    {
-      type: "Containers 2-7 days",
-      fy82_83: { vehicle: "0.00", teu: 241.58, feu: 322.10 },
-      fy83_85: { vehicle: "0.00", teu: 265.73, feu: 354.31 },
-      fy85_87: { vehicle: "0.00", teu: 292.31, feu: 389.74 },
-      fy87_88: { vehicle: "0.00", teu: 321.54, feu: 428.72 }
-    },
-    {
-      type: "Containers 8 days onwards",
-      fy82_83: { vehicle: "0.00", teu: 322.10, feu: 483.15 },
-      fy83_85: { vehicle: "0.00", teu: 354.31, feu: 531.47 },
-      fy85_87: { vehicle: "0.00", teu: 389.74, feu: 584.62 },
-      fy87_88: { vehicle: "0.00", teu: 428.72, feu: 643.08 }
-    }
-  ]
-}
+    ]
   }
 
 };

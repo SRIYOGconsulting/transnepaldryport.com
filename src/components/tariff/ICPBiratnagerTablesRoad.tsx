@@ -6,9 +6,8 @@ function SectionBlock({
   sections
 }: {
   title: string;
-  sections: any[];
+  sections: { title: string; data: any[] }[];
 }) {
-
   const validSections = sections.filter(Boolean);
 
   if (validSections.length === 0) return null;
@@ -29,7 +28,6 @@ function SectionBlock({
 }
 
 export default function ICDBiratnagarRoadTables() {
-
   const {
     vehicleEntryCharges,
     cargoHandlingCharges,
@@ -37,46 +35,57 @@ export default function ICDBiratnagarRoadTables() {
     forkliftCharges,
     weighmentCharges,
     cleaningCharges,
-    warehousingImports,
-    warehousingExports,
-    openYardStorage,
-    parkingFreightVehicles,
-    parkingContainers,
+    warehousingCharges,
+    parkingCharges,
     subLeaseCharges
   } = ICP_BIRATNAGAR_ROAD;
 
   return (
     <>
+      {/* Vehicle Entry */}
       <TableWithHeading
         title={vehicleEntryCharges.title}
         data={vehicleEntryCharges.data}
       />
 
+      {/* Cargo Handling Charges */}
       <SectionBlock
         title="Cargo Handling Charges"
         sections={[cargoHandlingCharges]}
       />
 
+      {/* Terminal Handling Charges */}
       <SectionBlock
         title="Terminal Handling Charges"
         sections={[terminalHandlingCharges]}
       />
 
+      {/* Equipment & Weighment Charges */}
       <SectionBlock
         title="Equipment & Weighment Charges"
         sections={[forkliftCharges, weighmentCharges, cleaningCharges]}
       />
 
+      {/* Warehousing Charges */}
       <SectionBlock
         title="Warehousing Charges"
-        sections={[warehousingImports, warehousingExports, openYardStorage]}
+        sections={[
+          { title: "Import", data: warehousingCharges.import },
+          { title: "Export", data: warehousingCharges.export },
+          { title: "Open Yard", data: warehousingCharges.openYard }
+        ]}
       />
 
+      {/* Parking & Storage Charges */}
       <SectionBlock
         title="Parking & Storage Charges"
-        sections={[parkingFreightVehicles, parkingContainers]}
+        sections={[
+          { title: "Freight Vehicles", data: parkingCharges.vehicles },
+          { title: "Containers", data: parkingCharges.containers }
+        ]}
       />
 
+      {/* Sublease Charges */}
       <SectionBlock
         title="Sublease Charges"
         sections={[subLeaseCharges]}
