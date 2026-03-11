@@ -7,6 +7,13 @@ import img6 from '../../../assets/img/services/ICDKakarvitta/img6.jpg';
 import img7 from '../../../assets/img/services/ICDKakarvitta/img7.jpg';
 import img8 from '../../../assets/img/services/ICDKakarvitta/img8.jpg';
 import img9 from '../../../assets/img/services/ICDKakarvitta/img9.jpg';
+import img10 from '../../../assets/img/services/ICDKakarvitta/1.jpeg';
+import img11 from '../../../assets/img/services/ICDKakarvitta/2.jpeg';
+import img12 from '../../../assets/img/services/ICDKakarvitta/3.jpeg';
+import img13 from '../../../assets/img/services/ICDKakarvitta/4.jpeg';
+import img14 from '../../../assets/img/services/ICDKakarvitta/5.jpeg';
+import img15 from '../../../assets/img/services/ICDKakarvitta/6.jpeg';
+
 
 export const ICD_KAKARBHITTA_INFO = {
     title: 'Features',
@@ -109,5 +116,32 @@ export const ICD_KAKARBHITTA_GALLERY = [
 
     {
         img: img9
+    }
+    ,
+
+    {
+        img: img10
+    },
+
+    {
+        img: img11
+    },
+
+    {
+        img: img12
+    },
+
+    {
+        img: img13
+    }
+    ,
+
+    {
+        img: img14
+    },
+    
+
+    {
+        img: img15
     }
 ];
