@@ -3,15 +3,22 @@ import TableWithHeading from '../TableWithHeading';
 
 function cleanVehicleOnly(data: any[]) {
   return data.map((row) => {
-    const newRow = { ...row };
+    const newRow: any = { ...row };
 
     Object.keys(newRow).forEach((key) => {
       if (key.startsWith("fy")) {
         const value = newRow[key];
 
         if (value && typeof value === "object") {
+
+          // vehicle only rows
           if (value.teu === "-" && value.feu === "-") {
             newRow[key] = value.vehicle;
+          }
+
+          // TEU/FEU rows
+          else {
+            newRow[key] = `${value.teu ?? "-"} / ${value.feu ?? "-"}`;
           }
         }
       }
@@ -20,7 +27,6 @@ function cleanVehicleOnly(data: any[]) {
     return newRow;
   });
 }
-
 function SectionBlock({
   title,
   sections

@@ -68,59 +68,112 @@ export const ICP_BIRATNAGAR_RAIL = {
     ]
   },
 
+  // terminalHandlingCharges: {
+  //   title: "Terminal Handling Charges",
+  //   data: [
+  //     {
+  //       sn: 1,
+  //       type: "Loaded container (complete cycle)",
+  //       fy82_83: { vehicle: "-", teu: 4392.30, feu: 5929.61 },
+  //       fy83_85: { vehicle: "0", teu: 4831.53, feu: 6522.57 },
+  //       fy85_87: { vehicle: "-", teu: 5314.68, feu: 7174.82 },
+  //       fy87_88: { vehicle: "-", teu: 5846.15, feu: 7892.30 }
+  //     },
+  //     {
+  //       sn: 2,
+  //       type: "Empty container (complete cycle)",
+  //       fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
+  //       fy83_85: { vehicle: "0", teu: 1046.83, feu: 1610.51 },
+  //       fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
+  //       fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
+  //     },
+  //     {
+  //       sn: 3,
+  //       type: "Handling of LCL cargo",
+  //       fy82_83: { vehicle: "-", teu: "366.03/ton", feu: "366.03/ton" },
+  //       fy83_85: { vehicle: "-", teu: "402.63/ton", feu: "402.63/ton" },
+  //       fy85_87: { vehicle: "-", teu: "442.89/ton", feu: "442.89/ton" },
+  //       fy87_88: { vehicle: "-", teu: "487.18/ton", feu: "487.18/ton" }
+  //     },
+  //     {
+  //       sn: 4,
+  //       type: "Transfer of loaded container (survey)",
+  //       fy82_83: { vehicle: "-", teu: 1464.10, feu: 1830.13 },
+  //       fy83_85: { vehicle: "-", teu: 1610.51, feu: 2013.14 },
+  //       fy85_87: { vehicle: "-", teu: 1771.56, feu: 2214.45 },
+  //       fy87_88: { vehicle: "-", teu: 1948.72, feu: 2435.90 }
+  //     },
+  //     {
+  //       sn: 5,
+  //       type: "Transfer of empty container (survey)",
+  //       fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
+  //       fy83_85: { vehicle: "-", teu: 1046.83, feu: 1610.51 },
+  //       fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
+  //       fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
+  //     },
+  //     {
+  //       sn: 6,
+  //       type: "Special charges for ODC",
+  //       fy82_83: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+  //       fy83_85: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+  //       fy85_87: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+  //       fy87_88: { vehicle: "-", teu: "25% additional", feu: "25% additional" }
+  //     }
+  //   ]
+  // },
   terminalHandlingCharges: {
-    title: "Terminal Handling Charges",
-    data: [
-      {
-        sn: 1,
-        type: "Loaded container (complete cycle)",
-        fy82_83: { vehicle: "-", teu: 4392.30, feu: 5929.61 },
-        fy83_85: { vehicle: "0", teu: 4831.53, feu: 6522.57 },
-        fy85_87: { vehicle: "-", teu: 5314.68, feu: 7174.82 },
-        fy87_88: { vehicle: "-", teu: 5846.15, feu: 7892.30 }
-      },
-      {
-        sn: 2,
-        type: "Empty container (complete cycle)",
-        fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
-        fy83_85: { vehicle: "0", teu: 1046.83, feu: 1610.51 },
-        fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
-        fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
-      },
-      {
-        sn: 3,
-        type: "Handling of LCL cargo",
-        fy82_83: { vehicle: "-", teu: "366.03/ton", feu: "366.03/ton" },
-        fy83_85: { vehicle: "-", teu: "402.63/ton", feu: "402.63/ton" },
-        fy85_87: { vehicle: "-", teu: "442.89/ton", feu: "442.89/ton" },
-        fy87_88: { vehicle: "-", teu: "487.18/ton", feu: "487.18/ton" }
-      },
-      {
-        sn: 4,
-        type: "Transfer of loaded container (survey)",
-        fy82_83: { vehicle: "-", teu: 1464.10, feu: 1830.13 },
-        fy83_85: { vehicle: "-", teu: 1610.51, feu: 2013.14 },
-        fy85_87: { vehicle: "-", teu: 1771.56, feu: 2214.45 },
-        fy87_88: { vehicle: "-", teu: 1948.72, feu: 2435.90 }
-      },
-      {
-        sn: 5,
-        type: "Transfer of empty container (survey)",
-        fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
-        fy83_85: { vehicle: "-", teu: 1046.83, feu: 1610.51 },
-        fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
-        fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
-      },
-      {
-        sn: 6,
-        type: "Special charges for ODC",
-        fy82_83: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
-        fy83_85: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
-        fy85_87: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
-        fy87_88: { vehicle: "-", teu: "25% additional", feu: "25% additional" }
-      }
-    ]
-  },
+  title: "Terminal Handling Charges",
+  data: [
+    {
+      sn: 1,
+      type: "Loaded container (complete cycle)",
+      fy82_83: { vehicle: "-", teu: 4392.30, feu: 5929.61 },
+      fy83_85: { vehicle: "0", teu: 4831.53, feu: 6522.57 },
+      fy85_87: { vehicle: "-", teu: 5314.68, feu: 7174.82 },
+      fy87_88: { vehicle: "-", teu: 5846.15, feu: 7892.30 }
+    },
+    {
+      sn: 2,
+      type: "Empty container (complete cycle)",
+      fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
+      fy83_85: { vehicle: "0", teu: 1046.83, feu: 1610.51 },
+      fy85_87: { vehicle: "-", teu: 1151.51, feu: 1711.56 }, // fixed
+      fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
+    },
+    {
+      sn: 3,
+      type: "Handling of LCL cargo",
+      fy82_83: { vehicle: "-", teu: "366.03/ton", feu: "366.03/ton" },
+      fy83_85: { vehicle: "-", teu: "402.63/ton", feu: "402.63/ton" },
+      fy85_87: { vehicle: "-", teu: "442.89/ton", feu: "442.89/ton" },
+      fy87_88: { vehicle: "-", teu: "487.18/ton", feu: "487.18/ton" }
+    },
+    {
+      sn: 4,
+      type: "Transfer of loaded container (survey)",
+      fy82_83: { vehicle: "-", teu: 1464.10, feu: 1830.13 },
+      fy83_85: { vehicle: "-", teu: 1610.51, feu: 2013.14 },
+      fy85_87: { vehicle: "-", teu: 1771.56, feu: 2214.45 },
+      fy87_88: { vehicle: "-", teu: 1948.72, feu: 2435.90 }
+    },
+    {
+      sn: 5,
+      type: "Transfer of empty container (survey)",
+      fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
+      fy83_85: { vehicle: "-", teu: 1046.83, feu: 1610.51 },
+      fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
+      fy87_88: { vehicle: "-", teu: 1266.67, feu: 1948.72 }
+    },
+    {
+      sn: 6,
+      type: "Special charges for ODC",
+      fy82_83: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+      fy83_85: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+      fy85_87: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
+      fy87_88: { vehicle: "-", teu: "25% additional", feu: "25% additional" }
+    }
+  ]
+},
 
   weighmentCharges: {
     title: "Weighment Charges",
