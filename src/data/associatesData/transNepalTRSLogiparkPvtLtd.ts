@@ -2,7 +2,6 @@ import mukesh_kumar_rathi from '../../assets/img/associates/transnepalTRSlogipar
 import bhim_raj_joshi from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/bhimraj_joshi.svg';
 import anand_kumar_singh from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/anand_kumar_singh.svg';
 import capt_mayur_paralkar from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/capt_mayur_paralkar.svg';
-import male_place_holder from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/male_place_holder.svg';
 import suresh_kumar_r from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/suresh-kumar-r.png';
 import Raghvendra_Pratap_Singh from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/raghvendra-pratap-singh.png'
 import aditya_roy from '../../assets/img/associates/transnepalTRSlogiparkPvtLtd/aditya-roy.png'
