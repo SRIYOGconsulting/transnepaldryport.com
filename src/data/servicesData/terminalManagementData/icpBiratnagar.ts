@@ -22,67 +22,63 @@ export const ICP_BIRATNAGAR_INFO = {
 
 export const ICP_BIRATNAGAR_FACILITIES = {
     building: [
-        {
-            id: 1,
-            particular: 'Administrative Building, Double Storey',
-            unit: '1320 sqm.'
-        },
-        {
-            id: 2,
-            particular: 'Dispensary Building, Single Storey',
-            unit: '161 sqm.'
-        },
-        {
-            id: 3,
-            particular: 'Customs service Building, Double Storey',
-            unit: '658 sqm.'
-        },
+        { id: 1, particular: 'Administrative Building, Double Storey', unit: '1320 sqm.' },
+        { id: 2, particular: 'Dispensary Building, Single Storey', unit: '161 sqm.' },
+        { id: 3, particular: 'Customs service Building, Double Storey', unit: '658 sqm.' },
+
         {
             id: 4,
-            particular: 'Dormitory Building, Single Storey',
-            unit: '647 sqm.'
+            particular: 'Dormitory Building, Double Storey',
+            unit: '1294 sqm.'
         },
-        {
-            id: 5,
-            particular: 'Security Barrack Building, Double storey',
-            unit: '837 sqm.'
-        },
+
+        { id: 5, particular: 'Security Barrack Building, Double storey', unit: '837 sqm.' },
+
         {
             id: 6,
-            particular: 'Quarantine Building, Single Storey',
-            unit: '250 sqm.'
+            particular: 'Quarantine Building, Double Storey',
+            unit: '500 sqm.'
         },
-        {
-            id: 7,
-            particular: 'Electrical Sub Station Building, Single Storey',
-            unit: '290 sqm'
-        },
+
+        { id: 7, particular: 'Electrical Sub Station Building, Single Storey', unit: '290 sqm' },
         { id: 8, particular: 'Entrance Gate, Double Storey', unit: '133 sqm' },
+
         {
             id: 9,
-            particular:
-                'Toilet Block- Type 1 (Import & Export) 2 Nos Single Storey.',
+            particular: 'Toilet Block- Type 1 (Import & Export) 2 Nos Single Storey.',
             unit: '35 sqm'
         },
         {
             id: 10,
-            particular:
-                'Toilet Block – Type 2 (Import & export) 2 Nos Single Storey',
+            particular: 'Toilet Block – Type 2 (Import & export) 2 Nos Single Storey',
             unit: '47 sqm'
         },
+
+        { id: 11, particular: 'Watch Tower, 4 Nos, Four Storey', unit: '63 sqm' },
+
         {
-            id: 11,
-            particular: 'Watch Tower, 4 Nos, Four Storey',
-            unit: '63 sqm'
+            id: 12,
+            particular: 'Toilet Block- Type 3 (near new Godown) 1 Nos Single Storey.',
+            unit: ''
+        },
+        {
+            id: 13,
+            particular: 'Toilet Block- Type 4 (container yard) 1 Nos Single Storey',
+            unit: '18 sqm'
+        },
+        {
+            id: 14,
+            particular: 'Gate Office- (Near Container yard) 2 Nos sinlge storey',
+            unit: '18 sqm each'
         }
     ],
 
     preEngineeredShedsGodowns: [
         { id: 1, particular: 'Pre-engineered Sheds/Godowns:', unit: '' },
+
         {
             id: 2,
-            particular:
-                'Warehouse Arrival with refrigeration facilities (Import Side)',
+            particular: 'Warehouse Arrival with refrigeration facilities (Import Side)',
             unit: '1520 sqm'
         },
         {
@@ -93,7 +89,23 @@ export const ICP_BIRATNAGAR_FACILITIES = {
         { id: 4, particular: 'Animal Shed (Import Side)', unit: '100 sqm' },
         { id: 5, particular: 'process Shed (Import side)', unit: '2500 sqm' },
         { id: 6, particular: 'process Shed (Export Side)', unit: '2500 sqm' },
-        { id: 7, particular: 'process cabins 31 Nos', unit: '418 sqm' }
+        { id: 7, particular: 'process cabins 31 Nos', unit: '418 sqm' },
+
+        {
+            id: 8,
+            particular: 'Warehouse New (Import Side)',
+            unit: '1430 sqm'
+        },
+        {
+            id: 9,
+            particular: 'Inspection shed (Import Side)',
+            unit: '440 sqm'
+        },
+        {
+            id: 10,
+            particular: 'Litigation Shed with office room facilities (Import side)',
+            unit: '650 sqm'
+        }
     ],
 
     additionalFeatures: [
@@ -101,54 +113,29 @@ export const ICP_BIRATNAGAR_FACILITIES = {
         { id: 2, particular: 'Weigh Bridge – 80 MT', unit: '2 No' },
         { id: 3, particular: 'Parking Yard', unit: '250 Vehicle' },
         { id: 4, particular: 'Container Yard', unit: '200 Boxes' },
-        {
-            id: 5,
-            particular: 'CCTV, PA, Fire Alarm Detection System',
-            unit: ''
-        },
-        {
-            id: 6,
-            particular: 'Sewage Treatment Plant – 50 KLD Capacity',
-            unit: ''
-        },
+        { id: 5, particular: 'CCTV, PA, Fire Alarm Detection System', unit: '' },
+        { id: 6, particular: 'Sewage Treatment Plant – 50 KLD Capacity', unit: '' },
         { id: 7, particular: 'Custom Examination Shed', unit: '' },
         { id: 8, particular: 'Diesel Generator', unit: '' },
         { id: 9, particular: 'Railway Yard-NCY', unit: '' },
         { id: 10, particular: 'Additional Space for Cargo Storage', unit: '' },
-        { id: 11, particular: 'Immigration Office', unit: '' }
+        { id: 11, particular: 'Immigration Office', unit: '' },
+
+        {
+            id: 12,
+            particular: 'Fully functional fire fighting system',
+            unit: ''
+        }
     ]
 };
 
 export const ICP_BIRATNAGER_GALLERY = [
-    {
-        img: img1
-    },
-
-    {
-        img: img2
-    },
-
-    {
-        img: img3
-    },
-
-    {
-        img: img4
-    },
-
-    {
-        img: img5
-    },
-
-    {
-        img: img6
-    },
-
-    {
-        img: img7
-    },
-
-    {
-        img: img8
-    }
+    { img: img1 },
+    { img: img2 },
+    { img: img3 },
+    { img: img4 },
+    { img: img5 },
+    { img: img6 },
+    { img: img7 },
+    { img: img8 }
 ];
