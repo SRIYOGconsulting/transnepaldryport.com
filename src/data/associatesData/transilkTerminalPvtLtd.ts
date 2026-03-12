@@ -28,15 +28,16 @@ export const TRANSILK_TERMINALS = {
             img: ramesh_sherpa
         },
         {
-            name: 'Bhimraj Joshi',
-            designation: 'Joint Managing Director',
-            img: bhimraj_joshi
-        },
-        {
             name: 'Suresh Kumar R',
             designation: 'Director',
             img: suresh_kumar_r
         },
+        {
+            name: 'Bhimraj Joshi',
+            designation: 'Joint Managing Director',
+            img: bhimraj_joshi
+        },
+        
         {
             name: 'Bijay Sherpa',
             designation: 'Director',

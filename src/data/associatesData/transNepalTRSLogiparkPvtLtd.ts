@@ -19,19 +19,14 @@ export const TRANSNEPAL_TRSLOGIPARK = {
     },
     boardOfDirectors: [
         {
-            name: 'Mukesh Kumar Rathi',
-            designation: 'Director',
-            img: mukesh_kumar_rathi
-        },
-        {
             name: 'Raghvendra Pratap Singh',
-            designation: 'Director',
+            designation: 'Chairmen',
             img: Raghvendra_Pratap_Singh
         },
         {
-            name: 'Aditya Roy',
+            name: 'Mukesh Kumar Rathi',
             designation: 'Director',
-            img: aditya_roy
+            img: mukesh_kumar_rathi
         },
         {
             name: 'Suresh Kumar R',
@@ -39,17 +34,25 @@ export const TRANSNEPAL_TRSLOGIPARK = {
             img: suresh_kumar_r
         },
         { name: 'Bhimraj Joshi', designation: 'Director', img: bhim_raj_joshi },
+
         {
             name: 'Dipendra Pratap Singh',
             designation: 'Director',
             img:dipendra_sign
-        }
+        },
+        {
+            name: 'Aditya Roy',
+            designation: 'Director',
+            img: aditya_roy
+        },
+        
+        
     ],
     managementCommittee: [
         {
             name: 'Aditya Roy',
             designation: 'Management Committee Member and CFO',
-            img: male_place_holder
+            img: aditya_roy
         },
         {
             name: 'Capt. Mayur Paralkar',
