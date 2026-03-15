@@ -34,7 +34,7 @@ export const ICP_BIRATNAGAR_ROAD = {
   },
 
   weighmentCharges: {
-    title: "Weightment Charge of Loaded/ Empty Vehicles",
+    title: "Weightment Charge of Loaded / Empty vehicles (TEU/FEU)",
     data: [
       { sn: 1, activities: "Weighment Charge", unit: "Per Event", fy82_83: 285.33, fy83_85: 313.86, fy85_87: 345.25, fy87_88: 379.78 }
     ]

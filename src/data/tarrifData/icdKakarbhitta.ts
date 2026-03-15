@@ -156,7 +156,7 @@ export const ICD_KAKARBHITTA = {
   weighmentCharges: [
     {
       sn: 1,
-      activities: "Weighment Charge of Loaded/Empty Vehicles",
+      activities: "Weighment Charge of Loaded/Empty Vehicles(TUE/FEU)",
       unit: "Per Event",
       fy82_83: 285.33,
       fy83_85: 313.86,

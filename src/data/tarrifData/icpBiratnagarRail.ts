@@ -43,7 +43,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     data: [
       {
         sn: 1,
-        type: "Containerized cargo",
+        type: "Containerized cargo(TEU/FEU)",
         fy82_83: { vehicle: "-", teu: 2262.7, feu: 2662 },
         fy83_85: { vehicle: "-", teu: 2488.97, feu: 2928.2 },
         fy85_87: { vehicle: "-", teu: 2737.87, feu: 3221.02 },
@@ -126,7 +126,7 @@ export const ICP_BIRATNAGAR_RAIL = {
   data: [
     {
       sn: 1,
-      type: "Loaded container (complete cycle)",
+      type: "Loaded container (complete cycle) (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: 4392.30, feu: 5929.61 },
       fy83_85: { vehicle: "0", teu: 4831.53, feu: 6522.57 },
       fy85_87: { vehicle: "-", teu: 5314.68, feu: 7174.82 },
@@ -134,7 +134,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     },
     {
       sn: 2,
-      type: "Empty container (complete cycle)",
+      type: "Empty container (complete cycle) (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
       fy83_85: { vehicle: "0", teu: 1046.83, feu: 1610.51 },
       fy85_87: { vehicle: "-", teu: 1151.51, feu: 1711.56 }, // fixed
@@ -142,7 +142,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     },
     {
       sn: 3,
-      type: "Handling of LCL cargo",
+      type: "Handling of LCL cargo (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: "366.03/ton", feu: "366.03/ton" },
       fy83_85: { vehicle: "-", teu: "402.63/ton", feu: "402.63/ton" },
       fy85_87: { vehicle: "-", teu: "442.89/ton", feu: "442.89/ton" },
@@ -150,7 +150,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     },
     {
       sn: 4,
-      type: "Transfer of loaded container (survey)",
+      type: "Transfer of loaded container (survey) (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: 1464.10, feu: 1830.13 },
       fy83_85: { vehicle: "-", teu: 1610.51, feu: 2013.14 },
       fy85_87: { vehicle: "-", teu: 1771.56, feu: 2214.45 },
@@ -158,7 +158,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     },
     {
       sn: 5,
-      type: "Transfer of empty container (survey)",
+      type: "Transfer of empty container (survey) (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: 951.67, feu: 1464.10 },
       fy83_85: { vehicle: "-", teu: 1046.83, feu: 1610.51 },
       fy85_87: { vehicle: "-", teu: 1151.51, feu: 1771.56 },
@@ -166,7 +166,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     },
     {
       sn: 6,
-      type: "Special charges for ODC",
+      type: "Special charges for ODC (TEU/FEU)",
       fy82_83: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
       fy83_85: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
       fy85_87: { vehicle: "-", teu: "25% additional", feu: "25% additional" },
@@ -180,7 +180,7 @@ export const ICP_BIRATNAGAR_RAIL = {
     data: [
       {
         sn: 1,
-        activity: "Loaded / Empty vehicles",
+        activity: "Loaded / Empty vehicles (TEU/FEU)",
         fy82_83: { vehicle: 161.05, teu: 161.05, feu: 161.05 },
         fy83_85: { vehicle: 177.16, teu: 177.16, feu: 177.16 },
         fy85_87: { vehicle: 194.87, teu: 194.87, feu: 194.87 },
@@ -214,28 +214,28 @@ export const ICP_BIRATNAGAR_RAIL = {
     title: "Parking & Storage Charges",
     data: [
       {
-        type: "Freight Vehicles 2-7 days",
+        type: "Freight Vehicles 2-7 days (TEU/FEU)",
         fy82_83: { vehicle: 241.58, teu: 241.58, feu: 322.10 },
         fy83_85: { vehicle: 265.73, teu: 265.73, feu: 354.31 },
         fy85_87: { vehicle: 292.31, teu: 292.31, feu: 389.74 },
         fy87_88: { vehicle: 321.53, teu: 321.53, feu: 428.72 }
       },
       {
-        type: "Freight Vehicles 8 days onwards",
+        type: "Freight Vehicles 8 days onwards (TEU/FEU)",
         fy82_83: { vehicle: 322.10, teu: 322.10, feu: 483.15 },
         fy83_85: { vehicle: 354.31, teu: 354.31, feu: 531.47 },
         fy85_87: { vehicle: 389.74, teu: 389.74, feu: 584.62 },
         fy87_88: { vehicle: 428.72, teu: 428.72, feu: 643.08 }
       },
       {
-        type: "Containers 2-7 days",
+        type: "Containers 2-7 days (TEU/FEU)",
         fy82_83: { vehicle: "Free", teu: 241.58, feu: 322.10 },
         fy83_85: { vehicle: "Free", teu: 265.73, feu: 354.31 },
         fy85_87: { vehicle: "Free", teu: 292.31, feu: 389.74 },
         fy87_88: { vehicle: "Free", teu: 321.54, feu: 428.72 }
       },
       {
-        type: "Containers 8 days onwards",
+        type: "Containers 8 days onwards (TEU/FEU)",
         fy82_83: { vehicle: "Free", teu: 322.10, feu: 483.15 },
         fy83_85: { vehicle: "Free", teu: 354.31, feu: 531.47 },
         fy85_87: { vehicle: "Free", teu: 389.74, feu: 584.62 },
