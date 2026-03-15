@@ -118,7 +118,7 @@ export default function Tariff() {
     title: " Tariff  |  TransNepal Freight Services Pvt. Ltd.",
     description: "Transparent pricing for transport and logistics services.",
     ogImage: "",
-    canonical: "https://test.transnepaldryport.com/tariff"
+    canonical: "https://transnepaldryport.com/tariff"
   });
     const [selectedTable, setSelectedTable] =
     useState<TableKey>('icpBiratnagarRoad');
